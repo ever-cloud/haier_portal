@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/hr-community.css">
+    <link rel="stylesheet" href="../css/hr-prototyperoom.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=EwYKU3Q9LPEw2vEGkXblk9p6pqSb7SYO"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        var str = location.hash;
+        var str = str.substr(1).split("&");
+        $(function () {
+
+            getRed();
+            if (getCookie("showImage")) {
+                $("#roomMap").css("display", "block");
+                $("#photoShow").css("display", "block");
+                $("#mask").css("display", "block");
+                getimgs(getCookie("showImage"))
+                setCookie("showImage", '');
+                $("#photoShow .icon").click(function () {
+                        $("#photoShow").css("display", "none");
+                        $("#mask").css("display", "none");
+                    });
+            }
+//            赋值给上面的标题和地点
+            $("#roomName").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])
+            $("#roomView>p").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])
+            setImg(str[0]);
+            reload();
+        })
+    </script>
+
+</head>
+<body onresize="resizeMap();">
+<div class="layout">
+    <div class="layout_bottom">
+        <div class="wrapper clearfix">
+            <!--样板间地图-->
+            <div id="roomMap" class="public mapBloc" style="display: block;">
+                <!--引入地图-->
+                <div id="myMap"></div>
+
+                <div class="mask clearfix" id="mask" style="width: 100%;height: 100%;display: none;"></div>
+            </div>
+            <!--地图 end-->
+            <div class="wrapper_all" id="wrapper_all">
+                <div id="all_prototyperoom" class="all_prototyperoom" style="display: block;">
+                    <div>
+                        <div id="prototypeRoom" class="prototypeRoom" style="display: block;">
+                            <!-- 上面集团名-->
+                            <div class="roomCompany clearfix">
+                                <div class="roomName" id="roomName"></div>
+                                <div class="roomView" id="roomView">
+                                    <img src="../images/local-b.png" alt="">
+                                    <p></p>
+                                </div>
+                                <span class="close">×</span>
+                            </div>
+                            <!--集团下部分样板间图片-->
+                            <!--<div class="container-fluid">-->
+                                <div class="roomCurrent  clearfix">
+                                    <!--<div class="row">-->
+                                        <div class="roomMeasure clearfix">
+                                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                                                <img src="" alt="" class="img_l">
+                                            <!--</div>-->
+                                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                                                <img src="" alt="" class="img_r">
+                                            <!--</div>-->
+                                        </div>
+
+                                        <div class="roomPlot clearfix">
+                                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-sm-12">-->
+                                                <img src="" alt="" class="img_t">
+                                            <!--</div>-->
+                                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-sm-12">-->
+                                                <img src="" alt="" class="img_b">
+                                            <!--</div>-->
+                                        </div>
+                                    <!--</div>-->
+                                </div>
+                            <!--</div>-->
+                            <div class="single clearfix" id="photoShow" style="display: none;">
+                                <!--右上角小图标-->
+                                <div class="icon"><i></i></div>
+                                <!--标题-->
+                                <div class="titleName clearfix">
+                                    <h4 class="title" id="popTitle"></h4>
+                                    <img src="../images/location.png" alt="">
+                                    <p></p>
+                                </div>
+                                <div class="roomStyle">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/setcookie.js"></script>
+<script src="../js/common/room-animate.js"></script>
+
+<script src="../js/common/nav-item.js"></script>
+<script src="../lib/temp/template.js"></script>
+<script src="../js/map/room-map.js"></script>
+<script src="../js/map/room-map-click.js"></script>
