@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/hr-prototyperoom.css">
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=EwYKU3Q9LPEw2vEGkXblk9p6pqSb7SYO"></script>
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script>
+        var str = location.hash;
+        var str = str.substr(1).split("&");
+        $(function () {
+            $("#roomName").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])
+            $("#roomView>p").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])
+            setImg(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0]);
+            reload();
+        })
+
+    </script>
+</head>
+<body>
+<div class="layout_right">
+    <div class="prototypeRoom">
+        <!-- top section-->
+        <div class="roomCompany clearfix">
+            <div class="roomName" id="roomName"></div>
+            <div class="roomView" id="roomView">
+                <img src="../images/local-b.png">
+                <p></p>
+            </div>
+            <span class="close">×</span>
+        </div>
+        <!--bottom section-->
+        <div class="roomCurrent  clearfix">
+            <!--top pic-->
+            <div class="roomMeasure clearfix">
+                <img src="" alt="" class="img_l">
+                <img src="" alt="" class="img_r">
+            </div>
+            <!--bottom pic-->
+            <div class="roomPlot clearfix">
+                <img src="" alt="" class="img_t">
+                <img src="" alt="" class="img_b">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/setcookie.js"></script>
+<script src="../js/common/nav-item.js"></script>
+<script src="../js/map/room-map.js"></script>
+<script src="../js/map/room-map-click.js"></script>
+</html>

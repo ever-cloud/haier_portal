@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=EwYKU3Q9LPEw2vEGkXblk9p6pqSb7SYO"></script>
+
+</head>
+<!--地图自适应调用-->
+<body onresize="resizeMap()">
+<div class="layout_map">
+    <div class="wrapper_map">
+        <div class="center">
+            <!--tab atart-->
+            <div class="tabBox">
+                <ul>
+                    <!--集团地图-->
+                    <li><a href="./hr-blocmap.html" target="main" class="clickstyle">地图</a></li>
+                    <li><a href="./main.html" target="main">概览</a></li>
+                    <li><a href="./hr-blocuser.html" target="main">用户总览</a></li>
+                    <li><a href="./hr-bloctenement.html" target="main">物业服务</a></li>
+                    <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
+                    <li><a href="./hr-blocbusiness.html" target="main">商业服务</a></li>
+                </ul>
+            </div>
+            <!--tab end-->
+            <!--map start-->
+            <div id="groupMap" class="public">
+                <!--create map-->
+                <div id="allmap"></div>
+                <!--right state-->
+                <div class="phase" style="position: absolute;top: 5px;left: 5px;">
+                    <ul>
+                        <li>
+                            <img src="../images/blueicon.png" alt="" class="complete"/>
+                            <p>完工阶段</p>
+                        </li>
+                        <li>
+                            <img src="../images/greenicon.png" alt="" class="construction"/>
+                            <p>施工阶段</p>
+                        <li>
+                            <img src="../images/orangeicon.png" alt="" class="sign"/>
+                            <p>签约阶段</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/common/common.js"></script>
+<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/map/haier-map-click.js"></script>
+</html>
+

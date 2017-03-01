@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/blocindex.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+</head>
+<body>
+<div class="layout_right">
+    <div class="wrapper_center">
+        <div class="wrapper_bg">
+            <!--topbar-->
+            <div class="tabBox">
+                <ul>
+                    <li><a href="./blocmain.html" target="blocmain">地图</a></li>
+                    <li><a href="./blochome.html" target="blocmain" >首页</a></li>
+                    <li><a href="./blocuser.html" target="blocmain">用户总览</a></li>
+                    <li><a href="./bloctenement.html" target="blocmain"   class="clickstyle">物业服务</a></li>
+                    <li><a href="./blocfacility.html" target="blocmain">设备状态</a></li>
+                    <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
+                </ul>
+            </div>
+            <!--echarts-->
+            <div class="hr_communitytenement public">
+                <!--top section-->
+                <div class="com_tenement_top">
+                    <div class="com_tenement_l">
+                        <div class="caseTitle">投诉趋势图</div>
+                        <div id="ecDescribe"></div>
+                    </div>
+                    <div class="com_tenement_r">
+                        <div class="measureTitle">代发件情况统计</div>
+                        <div id="eccombox"></div>
+                    </div>
+                </div>
+                <!--bottom section-->
+                <div class="com_tenement_bottom">
+                    <div class="com_tenementbottom_all">
+                        <div class="ensureTitle">报修趋势图</div>
+                        <div id="ecEnsure"></div>
+                    </div>
+                    <div class="com_tenementbottom_l">
+                        <div class="houseTitle">
+                            居家报修趋势图
+                        </div>
+                        <div id="ecHouseRepair"></div>
+                    </div>
+                    <div class="com_tenementbottom_r">
+                        <div class="typeTitle">
+                            公共报修趋势图
+                        </div>
+                        <div id="ecType"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/echarts/haier-community/haier-community-tenement-ec.js"></script>
+<script src="../js/common/common.js"></script>
+<!--<script src="../js/common/setcookie.js"></script>-->
+</html>

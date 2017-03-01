@@ -1,0 +1,1022 @@
+/*hr_communityHome start*/
+.hr_communityHome{
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.community_top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+/*left*/
+.community_user {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+    position: relative;
+}
+.community_userStatus,
+.community_commerceState {
+    height: 30px;
+    line-height: 30px;
+    font-size:14px;
+}
+.community_user_l,
+.community_commerceState_l {
+    float: left;
+    position: relative;
+}
+
+.community_user_l img {
+    position: absolute;
+    top: 6px;
+    left: 18px;
+
+}
+.community_commerceState_l img {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+
+}
+
+.community_user_l span,
+.community_commerceState_l span {
+    padding-left: 50px;
+    font-size: 14px;
+}
+.community_userStatus a,
+.community_commerceState a {
+    float: right;
+    padding-right: 20px;
+}
+
+#ecDetailsTop {
+    width: 100%;
+    height: 48%;
+}
+
+#ecDetailsDown {
+    width: 100%;
+    height: 40%;
+    padding: 0 0 3% 0;
+}
+
+/*mid*/
+
+.community_commerce {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+    position: relative;
+}
+
+#eclimit {
+    width: 100%;
+    height: 43%;
+
+}
+
+#ecConfine {
+    width: 100%;
+    height: 45%;
+
+}
+/*right*/
+
+
+.community_scale {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.community_scale ul {
+    width: 100%;
+    height: 100%;
+}
+
+.community_scale ul li {
+    width: 100%;
+    height: 33.3%;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.community_scale ul li i {
+    font-size: 30px;
+    color: #333333;
+    height: 30%;
+}
+.community_scale ul li p {
+    font-size: 12px;
+    color: #333333;
+    height: 40%;
+    line-height: 40%;
+    padding-top: 5%;
+}
+
+/*bottom section*/
+
+.community_bottom {
+    width: 100%;
+    height: 50%;
+}
+
+
+/*left*/
+.community_tenement {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+    position: relative;
+}
+.community_tenementState,
+.community_facilityState {
+    height: 40px;
+    line-height: 40px;
+    font-size:14px;
+}
+
+.community_tenementState_l,
+.community_facilityState_l {
+    float: left;
+    position: relative;
+}
+
+.community_tenementState_l img {
+    position: absolute;
+    top: 6px;
+    left: 43px;
+}
+
+.community_facilityState_l img {
+    position: absolute;
+    top: 8px;
+    left: 40px;
+}
+.community_tenementState_l span,
+.community_facilityState_l span {
+    padding-left: 80px;
+    font-size:14px;
+}
+
+.community_tenementState a,
+.community_facilityState a {
+    float: right;
+    padding-right: 50px;
+}
+
+
+#ecMendsever {
+    width: 100%;
+    height: 41%;
+
+}
+
+#ecProcess {
+    width: 100%;
+    height: 44%;
+    padding: 0 0 1% 0;
+}
+
+/*right*/
+
+.community_facility {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+
+#ecPush {
+    width: 100%;
+    height: 43%;
+}
+
+#ecReference {
+    width: 100%;
+    height: 41%;
+    padding: 0 0 1% 0;
+}
+
+/*hr_communityHome end*/
+
+/*hr_communityUser start*/
+
+.hr_communityUser{
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+.com_user_top{
+    width: 100%;
+    height: 50%;
+}
+
+.user_top_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.ecUser_sectionCom {
+    width: 100%;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+}
+
+
+
+#ecHouse_com {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    display: block !important;
+    left: 0 !important;
+    margin-top: 33px;
+}
+
+#ecHome_com {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    margin-top: 33px;
+    display: block !important;
+    top: 300px;
+    left: 0 !important;
+}
+
+.user_top_l .com_monthTab {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    float: left;
+    font-size:14px;
+    cursor: pointer;
+}
+
+.com_monthTab p {
+    width: 100px;
+    float: left;
+}
+.com_monthTab p.run_com {
+    color: #336699;
+    cursor: pointer;
+}
+
+
+.com_monthTab p:first-child {
+    margin-left: 20%;
+}
+.com_monthTab p:nth-child(2) {
+    margin-left: 20%;
+}
+
+.user_top_r{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+
+#ecBloctop_com {
+    width: 50%;
+    height: 75%;
+    display: block;
+    float: left;
+    padding-top: 3%;
+}
+
+#ecBlocbottom_com {
+    width: 50%;
+    height: 75%;
+    display: block;
+    float: left;
+    padding-top: 3%;
+}
+
+.user_top_r .countTab {
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+    font-size:14px;
+}
+.countTab .mouthUsers {
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    margin-left: 12%;
+    width: 40%;
+    text-align: left;
+}
+
+.countTab .mouthActive {
+    width: 36%;
+    height: 37px;
+    line-height: 37px;
+    float: right;
+    text-align: left;
+    padding-left: 5%;
+}
+/*bottom section*/
+.com_user_bottom {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.user_bottom_l {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecExcellent_com {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0 0 0 10%;
+}
+
+.user_bottom_r {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+#ecEducation_com {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0 10% 0 0;
+}
+
+
+.com_user_two .gender {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.gender .boy {
+    position: absolute;
+    top: 37%;
+    left: 18%;
+}
+.gender .girl {
+    position: absolute;
+    top: 37%;
+    left: 79%;
+}
+
+#ecGender_com {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.com_user_two .age {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.age .baby {
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+}
+
+.age .young {
+    position: absolute;
+    bottom: 3%;
+    left: 31%;
+}
+
+.age .father {
+    position: absolute;
+    bottom: 3%;
+    right: 47%;
+}
+
+.age .grandpa {
+    position: absolute;
+    bottom: 3%;
+    right: 31%;
+}
+
+#ecAge_com {
+    width: 100%;
+    height: 80%;
+    display: block;
+    padding: 0 10% 0 0;
+}
+
+/*hr_communityUser end*/
+/*hr_communitytenement start*/
+.hr_communitytenement{
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+/*top section*/
+.com_tenement_top{
+    width: 100%;
+    height: 50%;
+    border-bottom:4px solid #bbdff2;
+}
+.com_tenement_l {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    border-right: 4px solid #bbdff2;
+}
+.com_tenement_l .caseTitle {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 20px;
+}
+#ecDescribe {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.com_tenement_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.measureTitle{
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    font-size: 20px;
+}
+
+#eccombox{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+.ensureTitle {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 20px;
+}
+#ecEnsure {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+/*bottom section*/
+
+.com_tenement_bottom {
+    width: 100%;
+    height: 50%;
+}
+.com_tenementbottom_all{
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.com_tenementbottom_l {
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.com_tenementbottom_l .houseTitle {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 20px;
+}
+
+#ecHouseRepair {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.com_tenementbottom_r {
+    width:33.3%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.com_tenementbottom_r .typeTitle {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 20px;
+}
+#ecType {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+/*hr_communitytenement end*/
+/*hr_communityfacility start*/
+.hr_communityfacility{
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+}
+
+.hr_communityfacility::-webkit-scrollbar {
+    display: none
+
+}
+/*section 1*/
+.hr_special {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.hr_special .com_facility_l {
+    width: 15%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+.bg_com_img img {
+    position: absolute;
+    top: 23%;
+    left: 41%;
+}
+
+
+.com_facility_l p {
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    font-size:18px;
+}
+
+.hr_special .com_facility_r {
+    width: 70%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.com_bar_title {
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+}
+#ecAdaptCount {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.com_facility_r_botttom {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.com_facility_r_top {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+#ecOpenCount {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+.com_facility_r_info {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+.com_info_all {
+    padding: 5% 0;
+    text-align: center;
+    height: 90%;
+}
+.com_title_info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.com_info_all  ul{
+    width: 100%;
+    height:100%;
+    padding-top:10%;
+}
+
+.com_info_all  ul li{
+    width: 100%;
+    height: 30%;
+}
+.com_info_all ul li i{
+    font-size: 16px;
+    color: #333333;
+    height: 30%;
+    display: block;
+}
+.com_info_all ul li p{
+    font-size: 20px;
+    color: #333333;
+    height: 40%;
+    padding-top: 3%;
+}
+/*section 2*/
+/*section 6*/
+.hr_commen {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.hr_commen .com_facility_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.hr_commen .com_common_title{
+    width:3%;
+    padding:8% 5%;
+    vertical-align:middle;
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+
+#ecSellCount {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.hr_commen .com_facility_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#ecFairly {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+/*section 3*/
+#ecPath {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+#ecInspect {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.hr_commen ul {
+    width: 30%;
+    height: 50%;
+    position: relative;
+}
+.hr_commen ul li {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    position: absolute;
+    bottom: 142%;
+    left: 44%;
+}
+.hr_commen ul li i {
+    position: absolute;
+    top: 57%;
+    left: 40%;
+    font-size: 18px;
+    font-family: "SimSun";
+
+}
+.hr_commen ul li p {
+    position: absolute;
+    top: 1%;
+    left: 41%;
+    font-size: 26px;
+    font-family: "simsum";
+    font-weight:bold;
+}
+.hr_commen ul li+li {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 91%;
+    left: 44%;
+    font-family: "simsum";
+}
+
+/*section 4*/
+
+.com_system_info{
+    width:100%;
+    height:36%;
+    border-bottom:4px solid #bbdff2;
+}
+
+
+.com_system_info .com_facility_l{
+    width:50%;
+    height:100%;
+    border-right:4px solid #bbdff2;
+    float:left;
+}
+
+.com_system_info .com_facility_r{
+    width:50%;
+    height:100%;
+    float:left;
+}
+.com_system_info .com_system_title{
+    width:3%;
+    padding:7% 5%;
+    vertical-align:middle;
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+    float:left;
+}
+
+.com_system_info .com_system_facility_r{
+    float:left;
+    width:87%;
+    height:100%;
+
+}
+
+.com_system_facility_r ul{
+    width:100%;
+    height:100%;
+
+}
+
+.com_system_facility_r ul li{
+    width:29%;
+    height:100%;
+    text-align:center;
+    display:inline-block;
+}
+.com_system_facility_r ul li span{
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    display: block;
+    padding-top: 40%;
+    /*font-weight:bold;*/
+
+}
+.com_system_facility_r ul li i{
+    width: 100%;
+    height: 15%;
+    padding-top: 15%;
+    font-size: 24px;
+    display: block;
+
+}
+.com_system_facility_r div{
+    width:48%;
+    height:100%;
+    text-align:center;
+    display:inline-block;
+}
+
+.com_system_facility_r div span{
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    display: block;
+    padding-top: 25%;
+
+}
+
+.com_system_facility_r div i{
+    width: 100%;
+    height: 15%;
+    padding-top: 8%;
+    font-size: 26px;
+    display: block;
+
+}
+
+/*section 5*/
+.com_system_info .com_system_r ul{
+    width:100%;
+    height:100%;
+
+}
+.com_system_r ul li{
+    width:24%;
+    height:100%;
+    text-align:center;
+    display:inline-block;
+}
+.com_system_r ul li span{
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    display: block;
+    padding-top: 40%;
+    /*font-weight:bold;*/
+
+}
+.com_system_r ul li i{
+    width: 100%;
+    height: 15%;
+    padding-top: 18%;
+    font-size: 26px;
+    display: block;
+
+}
+.com_system_info:last-child {
+    border-bottom: none;
+}
+/*hr_communityfacility end*/
+
+/*hr_communitybusiness start*/
+
+.hr_communitybusiness{
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+.com_business_top {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.com_business_top_l {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    border-bottom: 4px solid #bbdff2;
+    float: left;
+}
+
+.com_business_top_l .com_visit {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight:bold;
+}
+
+
+#ecExport {
+    width: 100%;
+    height: 87%;
+    padding: 0 0 3% 0;
+}
+
+.com_business_top_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.com_business_top_r .com_visit {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight:bold;
+}
+
+#ecMonth{
+    width:100%;
+    height:92%;
+    float:left;
+}
+.com_business_bottom{
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+}
+.com_business_bottom_l {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecDeuce {
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+
+#ecEqual {
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+.com_business_bottom_r {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+#ecOrderserve{
+    width:100%;
+    height:100%;
+    float:left;
+}
+
+/*hr_communitybusiness end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

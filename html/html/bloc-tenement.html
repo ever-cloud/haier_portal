@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>集团物业服务</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/bloc.css">
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script>
+        var str=location.hash;
+        var str=str.substr(1).split("&")
+        $(function(){
+            if (str[0]) {
+                $(".bg_name").text(str[0].indexOf("%")!=-1?decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0]:str[0])
+
+            }else{
+//                获取名称文本
+                $(".bg_name").text(getCookie("item"));
+            }
+        })
+
+    </script>
+</head>
+<body>
+
+<div class="layout_bottom">
+    <div class="wrapper clearfix">
+        <div class="wrapper_all" id="wrapper_all">
+            <div class="wrapper_center">
+                <div class="wrapper_bg">
+                    <div class="tabBox">
+                        <ul>
+                            <li><a href="./blocmain.html" target="blocmain">地图</a></li>
+                            <li><a href="./bloc-home.html" target="blocmain">首页</a></li>
+                            <li><a href="./bloc-user.html" target="blocmain">用户总览</a></li>
+                            <li><a href="./bloc-tenement.html" target="blocmain"  class="clickstyle">物业服务</a></li>
+                            <li><a href="./bloc-facility.html" target="blocmain">设备状态</a></li>
+                            <li><a href="./bloc-business.html" target="blocmain">商业服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="all_community">
+                        <!--社区物业服务 start-->
+                        <div class="hr_communitytenement public" id="hr_communitytenement">
+
+                                    <div class="com_tenement_top">
+                                            <div class="com_tenement_l">
+                                                <div id="caseTitle">投诉趋势图
+                                                </div>
+                                                <div id="ecDescribe"></div>
+                                            </div>
+
+                                            <div class="com_tenement_r">
+                                                <div id="ensureTitle">报修趋势图
+                                                </div>
+                                                <div id="ecEnsure"></div>
+                                            </div>
+
+                                    </div>
+                                    <div class="com_tenement_bottom">
+
+                                            <div class="com_tenementbottom_l">
+                                                <div id="houseTitle">居家报修趋势图
+                                                </div>
+                                                <div id="ecHouseRepair"></div>
+                                            </div>
+
+                                            <div class="com_tenementbottom_r">
+                                                <div id="typeTitle">公共报修趋势图
+                                                </div>
+                                                <div id="ecType"></div>
+                                            </div>
+                                    </div>
+                        </div>
+                        <!--社区物业服务 end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="../js/echarts/haier-community/haier-community-tenement-ec.js"></script>
+<script src="../js/common/bloc-click-common.js"></script>
+<script src="../js/common/setcookie.js"></script>
+
+</html>

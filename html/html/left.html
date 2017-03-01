@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../lib/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../lib/jquery/jquery-ui.min.js"></script>
+    <!--map 秘钥-->
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=EwYKU3Q9LPEw2vEGkXblk9p6pqSb7SYO"></script>
+    <script>
+        $.widget("custom.catcomplete", $.ui.autocomplete, {
+            _renderMenu: function (ul, items) {
+                var that = this,
+                        currentCategory = "";
+                $.each(items, function (index, item) {
+                    if (item.category != currentCategory) {
+//                        data-index= index
+                        ul.append("<li class='ui-autocomplete-category'>" + item.category + "</li>");
+                        currentCategory = item.category;
+                    }
+                    that._renderItemData(ul, item);
+                });
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            var data = [
+                {label: "国奥天地", category: ""},
+                {label: "国奥天地", category: ""}
+            ];
+
+            $(".text").catcomplete({
+                delay: 0,
+                source: data
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div class="layout_left">
+    <!--nav start-->
+    <div class="nav clearfix">
+        <div class="nav_menu">
+            <i class="nav_icon"></i>
+            <p>导航菜单</p>
+        </div>
+        <div class="searchbar clearfix">
+            <input type="text" class="text" placeholder="例:请输入国奥天地">
+            <input type="button" class="btn">
+        </div>
+        <div class="nav_section nav_top nav_item" id="nav_item"></div>
+        <div class="nav_prototypeRoom nav_all">
+            <div class="nav_top nav_room">
+                <span>样板间</span>
+            </div>
+            <!--模板引擎创建div传数据 ===样板间-->
+            <div id="nav_room" class="nav_item clearfix" style="display: none;"></div>
+        </div>
+    </div>
+    <!--nav  end-->
+</div>
+</body>
+
+<script src="../js/common/common.js"></script>
+<script src="../js/common/setcookie.js"></script>
+<script src="../js/common/nav-item.js"></script>
+<script src="../lib/temp/template.js"></script>
+
+<!--模板引擎创建div传数据==集团-->
+<script id="test" type="text/html">
+    {{each key as value}}
+    <div id="nav-item">
+        <!--集团名-->
+        <div class="menu_bloc"><a href="./main.html" target="main">{{value.spe_name}}</a></div>
+        {{each value.spe_group as group}}
+        <!--大区-->
+        <div class="trends" style="display: none;">
+            <!--区名字-->
+            <div class="trends_group">{{group.bloc}}</div>
+
+            {{each group.spe_community as arr}}
+            <!--小区-->
+            <div class="community_group" style="display: none;">
+                <!--字母-->
+                <div class="com_letter">{{arr.late}}</div>
+                <!--小区名-->
+                <ul style="display: none;">
+                    {{each arr.name as name }}
+                    <li class="community_name"><a href="./hr-community-map.html" target="main">{{name}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+        </div>
+        {{/each}}
+    </div>
+    {{/each}}
+</script>
+<!--模板引擎创建div传数据 ===样板间-->
+<script id="room" type="text/html">
+    <ul class="ul">
+        {{each list as value}}
+        <li>
+            <a href="#">{{value.letter}}</a>
+        </li>
+        <div class="box" style="display: none;">
+            {{each value.data as key}}
+            <li><a href="./hr-prototyperoom.html#{{key.name}}" target="main" onclick="bindMouseenter()">{{key.name}}</a>
+            </li>
+            {{/each}}
+        </div>
+        {{/each}}
+    </ul>
+</script>
+
+<script>
+    //模板引擎创建div传数据==集团
+    var myHtml = template('test', objData);
+    document.getElementById('nav_item').innerHTML = myHtml;
+    //   模板引擎创建div传数据 ===样板间
+    var htmlroom = template('room', setList(objData2));
+    document.getElementById('nav_room').innerHTML = htmlroom;
+    //    清空没有值的字母选项A-Z
+    $(".ul>.box").each(function (e) {
+        if (!$(this).children().html()) {
+            $(this).prev().remove();
+            $(this).remove();
+        }
+    });
+</script>
+<!--调用地图点击事件必须引入-->
+<script src="../js/map/room-map-click.js"></script>
+<script>
+    $(function(){
+        $(".community_name a").click(function(){
+//            点击刷新
+            window.parent.frames["main"].location.reload();
+        });
+//        兼容ie浏览器
+        if ("ActiveXObject" in window) {
+            $("#nav_item .tabBox ul li a").on("click", function (){
+                window.parent.frames["main"].cookie = ["item", $(this).attr("href").split("#")[1]];
+                window.parent.frames["main"].location.href = $(this).attr("href");
+                return false;
+            })
+            $("#nav_group .tabBox ul li a").on("click", function () {
+                window.parent.frames["main"].cookie = ["item", $(this).attr("href").split("#")[1]];
+                window.parent.frames["main"].location.href = $(this).attr("href");
+                return false;
+            })
+            $("#nav_room .box li a").on("click", function () {
+                window.parent.frames["main"].location.href = "./hr-prototyperoom.html";
+                window.parent.frames["main"].location.href = $(this).attr("href");
+                bindMouseenterCopy($(this).text());
+                return false;
+            });
+
+        };
+    });
+</script>
+
+</html>

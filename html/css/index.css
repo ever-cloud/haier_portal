@@ -1,0 +1,1028 @@
+/*hr-blochome start*/
+.hr_blocHome {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.bloc_top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+/*top-left*/
+.bloc_top .bloc_total {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+#ecBand {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+/*top-mid*/
+.bloc_top .bloc_user {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.bloc_user .bloc_userStates,
+.bloc_commerce .bloc_commerceState,
+.bloc_tenement .bloc_tenementState,
+.bloc_facility .bloc_facilityState {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.bloc_user .bloc_user_l,
+.bloc_commerce .bloc_commerceState_l,
+.bloc_tenement .bloc_tenementState_l,
+.bloc_facility .bloc_facilityState_l {
+    position: relative;
+    float: left;
+}
+
+.bloc_user_l img {
+    position: absolute;
+    top: 7px;
+    left: 18px;
+}
+
+.bloc_commerceState_l img {
+    position: absolute;
+    top: 6px;
+    left: 13px;
+}
+
+.bloc_tenementState_l img {
+    position: absolute;
+    top: 7px;
+    left: 19px;
+}
+
+.bloc_facilityState_l img {
+    position: absolute;
+    top: 3px;
+    left: 17px;
+}
+
+.bloc_user_l span,
+.bloc_commerceState_l span,
+.bloc_tenementState_l span,
+.bloc_facilityState_l span {
+    padding-left: 50px;
+    font-size: 14px;
+}
+
+.bloc_userStates a,
+.bloc_commerceState a,
+.bloc_tenementState a,
+.bloc_facilityState a {
+    float: right;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+#ecAdd {
+    width: 100%;
+    height: 50%;
+}
+
+#ecReduce {
+    width: 100%;
+    height: 38%;
+    padding-bottom: 1%;
+}
+
+/*top-right*/
+.bloc_scale {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.bloc_scale ul {
+    width: 100%;
+    height: 100%;
+}
+
+.bloc_scale ul li {
+    width: 100%;
+    height: 33.3%;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.bloc_scale ul li i {
+    font-size: 24px;
+    color: #333333;
+    height: 30%;
+}
+
+.bloc_scale ul li p {
+    font-size: 14px;
+    color: #333333;
+    height: 40%;
+    line-height: 40%;
+    padding-top: 5%;
+}
+
+/*bottom section*/
+.bloc_bottom {
+    width: 100%;
+    height: 50%;
+}
+
+/*top-left*/
+.bloc_commerce {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+#ecSuccess {
+    width: 100%;
+    height: 49%;
+    padding-bottom:1%;
+}
+
+#ecDefeat {
+    width: 100%;
+    height: 39%;
+    padding-bottom: 1%;
+}
+
+/*top-mid*/
+.bloc_tenement {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+#ecFinish {
+    width: 100%;
+    height: 45%;
+}
+
+#ecReceive {
+    width: 100%;
+    height: 43%;
+    padding-bottom: 2%;
+}
+
+/*top-right*/
+.bloc_facility {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+#ecStart {
+    width: 100%;
+    height: 45%;
+}
+
+#ecEnd {
+    width: 100%;
+    height: 43%;
+    padding-bottom: 3%;
+}
+
+/*hr-blochome end*/
+
+/*hr_blocUser start*/
+.hr_blocUser {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.hr_blocUser .bc_user_top {
+    width: 100%;
+    height: 50%;
+}
+
+.bc_user_top .user_top_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.user_top_l .ecUser_section {
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+}
+
+#ecHouse {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    display: block !important;
+    left: 0 !important;
+    margin-top: 34px;
+}
+
+#ecHome {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    margin-top: 34px;
+    display: block !important;
+    top: 300px;
+    left: 0 !important;
+}
+
+.user_top_l .monthTab {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    float: left;
+    font-size:14px;
+    cursor: pointer;
+}
+
+.user_top_l .monthTab p {
+    float: left;
+}
+
+.user_top_l .monthTab p.run {
+    color: #336699;
+    cursor: pointer;
+}
+
+.user_top_l .monthTab p:first-child {
+    margin-left: 30%;
+}
+
+.user_top_l .monthTab p:nth-child(2) {
+    margin-left: 15%;
+}
+
+#ecBloctop {
+    width: 50%;
+    height: 85%;
+    float: left;
+    padding-top: 3%;
+}
+
+#ecBlocbottom {
+    width: 50%;
+    height: 85%;
+    float: left;
+    padding-top: 3%;
+}
+
+.bc_user_top .user_top_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.user_top_r .countTab {
+    width: 100%;
+    font-size:14px;
+    text-align: center;
+}
+
+.user_top_r .countTab .mouthUsers {
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    margin-left: 12%;
+    width: 40%;
+    text-align: left;
+}
+
+.user_top_r .countTab .mouthActive {
+    width: 36%;
+    height: 37px;
+    line-height: 37px;
+    float: right;
+    text-align: left;
+    /*padding-left:5%;*/
+}
+
+/*bottom section*/
+
+.bc_user_bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.bc_user_bottom .user_bottom_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#ecExcellent {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 3% 10%;
+}
+
+.user_bottom_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#ecEducation {
+    width: 100%;
+    height: 100%;
+    padding-right: 10%;
+}
+
+.bc_user_two .gender {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.gender .boy {
+    position: absolute;
+    top: 37%;
+    left: 20%;
+}
+
+#ecGender {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 10%;
+}
+
+.gender .girl {
+    position: absolute;
+    top: 37%;
+    left: 80%;
+}
+
+.bc_user_two .age {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.age .baby {
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+}
+
+.age .young {
+    position: absolute;
+    bottom: 3%;
+    left: 31%;
+}
+
+.age .father {
+    position: absolute;
+    bottom: 3%;
+    right: 47%;
+}
+
+.age .grandpa {
+    position: absolute;
+    bottom: 3%;
+    right: 31%;
+}
+
+#ecAge {
+    width: 100%;
+    height: 80%;
+    padding: 0 10% 0 0;
+}
+
+/*hr_blocUser end*/
+
+/*hr_bloctenement start*/
+
+.hr_bloctenement {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.tenement_top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.tenement_top .tenement_top_l {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    border-right:4px solid #bbdff2;
+}
+
+.mendTitle {
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    font-size: 20px;
+}
+
+#ecMend {
+    width: 100%;
+    height: 100%;
+    padding:1%;
+}
+
+.tenement_top_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.fixTitle {
+    position: absolute;
+    top: 5%;
+    left: 28%;
+    font-size: 20px;
+}
+
+#ecFix {
+    width: 100%;
+    height: 100%;
+}
+
+.maintainTitle {
+    position: absolute;
+    top: 6%;
+    left: 38%;
+    font-size: 20px;
+}
+
+#ecMaintain {
+    width: 100%;
+    height: 100%;
+}
+
+/*bottom section*/
+.tenement_bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.tenement_bottom .tenement_bottom_l {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.tenement_bottom .tenement_mid {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.tenement_mid .measureTitle {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    font-size: 20px;
+}
+
+#ecMeasure {
+    width: 100%;
+    height:100%;
+    padding: 1%;
+}
+
+.tenement_bottom .tenement_bottom_r {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.tenement_top_r .left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.measureTitle {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    font-size: 20px;
+}
+
+#ecOutbox {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+/*hr_bloctenement end*/
+
+/*hr_blocfacility start*/
+.hr_blocfacility {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+}
+
+.hr_blocfacility::-webkit-scrollbar {
+    display: none;
+}
+
+/*section 1*/
+.hr_blocfacility .special {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.special .facility_l {
+    width: 15%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.bg_icon_img img {
+    position: absolute;
+    top: 26%;
+    left: 41%;
+}
+
+.special .facility_l p {
+    position: absolute;
+    top: 72%;
+    left: 46%;
+    font-size: 14px;
+}
+
+.special .facility_r {
+    width: 70%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.facility_r .facility_r_top {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.facility_r_top .bar_title {
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ecAdapt {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.facility_r_botttom {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.facility_r_botttom .bar_title {
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ecOpen {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.facility_r_info {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.facility_r_info .info_all {
+    padding: 5% 0;
+    text-align: center;
+    height: 100%;
+}
+
+.info_all .title_info {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.info_all ul {
+    width: 100%;
+    height: 90%;
+    padding-top: 10%;
+}
+
+.info_all ul li {
+    width: 100%;
+    height: 30%;
+}
+
+.info_all ul li i {
+    font-size: 16px;
+    color: #333333;
+    height: 50%;
+    display: block;
+}
+
+.info_all ul li p {
+    font-size: 18px;
+    color: #333333;
+    height: 50%;
+    padding-top: 3%;
+    line-height: 50%;
+}
+
+/*section 2*/
+.hr_blocfacility .commen {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.facility_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.commen .common_title {
+    width: 3%;
+    padding: 8% 5%;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#ecSell {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.commen .facility_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#ecLine {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+/*section 3*/
+#ecStop {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+#ecPaking {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.commen .common_times i {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.commen .common_times p {
+    position: absolute;
+    top: 17%;
+    left: 41%;
+    font-size: 18px;
+}
+
+.commen .common_card i {
+    position: absolute;
+    top: 7%;
+    left: 58%;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.commen .common_card p {
+    position: absolute;
+    top: 17%;
+    left: 61%;
+    font-size: 18px;
+}
+
+/*section 4*/
+.system_info {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.system_info .facility_l {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.system_info .system_title {
+    width: 3%;
+    padding: 7% 5%;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+
+.facility_l .system_facility_r {
+    width: 87%;
+    height: 100%;
+    float: left;
+}
+
+.system_facility_r ul {
+    width: 100%;
+    height: 100%;
+
+}
+
+.system_facility_r ul li {
+    width: 29%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.system_facility_r ul li span {
+    width: 100%;
+    height: 15%;
+    font-size: 14px;
+    display: block;
+    padding-top: 40%;
+}
+
+.system_facility_r ul li i {
+    width: 100%;
+    height: 15%;
+    font-size: 26px;
+    display: block;
+    padding-top: 20%;
+
+}
+
+.system_info .facility_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.system_facility_r {
+    width: 87%;
+    height: 100%;
+    float: left;
+
+}
+
+.system_facility_r div {
+    width: 48%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.system_facility_r div span {
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    display: block;
+    padding-top: 25%;
+}
+
+.system_facility_r div i {
+    width: 100%;
+    height: 15%;
+    padding-top: 11%;
+    font-size: 24px;
+    display: block;
+
+}
+
+.system_r ul {
+    width: 100%;
+    height: 100%;
+
+}
+
+.system_r ul li {
+    width: 24%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.system_r ul li span {
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    display: block;
+    padding-top: 48%;
+}
+
+.system_r ul li i {
+    width: 100%;
+    height: 15%;
+    padding-top: 26%;
+    font-size: 24px;
+    display: block;
+
+}
+
+.system_info:last-child {
+    border-bottom: none;
+}
+
+/*hr_blocfacility end*/
+/*hr_blocbusiness start*/
+.hr_blocbusiness {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.business_top {
+    width: 100%;
+    height: 50%;
+}
+
+.business_top_l {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    border-bottom: 4px solid #bbdff2;
+    float: left;
+}
+
+.business_top_l .visit {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+#ecVolume {
+    width: 100%;
+    height: 88%;
+    padding: 0 0 3% 0;
+}
+
+.business_top_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.business_top_r .visit {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+#ecAppraise {
+    width: 100%;
+    height: 87%;
+    float: left;
+}
+
+/*bottom section*/
+.business_bottom {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.business_bottom_l {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecCategory {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#ecSort {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.business_bottom_r {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecServeorder {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+/*hr_blocbusiness end*/
+
+
+
+
+
+
+
+
+
+

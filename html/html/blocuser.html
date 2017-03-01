@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/blocindex.css">
+    <!--swiper轮播图插件-->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../dist/css/myswiper.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script src="../js/common/tab-click.js"></script>
+</head>
+<body>
+<div class="layout_right">
+    <div class="wrapper_center">
+        <div class="wrapper_bg">
+            <!--topbar-->
+            <div class="tabBox">
+                <ul>
+                    <li><a href="./blocmain.html" target="blocmain">地图</a></li>
+                    <li><a href="./blochome.html" target="blocmain">首页</a></li>
+                    <li><a href="./blocuser.html" target="blocmain"   class="clickstyle">用户总览</a></li>
+                    <li><a href="./bloctenement.html" target="blocmain">物业服务</a></li>
+                    <li><a href="./blocfacility.html" target="blocmain">设备状态</a></li>
+                    <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
+                </ul>
+            </div>
+            <!--echarts-->
+            <div class="hr_communityUser public">
+                <!--top section-->
+                <div class="com_user_top">
+                    <!--left-->
+                    <div class="user_top_l">
+                        <div class="ecUser_sectionCom" style="position: relative;">
+                            <div id="ecHouse_com" class="allTabitem_com"></div>
+                            <div id="ecHome_com" class="allTabitem_com"></div>
+                        </div>
+                        <div class="com_monthTab">
+                            <p class="tabMonth_com run_com">月活跃用户数</p>
+
+                            <p class="tabDay_com">日活跃用户数</p>
+                        </div>
+                    </div>
+                    <!--right-->
+                    <div class="user_top_r">
+                        <div id="ecBloctop_com"></div>
+                        <div id="ecBlocbottom_com"></div>
+                        <div class="countTab">
+                            <div class="mouthUsers">
+                                当月新增用户数：
+                                <span>94</span>
+                            </div>
+                            <div class="mouthActive">
+                                当月活跃用户数：
+                                <span>3100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--bottom section-->
+                <div class="swiper-container com_user_bottom">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="user_bottom_l">
+                                <div id="ecExcellent_com"></div>
+                            </div>
+                            <div class="user_bottom_r">
+                                <div id="ecEducation_com"></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide com_user_two">
+                            <div class="gender">
+                                <img src="../images/gender.png" alt="" class="boy"/>
+                                <img src="../images/girl.png" alt="" class="girl"/>
+
+                                <div id="ecGender_com"></div>
+                            </div>
+                            <div class="age">
+                                <div id="ecAge_com"></div>
+                                <img src="../images/baby.png" alt="" class="baby"/>
+                                <img src="../images/boy.png" alt="" class="young"/>
+                                <img src="../images/father.png" alt="" class="father"/>
+                                <img src="../images/grandpa.png" alt="" class="grandpa"/>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/echarts/haier-community/haier-community-user-ec.js"></script>
+<script src="../js/common/common.js"></script>
+<!--<script src="../js/common/setcookie.js"></script>-->
+
+
+<!--swiper轮播图插件-->
+<script src="../dist/js/swiper.min.js"></script>
+
+<script>
+    var swiper;
+
+    function getUser() {
+        swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+        });
+    }
+    getUser();
+</script>
+</html>
