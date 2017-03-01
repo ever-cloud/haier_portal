@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=EwYKU3Q9LPEw2vEGkXblk9p6pqSb7SYO"></script>
+    <script>
+        var str = location.hash;
+        var str = str.substr(1).split("&");
+        $(function () {
+            if (str[0]) {
+//                $(".bg_name").text(str[0]);
+                $(".bg_name").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])
+
+            } else {
+//                获取名称文本
+                $(".bg_name").text(getCookie("item"));
+            }
+        })
+
+    </script>
+</head>
+<body onresize="resizeMap()">
+<div class="layout_bottom">
+    <div class="wrapper clearfix">
+        <!--海尔集团map-->
+        <!--集团地图 start-->
+        <div class="wrapper_center_new">
+
+            <div class="wrapper_new">
+                <div class="tabBox">
+                        <ul>
+                            <!--集团地图-->
+                            <li><a href="main.html" target="main" class="clickstyle">地图</a></li>
+                            <li><a href="hr-blochome.html" target="main">首页</a></li>
+                            <li><a href="./hr-blocuser.html" target="main">用户总览</a></li>
+                            <li><a href="./hr-bloctenement.html" target="main">物业服务</a></li>
+                            <li><a href="./hr-blocfacility.html" target="main">设备状态</a></li>
+                            <li><a href="./hr-blocbusiness.html" target="main">商业服务</a></li>
+                        </ul>
+                </div>
+                <div id="groupMap" class="public mapBloc">
+                    <!--引入地图-->
+                    <div id="allmap"></div>
+                    <!--左上角状态-->
+                    <div class="phase" style="position: absolute;top: 5px;left:5px;">
+                        <ul>
+                            <li>
+                                <img src="../images/blueicon.png" alt="" class="complete"/>
+
+                                <p>完工阶段</p>
+                            </li>
+                            <li>
+                                <img src="../images/greenicon.png" alt="" class="construction"/>
+
+                                <p>施工阶段</p>
+                            <li>
+                                <img src="../images/orangeicon.png" alt="" class="sign"/>
+
+                                <p>签约阶段</p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/setcookie.js"></script>
+<script src="../js/map/haier-map-click.js"></script>
+
+
+</html>

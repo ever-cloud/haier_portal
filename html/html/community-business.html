@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔社区</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/community.css">
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../js/common/tab-click.js"></script>
+    <script>
+        var str = location.hash;
+        var str = str.substr(1).split("&")
+        $(function () {
+            if (str[0]) {
+//                    $(".bg_name").text(str[0]);
+                $(".bg_name").text(str[0].indexOf("%")!=-1?decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0]:str[0])
+
+            }else{
+//                获取名称文本
+                $(".bg_name").text(getCookie("item"));
+            }
+        })
+
+    </script>
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="wrapper_all" id="wrapper_all">
+        <div class="wrapper_center">
+            <!--背景图-->
+            <div class="tabBox">
+                <ul>
+                    <li><a href="./conmunitymain.html" target="conmunitymain">社区首页</a></li>
+                    <li><a href="./community-user.html" target="conmunitymain">用户总览</a></li>
+                    <li><a href="./community-tenement.html" target="conmunitymain">物业服务</a></li>
+                    <li><a href="./community-facility.html" target="conmunitymain">设备状态</a></li>
+                    <li><a href="./community-business.html" target="conmunitymain" class="clickstyle">商业服务</a></li>
+                </ul>
+            </div>
+            <div class="wrapper_bg">
+
+                <div class="all_community">
+
+                    <!--社区商业服务start-->
+                    <div class="communitybusiness community" id="communitybusiness">
+                        <div class="com_business_top_new">
+                            <!-- 平台访问量-->
+                            <div class="com_business_top_l_new">
+                                <div class="com_visit_new">社区服务平台访问情况</div>
+                                <div id="ecExportnew"></div>
+                            </div>
+                            <div class="com_business_top_r_new">
+                                <div class="com_visit_new">社区商业服务交易情况</div>
+                                <div id="ecMonthnew"></div>
+
+                            </div>
+                        </div>
+                        <div class="com_business_bottom_new">
+                            <div class="com_business_bottom_l_new">
+                                <div id="ecDeucenew"></div>
+                                <div id="ecEqualnew"></div>
+                            </div>
+                            <div class="com_business_bottom_r_new">
+                                <div id="ecOrderservenew"></div>
+                            </div>
+
+                        </div>
+
+                        <!--社区商业服务end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    $(".home_name").on("click", function () {
+        //获取当前的小区名称
+        var titleText = $(".bg_name").text();
+        console.log(titleText);
+        //存储名称
+        setCookie("item", titleText);
+        //名称文本内容
+        $(".bg_name").text($(this).text());
+    })
+</script>
+<script src="../js/echarts/community/community-Business-ec.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/setcookie.js"></script>
+</html>
