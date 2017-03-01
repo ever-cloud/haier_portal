@@ -1,0 +1,154 @@
+/*hr-prototypeRoomS start*/
+.prototypeRoom {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    /*min-width:862px;*/
+}
+
+/*top section*/
+.roomCompany {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.roomCompany .roomName {
+    height: 46px;
+    line-height: 46px;
+    padding-left: 2%;
+    color: #000000;
+    font-size: 24px;
+    float: left;
+}
+
+.roomCompany .roomView {
+    height: 46px;
+    line-height: 46px;
+    padding-left: 5%;
+    font-size: 18px;
+    color: #000000;
+    float: left;
+    position: relative;
+    padding-right: 20px;
+}
+
+.roomView img {
+    width: 24px;
+    height: 24px;
+    color: #E6EDF5;
+    float: left;
+    position: absolute;
+    top: 26%;
+    left: 30%;
+}
+
+.roomView p {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 43px;
+    font-size: 18px;
+    color: #000000;
+    float: left;
+}
+
+.roomCompany .close {
+    margin-right: 20px;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    font-size: 23px;
+    border: 2px solid #bbdff2;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    color: #bbdff2;
+    cursor: pointer;
+}
+
+/*bottom section*/
+.roomCurrent {
+    width: 100%;
+    height: -webkit-calc(100% - 50px);
+    height: -moz-calc(100% - 50px);
+    height: calc(100% - 50px);
+    margin-top: 50px;
+}
+
+/*top pic*/
+
+.roomMeasure {
+    width: 100%;
+    height: 50%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.roomMeasure .img_l{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-right:4px solid #bbdff2;
+}
+.roomMeasure .img_r{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.roomPlot{
+    width: 100%;
+    height: 50%;
+}
+
+.roomPlot .img_t{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-right:4px solid #bbdff2;
+}
+
+.roomPlot .img_b{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+/*hr-prototypeRoomS end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+</head>
+<body>
+<div class="layout_right">
+    <div class="wrapper_center">
+        <div class="wrapper_bg">
+            <!--topbar-->
+            <div class="tabBoxall">
+                <div class="tabBox">
+                    <ul>
+                        <!--集团地图-->
+                        <li><a href="./hr-blocmap.html" target="main">地图</a></li>
+                        <li><a href="./main.html" target="main" class="clickstyle">概览</a></li>
+                        <li><a href="./hr-blocuser.html" target="main">用户总览</a></li>
+                        <li><a href="./hr-bloctenement.html" target="main">物业服务</a></li>
+                        <li><a href="./hr-blocfacility.html" target="main">设备状态</a></li>
+                        <li><a href="./hr-blocbusiness.html" target="main">商业服务</a></li>
+                    </ul>
+                </div>
+                <div class="tabBox_right"><a href="./blocindex.html" target="_blank">集团详情</a></div>
+
+            </div>
+            <!--echarts-->
+            <div class="hr_blocHome public">
+                <!--top section-->
+                <div class="bloc_top clearfix">
+                    <!--top-left-->
+                    <div class="bloc_total">
+                        <!--echarts 1-->
+                        <div id="ecBand"></div>
+                    </div>
+                    <!--top-mid-->
+                    <div class="bloc_user">
+                        <div class="bloc_userStates">
+                            <div class="bloc_user_l">
+                                <img src="../images/photo.png" alt="">
+                                <span>用户情况</span>
+                            </div>
+                            <a href="./hr-blocuser.html">详情></a>
+                        </div>
+                        <!--echarts 2-->
+                        <div id="ecAdd"></div>
+                        <div id="ecReduce"></div>
+                    </div>
+                    <!--top-right-->
+                    <div class="bloc_scale">
+                        <ul>
+                            <li>
+                                <i>1290</i>
+                                <p>总户数</p>
+                            </li>
+                            <li>
+                                <i>862</i>
+                                <p>入住户数</p>
+                            </li>
+                            <li>
+                                <i>66.8%</i>
+                                <p>入住率</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--bottom section-->
+                <div class="bloc_bottom">
+                    <!--top-left-->
+                    <div class="bloc_commerce">
+                        <div class="bloc_commerceState">
+                            <div class="bloc_commerceState_l">
+                                <img src="../images/shop.png" alt="">
+                                <span>商业服务</span>
+                            </div>
+                            <a href="./hr-blocbusiness.html">详情></a>
+                        </div>
+                        <!--echarts 3-->
+                        <div id="ecSuccess"></div>
+                        <div id="ecDefeat"></div>
+                    </div>
+                    <!--top-mid-->
+                    <div class="bloc_tenement">
+                        <div class="bloc_tenementState">
+                            <div class="bloc_tenementState_l">
+                                <img src="../images/people.png" alt="">
+                                <span>物业服务</span>
+                            </div>
+
+                            <a href="./hr-bloctenement.html">详情></a>
+                        </div>
+                        <!--echarts 4-->
+                        <div id="ecFinish"></div>
+                        <div id="ecReceive"></div>
+
+                    </div>
+                    <!--top-right-->
+                    <div class="bloc_facility">
+                        <div class="bloc_facilityState">
+                            <div class="bloc_facilityState_l">
+                                <img src="../images/circle.png" alt="">
+                                <span>设备状态</span>
+                            </div>
+                            <a href="./hr-blocfacility.html">详情></a>
+                        </div>
+                        <!--echarts 5-->
+                        <div id="ecStart"></div>
+                        <div id="ecEnd"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/echarts/haier-bloc/haier-bloc-home-ec.js"></script>
+<script src="../js/common/common.js"></script>
+<!--<script src="../js/common/setcookie.js"></script>-->
+</html>

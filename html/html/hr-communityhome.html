@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/hr-community.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+</head>
+<body>
+<div class="layout_right">
+    <div class="wrapper_center">
+        <div class="wrapper_bg">
+            <!--topbar-->
+            <div class="tabBoxall">
+                <div class="tabBox">
+                    <ul>
+                        <!--社区地图-->
+                        <li><a href="./main.html" target="main">地图</a></li>
+                        <li><a href="./hr-communityhome.html" target="main"  class="clickstyle">首页</a></li>
+                        <li><a href="./hr-communityuser.html" target="main">用户总览</a></li>
+                        <li><a href="./hr-communitytenement.html" target="main">物业服务</a></li>
+                        <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
+                        <li><a href="./hr-communitybusiness.html" target="main">商业服务</a></li>
+                    </ul>
+                </div>
+                <div class="tabBox_right"><a href="./communityindex.html" target="_blank">社区详情</a></div>
+
+            </div>
+            <!--echarts-->
+            <div class="hr_communityHome public">
+                <!--top section-->
+                <div class="community_top">
+                    <!--left-->
+                    <div class="community_user">
+                        <div class="community_userStatus">
+                            <div class="community_user_l">
+                                <img src="../images/photo.png" alt="">
+                                <span>用户情况</span>
+                            </div>
+                            <a href="./hr-communityuser.html">详情></a>
+                        </div>
+                        <!--echarts 1-->
+                        <div id="ecDetailsTop"></div>
+                        <div id="ecDetailsDown"></div>
+                    </div>
+                    <!--mid-->
+                    <div class="community_commerce">
+                        <div class="community_commerceState">
+                            <div class="community_commerceState_l">
+                                <img src="../images/shop.png" alt="">
+                                <span>商业服务</span>
+                            </div>
+                            <a href="./hr-communitybusiness.html">详情></a>
+                        </div>
+                        <!--echarts 2-->
+                        <div id="eclimit"></div>
+                        <div id="ecConfine"></div>
+                    </div>
+                    <!--right-->
+                    <div class="community_scale">
+                        <ul>
+                            <li>
+                                <i>1290</i>
+                                <p>总户数</p>
+                            </li>
+                            <li>
+                                <i>862</i>
+                                <p>入住户数</p>
+                            </li>
+                            <li>
+                                <i>66.8%</i>
+                                <p>入住率</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--bottom section-->
+                <div class="community_bottom">
+                    <!--left-->
+                    <div class="community_tenement">
+                        <div class="community_tenementState">
+                            <div class="community_tenementState_l">
+                                <img src="../images/people.png" alt="">
+                                <span>物业服务</span>
+                            </div>
+                            <a href="./hr-communitytenement.html">详情></a>
+
+                        </div>
+                        <!--echarts 3-->
+                        <div id="ecMendsever"></div>
+                        <div id="ecProcess"></div>
+                    </div>
+                    <!--right-->
+                    <div class="community_facility">
+                        <div class="community_facilityState">
+                            <div class="community_facilityState_l">
+                                <img src="../images/circle.png" alt="">
+                                <span>设备状态</span>
+                            </div>
+                            <a href="./hr-communityfacility.html">详情></a>
+
+                        </div>
+                        <!--echarts 4-->
+                        <div id="ecPush"></div>
+                        <div id="ecReference"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/echarts/haier-community/haier-community-home-ec.js"></script>
+<script src="../js/common/common.js"></script>
+<!--<script src="../js/common/setcookie.js"></script>-->
+</html>

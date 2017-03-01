@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔社区</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/community.css">
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+
+    <script>
+        var str = location.hash;
+        var str = str.substr(1).split("&")
+        $(function () {
+            if (str[0]) {
+//                $(".bg_name").text(str[0]);
+                $(".bg_name").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])
+
+            } else {
+//                获取名称文本
+                $(".bg_name").text(getCookie("item"));
+            }
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="wrapper_all" id="wrapper_all">
+        <div class="wrapper_center">
+            <!--背景图-->
+            <div class="tabBox">
+                <ul>
+                    <li><a href="./conmunitymain.html" target="conmunitymain">社区首页</a></li>
+                    <li><a href="./community-user.html" target="conmunitymain">用户总览</a></li>
+                    <li><a href="./community-tenement.html" target="conmunitymain">物业服务</a></li>
+                    <li><a href="./community-facility.html" target="conmunitymain" class="clickstyle">设备状态</a></li>
+                    <li><a href="./community-business.html" target="conmunitymain">商业服务</a></li>
+                </ul>
+            </div>
+            <div class="wrapper_bg">
+
+                <div class="all_community">
+
+                    <!--社区设备状态start-->
+                    <div class="communityfacility community" id="communityfacility">
+                        <div class="facility_all">
+                            <div class="com_special">
+                                <div class="com_special_facility_l bg_special_img">
+                                    <img src="../images/view.png" alt="">
+                                    <p>总览</p>
+                                </div>
+                                <div class="com_special_facility_r">
+                                    <div class="com_special_facility_r_top clearfix">
+                                        <div class="com_special_bar_title">设备构成</div>
+                                        <div id="ecAdaptspecial"></div>
+                                    </div>
+                                    <div class="com_special_facility_r_botttom">
+                                        <div class="com_special_bar_title">故障设备构成</div>
+                                        <div id="ecOpenspecial"></div>
+                                    </div>
+                                </div>
+                                <div class="com_special_facility_r_info">
+                                    <div class="com_special_info_all">
+                                        <h1 class="com_special_title_info">
+                                            实时报警信息
+                                        </h1>
+                                        <div>
+                                            <i>入侵报警</i>
+                                            <p>3</p>
+                                        </div>
+                                        <div>
+                                            <i>可视对讲</i>
+                                            <p>0</p>
+                                        </div>
+                                        <div>
+                                            <i>人员定位</i>
+                                            <p>6</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="com_commen">
+                                <div class="com_commen_facility_l">
+                                    <h1 class="com_commen_title">视频监控</h1>
+                                    <div id="ecSellspecial"></div>
+                                </div>
+                                <div class="com_commen_facility_r">
+                                    <h1 class="com_commen_title">电梯监控</h1>
+                                    <div id="ecFairlyspecial"></div>
+                                </div>
+
+                            </div>
+                            <div class="com_commen">
+                                <div class="com_commen_facility_l">
+                                    <h1 class="com_commen_title">可视对讲</h1>
+                                    <div id="ecPathspecial"></div>
+                                </div>
+                                <div class="com_commen_facility_r">
+                                    <h1 class="com_commen_title">人员定位</h1>
+                                    <div id="ecInspectspecial"></div>
+                                    <!--<ul>-->
+                                        <!--<li class="common_times">-->
+                                            <!--<i>发卡人数</i>-->
+                                            <!--<p>23404</p>-->
+                                        <!--</li>-->
+                                        <!--<li class="common_card">-->
+                                            <!--<i>报警人次</i>-->
+                                            <!--<p>234</p>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                </div>
+
+                            </div>
+                            <div class="com_system_info_new">
+                                <div class="com_facility_l_new">
+                                    <h1 class="com_system_title_new">门禁系统</h1>
+                                    <div class="com_system_facility_r_new">
+                                        <ul>
+                                            <li>
+                                                <span>在线小区</span>
+                                                <i>58</i>
+                                            </li>
+                                            <li>
+                                                <span>门禁总数</span>
+                                                <i>23404</i>
+                                            </li>
+                                            <li>
+                                                <span>报警个数</span>
+                                                <i>19846</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="com_facility_r_new">
+                                    <h1 class="com_system_title_new">信息发布</h1>
+                                    <div class="com_system_facility_r_new">
+                                        <div>
+                                            <span>终端总数</span>
+                                            <i>58</i>
+                                        </div>
+                                        <div>
+                                            <span>在线数</span>
+                                            <i>34</i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="com_system_info_new">
+                                <div class="com_facility_l_new">
+                                    <h1 class="com_system_title_new">入侵报警</h1>
+                                    <div class="com_system_facility_r_new">
+                                        <ul>
+                                            <li>
+
+                                                <span>在线数</span>
+                                                <i>58</i>
+                                            </li>
+                                            <li>
+                                                <span>防区数</span>
+                                                <i>204</i>
+                                            </li>
+                                            <li>
+                                                <span>报警数</span>
+                                                <i>0</i>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="com_facility_r_new">
+                                    <h1 class="com_system_title_new">停车场</h1>
+                                    <div class="com_system_facility_r_new com_system_r_new">
+                                        <ul>
+                                            <li>
+                                                <span>在线数</span>
+                                                <i>58</i>
+                                            </li>
+                                            <li>
+                                                <span>当日入车数</span>
+                                                <i>234</i>
+                                            </li>
+                                            <li>
+                                                <span>当日出车数</span>
+                                                <i>234</i>
+                                            </li>
+                                            <li>
+                                                <span>车位总数</span>
+                                                <i>7364</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="com_system_info_new">
+                                <div class="com_facility_l_new">
+                                    <h1 class="com_system_title_new">广播通信</h1>
+                                    <div class="com_system_facility_r_new">
+
+                                        <ul>
+                                            <li>
+                                                <span>在线分区</span>
+                                                <i>58</i>
+                                            </li>
+                                            <li>
+                                                <span>离线分区</span>
+                                                <i>204</i>
+                                            </li>
+                                            <li>
+                                                <span>广播状态</span>
+                                                <i>40</i>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="com_facility_r_new">
+                                    <h1 class="com_system_title_new">信息发布</h1>
+                                    <div class="com_system_facility_r_new">
+                                        <div>
+                                            <span>终端总数</span>
+                                            <i>58</i>
+                                        </div>
+                                        <div>
+                                            <span>在线数</span>
+                                            <i>34</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--社区设备状态end-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script>
+    $(".home_name").on("click", function () {
+        //获取当前的小区名称
+        var titleText = $(".bg_name").text();
+        console.log(titleText);
+        //存储名称
+        setCookie("item", titleText);
+        //名称文本内容
+        $(".bg_name").text($(this).text());
+    })
+</script>
+<script src="../js/echarts/community/community-facility-ec.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/setcookie.js"></script>
+
+</html>

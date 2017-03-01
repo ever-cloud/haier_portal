@@ -1,0 +1,1107 @@
+.tabBox ul li{
+    width: 19.2%;
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 0.4%;
+    /* border: 1px solid #cccccc; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: inset -2px -2px 4px #cccccc;
+    background-color: #fff;
+}
+/*communityHome start*/
+.communityHome {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.com_top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.com_top .com_user {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.com_user .com_userStatus {
+    height: 30px;
+    line-height: 30px;
+    font-size:14px;
+}
+
+.com_user_l {
+    float: left;
+    position: relative;
+}
+
+.com_user_l img {
+    position: absolute;
+    top: 7px;
+    left: 18px;
+}
+
+.com_user_l span {
+    padding-left: 50px;
+}
+
+.com_userStatus a {
+    float: right;
+    padding-right: 40px;
+    color: #000;
+}
+
+#ecDetailsleft {
+    width: 100%;
+    height: 44%;
+}
+
+#ecDetailsright {
+    width: 100%;
+    height: 43%;
+    padding: 0 0 2% 0;
+}
+
+.com_commerce {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.com_commerce {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.com_commerceState {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.com_commerceState_l {
+    float: left;
+    position: relative;
+}
+
+.com_commerceState_l img {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+}
+
+.com_commerceState_l span {
+    padding-left: 50px;
+}
+
+.com_commerceState a {
+    float: right;
+    padding-right: 40px;
+    color: #000;
+}
+
+#eclimitleft {
+    width: 100%;
+    height: 42%;
+}
+
+#ecConfineright {
+    width: 100%;
+    height: 45%;
+    padding-bottom: 2%;
+}
+
+.com_scale {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.com_scale ul {
+    width: 100%;
+    height: 100%;
+}
+
+.com_scale ul li {
+    width: 100%;
+    height: 33.3%;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.com_scale ul li i {
+    color: #333333;
+    height: 30%;
+    font-size: 26px;
+}
+
+.com_scale ul li p {
+    font-size: 14px;
+    color: #333333;
+    height: 35%;
+    line-height: 35%;
+    padding-top: 3%;
+}
+
+.com_bottom {
+    width: 100%;
+    height: 50%;
+
+}
+
+.com_tenement {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.com_tenementState {
+    height: 30px;
+    line-height: 30px;
+    font-size:14px;
+}
+
+.com_tenementState_l {
+    float: left;
+    position: relative;
+}
+
+.com_tenementState_l img {
+    position: absolute;
+    top: 5px;
+    left: 46px;
+}
+
+.com_tenementState_l span {
+    padding-left: 80px;
+}
+
+.com_tenementState a {
+    float: right;
+    padding-right: 40px;
+    color: #000;
+}
+
+#ecMendseverleft {
+    width: 100%;
+    height: 43%;
+}
+
+#ecProcessright {
+    width: 100%;
+    height: 45%;
+    padding-bottom: 1%;
+}
+
+.com_facility {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.com_facilityState {
+    height: 30px;
+    line-height: 30px;
+    font-size:14px;
+}
+
+.com_facilityState_l {
+    float: left;
+    position: relative;
+}
+
+.com_facilityState_l img {
+    position: absolute;
+    top: 5px;
+    left: 41px;
+}
+
+.com_facilityState_l span {
+    padding-left: 80px;
+}
+
+.com_facilityState a {
+    float: right;
+    padding-right: 40px;
+    color: #000;
+}
+
+#ecPushleft {
+    width: 100%;
+    height: 45%;
+}
+
+#ecReferenceright {
+    width: 100%;
+    height: 43%;
+    padding-bottom: 2%;
+}
+
+/*communityHome end*/
+/*communityUser start*/
+.communityUser {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.com_user_top_new {
+    width: 100%;
+    height: 48%;
+}
+
+.user_top_l_new {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.ecUser_sectionCom_new {
+    width: 100%;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+}
+
+#ecHousenew {
+    width: 100%;
+    height: 88%;
+    position: absolute;
+    margin-top: 27px;
+    top: 0;
+    display: block !important;
+    left: 0 !important;
+}
+
+#ecHomenew {
+    width: 100%;
+    height: 88%;
+    position: absolute;
+    margin-top: 27px;
+    display: block !important;
+    top: 300px;
+    left: 0 !important;
+}
+
+.com_monthTab_new {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    float: left;
+    font-size:14px;
+}
+
+.com_monthTab_new p {
+    width: 100px;
+    float: left;
+    cursor: pointer;
+}
+
+.com_monthTab_new p.run_new {
+    color: #336699;
+    cursor: pointer;
+}
+
+.com_monthTab_new p:first-child {
+    margin-left: 33%;
+}
+
+.com_monthTab_new p:nth-child(2) {
+    margin-left: 50px;
+}
+
+.user_top_r_new {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-top: 5px;
+}
+
+#eccomtopnew {
+    width: 50%;
+    height: 86%;
+    float: left;
+    padding-top: 1%;
+}
+
+#eccombottomnew {
+    width: 50%;
+    height: 86%;
+    float: left;
+    padding-top: 1%;
+}
+
+.user_top_r_new .countTabnew {
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+    font-size:14px;
+}
+
+.countTabnew .mouthUsersnew {
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    margin-left: 12%;
+    width: 40%;
+    text-align: left;
+}
+
+.countTabnew .mouthActivenew {
+    width: 36%;
+    height: 37px;
+    line-height: 37px;
+    float: right;
+    text-align: left;
+}
+
+.com_user_bottom_new {
+    max-width: 100%;
+    /*width:1260px;*/
+    height: 245px;
+    position: relative;
+}
+
+.user_bottom_l_new {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecExcellentnew {
+    width: 100%;
+    height: 100%;
+    padding-left: 15%;
+}
+
+.user_bottom_r_new {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#ecEducationnew {
+    width: 100%;
+    height: 100%;
+    padding-right: 20%;
+}
+
+.com_user_two_new .gender_new {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.com_user_two_new .gender_new{
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.gender_new .boy_new{
+    position: absolute;
+    top: 37%;
+    left: 27%;
+}
+.gender_new .girl_new{
+    position: absolute;
+    top: 37%;
+    right: 15%;
+}
+
+
+#ecGendernew {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 5% 10%;
+}
+
+.com_user_two_new .age_new{
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#ecAgenew{
+    width: 100%;
+    height: 76%;
+    padding-right: 10%;
+}
+
+.age_new .baby_new{
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
+}
+
+.age_new .young_new{
+    position: absolute;
+    bottom: 8%;
+    left: 31%;
+}
+
+
+.age_new .father_new{
+    position: absolute;
+    bottom: 8%;
+    right: 47%;
+}
+
+.age_new .grandpa_new{
+    position: absolute;
+    bottom: 8%;
+    right: 31%;
+}
+
+/*communityUser end*/
+/*communitytenement start*/
+.communitytenement {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+/*top section*/
+.com_tenement_top_new{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    border-bottom:4px solid #bbdff2;
+}
+.com_tenement_top_new{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.com_tenement_l_new{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.caseTitlenew{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 20px;
+}
+#ecDescribenew{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.com_tenement_r_new{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.measureTitlenew{
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    font-size: 20px;
+}
+#eccomboxnew{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+
+/*bottom section*/
+.com_tenement_bottom_new{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.com_tenement_all_new{
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.ensureTitlenew{
+position: absolute;
+top: 10%;
+left: 40%;
+font-size: 20px;
+}
+
+#ecEnsurenew {
+    width: 100%;
+    height: 100%;
+}
+
+
+.com_tenementbottom_l_new{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+
+.houseTitlenew{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 20px;
+}
+
+#ecHouseRepairnew{
+    width: 100%;
+    height: 100%;
+}
+
+.com_tenementbottom_r_new{
+    width: 33.3%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.typeTitlenew{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 20px;
+}
+
+
+#ecTypenew{
+    width: 100%;
+    height: 100%;
+}
+/*communitytenement end*/
+
+
+/*communityfacility start*/
+
+.communityfacility{
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+}
+
+.communityfacility::-webkit-scrollbar {
+    display: none
+}
+
+
+
+.facility_all {
+    width: 100%;
+    height: 100%;
+
+}
+
+.com_special {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+.com_special_facility_l{
+    width: 15%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+
+.bg_special_img img {
+    position: absolute;
+    top: 20%;
+    left: 41%;
+}
+
+
+.com_special_facility_l p{
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    font-size:16px;
+}
+
+
+.com_special_facility_r{
+    width: 70%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.com_special_facility_r_top{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.com_special_bar_title{
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+#ecAdaptspecial{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.com_special_facility_r_botttom{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.com_special_bar_title{
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#ecOpenspecial{
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+.com_special_facility_r_info{
+    width: 15%;
+    height: 100%;
+    float: left;
+
+}
+
+.com_special_info_all{
+    padding: 5% 0;
+    text-align: center;
+    height: 90%;
+}
+.com_special_title_info{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+.com_special_info_all ul{
+    width: 100%;
+    height:100%;
+    padding-top:10%;
+}
+
+.com_special_info_all ul li{
+    width: 100%;
+    height: 33%;
+}
+
+.com_special_info_all ul li i{
+    font-size: 16px;
+    color: #333333;
+    height: 30%;
+    display: block;
+}
+
+.com_special_info_all ul li p{
+    font-size: 24px;
+    color: #333333;
+    height: 40%;
+    padding-top: 3%;
+}
+
+
+.com_commen{
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+.com_commen_facility_l{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+.com_commen_facility_l .com_commen_title{
+    width:3%;
+    padding:7% 5%;
+    vertical-align:middle;
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+#ecSellspecial {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.com_commen_facility_r{
+
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+
+}
+.com_commen_facility_r .com_commen_title{
+    width:3%;
+    padding:7% 5%;
+    vertical-align:middle;
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+#ecFairlyspecial {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+#ecPathspecial {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+#ecInspectspecial {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.com_commen_facility_r .common_times i{
+    position: absolute;
+    bottom: 122%;
+    left: 24%;
+    font-size: 16px;
+    font-family: "SimSun";
+
+}
+
+.com_commen_facility_r  .common_times p {
+    position: absolute;
+    bottom: 135%;
+    left: 25%;
+    font-size: 20px;
+    font-family: "simsum";
+}
+
+
+.com_commen_facility_r .common_card i {
+    position: absolute;
+    top: -6%;
+    left: 24%;
+    font-size: 16px;
+    font-family: "SimSun";
+}
+
+.com_commen_facility_r .common_card p {
+    position: absolute;
+    top: -19%;
+    left: 27%;
+    font-size: 22px;
+    font-family: "simsum";
+}
+/*信息部分*/
+.com_system_info_new{
+    width:100%;
+    height:36%;
+    border-bottom:4px solid #bbdff2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.com_facility_l_new{
+    width:50%;
+    height:100%;
+    border-right:4px solid #bbdff2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+}
+.com_system_info_new .com_facility_r_new{
+    width:50%;
+    height:100%;
+    float:left;
+}
+.com_system_info_new .com_system_title_new{
+    width:3%;
+    padding:7% 5%;
+    vertical-align:middle;
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+    float:left;
+}
+.com_system_info_new .com_system_facility_r_new{
+    float:left;
+    width:87%;
+    height:100%;
+
+}
+
+.com_system_facility_r_new ul{
+    width:100%;
+    height:100%;
+
+}
+.com_system_facility_r_new ul li{
+    width:29%;
+    height:100%;
+    text-align:center;
+    display:inline-block;
+}
+
+.com_system_facility_r_new ul li span{
+    width: 100%;
+    height: 15%;
+    font-size: 14px;
+    display: block;
+    padding-top: 40%;
+
+}
+
+
+.com_system_facility_r_new ul li i{
+    width: 100%;
+    height: 15%;
+    font-size: 24px;
+    padding-top: 20%;
+    display: block;
+
+}
+
+.com_system_facility_r_new div{
+    width:48%;
+    height:100%;
+    text-align:center;
+    display:inline-block;
+}
+
+.com_system_facility_r_new div span{
+    width: 100%;
+    height: 15%;
+    line-height: 15%;
+    font-size: 14px;
+    display: block;
+    padding-top: 28%;
+    /*font-weight:bold;*/
+
+}
+
+
+.com_system_facility_r_new div i{
+    width: 100%;
+    height: 15%;
+    line-height: 15%;
+    font-size: 24px;
+    display: block;
+    padding-top: 14%;
+
+}
+
+.com_system_r_new ul{
+    width:100%;
+    height:100%;
+
+}
+.com_system_r_new ul li{
+    width:24%;
+    height:100%;
+    text-align:center;
+    display:inline-block;
+}
+
+.com_system_r_new ul li span{
+    width: 100%;
+    height: 15%;
+    line-height: 15%;
+    font-size: 14px;
+    display: block;
+    padding-top: 50%;
+}
+
+
+.com_system_r_new ul li i{
+    width: 100%;
+    height: 15%;
+    line-height: 15%;
+    font-size: 24px;
+    display: block;
+    padding-top: 33%;
+
+}
+
+
+
+.com_system_info_new:last-child {
+    border-bottom: none;
+}
+
+
+
+/*communityfacility end*/
+/*communitybusiness start*/
+
+.communitybusiness{
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+.com_business_top_new {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.com_business_top_l_new {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    border-bottom: 4px solid #bbdff2;
+    float: left;
+}
+
+.com_business_top_l_new .com_visit_new {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight:bold;
+}
+
+
+#ecExportnew {
+    width: 100%;
+    height: 87%;
+    padding: 0 0 3% 0;
+}
+.com_business_top_r_new {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.com_business_top_r_new .com_visit_new {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight:bold;
+}
+#ecMonthnew{
+    width:100%;
+    height:87%;
+    float:left;
+}
+
+.com_business_bottom_new{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    position: relative;
+
+}
+.com_business_bottom_l_new{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+#ecDeucenew {
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#ecEqualnew {
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+.com_business_bottom_r_new {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecOrderservenew{
+    width:100%;
+    height:100%;
+    float:left;
+}
+
+
+/*communitybusiness end*/
+
+
+
+
