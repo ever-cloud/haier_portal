@@ -9,22 +9,32 @@
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=EwYKU3Q9LPEw2vEGkXblk9p6pqSb7SYO"></script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("communityItem"));
+        })
+    </script>
 </head>
 <!--地图自适应调用-->
 <body onresize="resizeMap()">
 <div class="layout_map">
     <div class="wrapper_map">
         <div class="center">
-            <div class="tabBox">
-                <ul>
-                    <li><a href="./blocmain.html" target="blocmain" class="clickstyle">地图</a></li>
-                    <li><a href="./blochome.html" target="blocmain">首页</a></li>
-                    <li><a href="./blocuser.html" target="blocmain">用户总览</a></li>
-                    <li><a href="./bloctenement.html" target="blocmain">物业服务</a></li>
-                    <li><a href="./blocfacility.html" target="blocmain">设备状态</a></li>
-                    <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
-                </ul>
+            <div class="tabBoxall">
+                <div class="tabBox">
+                    <ul>
+                        <li><a href="./blocmain.html" target="blocmain" class="clickstyle">地图</a></li>
+                        <li><a href="./blochome.html" target="blocmain">首页</a></li>
+                        <li><a href="./blocuser.html" target="blocmain">用户总览</a></li>
+                        <li><a href="./bloctenement.html" target="blocmain">物业服务</a></li>
+                        <li><a href="./blocfacility.html" target="blocmain">设备状态</a></li>
+                        <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
+                    </ul>
+                </div>
+                <div class="tabBox_right"><i>当前位置：</i><span></span></div>
+
             </div>
+
 
             <!--map start-->
             <div id="comMap" class="public">

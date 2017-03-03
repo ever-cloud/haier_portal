@@ -4,59 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>海尔安图集团社区</title>
+    <title>海尔社区</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/hr-community.css">
-    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="../css/community.css">
     <script src="../lib/echarts/echarts.js"></script>
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../js/common/tab-click.js"></script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("communityItem"));
+        })
+    </script>
 </head>
 <body>
 <div class="layout_right">
     <div class="wrapper_center">
         <div class="wrapper_bg">
             <!--topbar-->
-            <div class="tabBox">
-                <ul>
-                    <!--社区地图-->
-                    <li><a href="./main.html" target="main">地图</a></li>
-                    <li><a href="./hr-communityhome.html" target="main">首页</a></li>
-                    <li><a href="./hr-communityuser.html" target="main">用户总览</a></li>
-                    <li><a href="./hr-communitytenement.html" target="main">物业服务</a></li>
-                    <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
-                    <li><a href="./hr-communitybusiness.html" target="main"  class="clickstyle">商业服务</a></li>
-                </ul>
+            <div class="tabBoxall">
+                <div class="tabBox">
+                    <ul>
+                        <li><a href="./hr-community-map.html" target="main">地图</a></li>
+                        <li><a href="./hr-communityhome.html" target="main">概览</a></li>
+                        <li><a href="./hr-communityuser.html" target="main" >用户总览</a></li>
+                        <li><a href="./hr-communitytenement.html" target="main">物业服务</a></li>
+                        <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
+                        <li><a href="./hr-communitybusiness.html" target="main" class="clickstyle">商业服务</a></li>
+                    </ul>
+                </div>
+                <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
             <!--echarts-->
-            <div class="hr_communitybusiness public">
-                <div class="com_business_top">
+            <div class="communitybusiness">
+                <div class="com_business_top_new">
                     <!-- 平台访问量-->
-                    <div class="com_business_top_l">
-                        <div class="com_visit">社区服务平台访问情况</div>
-                        <div id="ecExport"></div>
+                    <div class="com_business_top_l_new">
+                        <div class="com_visit_new">社区服务平台访问情况</div>
+                        <div id="ecExportnew"></div>
                     </div>
-                    <div class="com_business_top_r">
-                        <div class="com_visit">集团服务平台访问情况</div>
-                        <div id="ecMonth"></div>
+                    <div class="com_business_top_r_new">
+                        <div class="com_visit_new">集团服务平台访问情况</div>
+                        <div id="ecMonthnew"></div>
 
                     </div>
                 </div>
-                <div class="com_business_bottom">
-                    <div class="com_business_bottom_l">
-                        <div id="ecDeuce"></div>
-                        <div id="ecEqual"></div>
+                <div class="com_business_bottom_new">
+                    <div class="com_business_bottom_l_new">
+                        <div id="ecDeucenew"></div>
+                        <div id="ecEqualnew"></div>
                     </div>
-                    <div class="com_business_bottom_r">
-                        <div id="ecOrderserve"></div>
+                    <div class="com_business_bottom_r_new">
+                        <div id="ecOrderservenew"></div>
                     </div>
+
                 </div>
+
+                <!--社区商业服务end-->
             </div>
         </div>
     </div>
 </div>
 </body>
-<script src="../js/echarts/haier-community/haier-community-Business-ec.js"></script>
+<script src="../js/echarts/community/community-Business-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 </html>

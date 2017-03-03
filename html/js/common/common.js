@@ -7,10 +7,19 @@ $(function () {
         $(this).parent().parent().next("div").children("#nav_room").hide();
         $(this).siblings(".trends").show();
 
+      var blocName=  $(this).children('a').text();
+        //console.log(blocName);
+        setCookie("item",blocName);
+
+
     });
 
     $(".trends_group").on("click", function () {
         $(this).siblings(".community_group").slideToggle();
+        var groupName=  $(this).children('a').text();
+        //console.log(groupName);
+        setCookie("groupItem",groupName);
+
     });
 
     $(".com_letter").on("click", function () {
@@ -20,6 +29,10 @@ $(function () {
     $(".community_name").on("click", function () {
         $(".community_name").removeClass("clickshow");
         $(this).addClass("clickshow");
+        var communityName=  $(this).children('a').text();
+        //console.log(communityName);
+        setCookie("communityItem",communityName);
+
     });
 
 
@@ -34,6 +47,8 @@ $(function () {
         $(".box > li").removeClass("clickshow");
         $(this).addClass("clickshow");
     });
+
+
 
 
 //样板间

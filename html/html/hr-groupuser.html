@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海尔安图集团社区</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/blocindex.css">
+    <link rel="stylesheet" href="../css/hr-community.css">
     <!--swiper轮播图插件-->
     <link rel="stylesheet" href="../dist/css/swiper.min.css">
     <link rel="stylesheet" href="../dist/css/myswiper.css">
@@ -16,9 +16,10 @@
     <script src="../js/common/tab-click.js"></script>
     <script>
         $(function(){
-            $(".tabBox_right span").text(getCookie("communityItem"));
+            $(".tabBox_right span").text(getCookie("groupItem"));
         })
     </script>
+
 </head>
 <body>
 <div class="layout_right">
@@ -26,19 +27,19 @@
         <div class="wrapper_bg">
             <!--topbar-->
             <div class="tabBoxall">
-                <div class="tabBox">
-                    <ul>
-                        <li><a href="./blocmain.html" target="blocmain">地图</a></li>
-                        <li><a href="./blochome.html" target="blocmain">首页</a></li>
-                        <li><a href="./blocuser.html" target="blocmain"   class="clickstyle">用户总览</a></li>
-                        <li><a href="./bloctenement.html" target="blocmain">物业服务</a></li>
-                        <li><a href="./blocfacility.html" target="blocmain">设备状态</a></li>
-                        <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
-                    </ul>
-                </div>
+            <div class="tabBox">
+                <ul>
+                    <!--社区地图-->
+                    <li><a href="./hr-group-map.html" target="main" >地图</a></li>
+                    <li><a href="./hr-grouphome.html" target="main">概览</a></li>
+                    <li><a href="./hr-groupuser.html" target="main"  class="clickstyle">用户总览</a></li>
+                    <li><a href="./hr-grouptenement.html" target="main">物业服务</a></li>
+                    <li><a href="./hr-groupfacility.html" target="main">设备状态</a></li>
+                    <li><a href="./hr-groupbusiness.html" target="main">商业服务</a></li>
+                </ul>
+            </div>
                 <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
-
             <!--echarts-->
             <div class="hr_communityUser public">
                 <!--top section-->
@@ -131,4 +132,5 @@
     }
     getUser();
 </script>
+
 </html>

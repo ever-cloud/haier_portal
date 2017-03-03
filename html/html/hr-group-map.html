@@ -11,8 +11,7 @@
             src="http://api.map.baidu.com/api?v=2.0&ak=EwYKU3Q9LPEw2vEGkXblk9p6pqSb7SYO"></script>
     <script>
         $(function(){
-            $(".tabBox_right span").text(getCookie("item"));
-
+            $(".tabBox_right span").text(getCookie("groupItem"));
         })
     </script>
 
@@ -22,26 +21,24 @@
 <div class="layout_map">
     <div class="wrapper_map">
         <div class="center">
-            <!--tab atart-->
             <div class="tabBoxall">
                 <div class="tabBox">
                     <ul>
-                        <!--集团地图-->
-                        <li><a href="./hr-blocmap.html" target="main" class="clickstyle">地图</a></li>
-                        <li><a href="./hr-blochome.html" target="main">概览</a></li>
-                        <li><a href="./hr-blocuser.html" target="main">用户总览</a></li>
-                        <li><a href="./hr-bloctenement.html" target="main">物业服务</a></li>
-                        <li><a href="./hr-blocfacility.html" target="main">设备状态</a></li>
-                        <li><a href="./hr-blocbusiness.html" target="main">商业服务</a></li>
+                        <!--社区地图-->
+                        <li><a href="./hr-group-map.html" target="main"  class="clickstyle">地图</a></li>
+                        <li><a href="./hr-grouphome.html" target="main">概览</a></li>
+                        <li><a href="./hr-groupuser.html" target="main" >用户总览</a></li>
+                        <li><a href="./hr-grouptenement.html" target="main">物业服务</a></li>
+                        <li><a href="./hr-groupfacility.html" target="main">设备状态</a></li>
+                        <li><a href="./hr-groupbusiness.html" target="main">商业服务</a></li>
                     </ul>
                 </div>
                 <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
-            <!--tab end-->
             <!--map start-->
-            <div id="groupMap" class="public">
+            <div id="comMap" class="public">
                 <!--create map-->
-                <div id="allmap"></div>
+                <div id="newmap"></div>
                 <!--right state-->
                 <div class="phase" style="position: absolute;top: 5px;left: 5px;">
                     <ul>
@@ -60,11 +57,11 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 </body>
+<script src="../js/map/community-map-click.js"></script>
 <script src="../js/common/common.js"></script>
 <script src="../js/common/setcookie.js"></script>
-<script src="../js/map/haier-map-click.js"></script>
 </html>
-

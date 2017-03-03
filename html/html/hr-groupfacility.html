@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>海尔安图集团社区</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/hr-community.css">
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../lib/echarts/echarts.js"></script>
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
     <script>
         $(function(){
-            $(".tabBox_right span").text(getCookie("item"));
-
+            $(".tabBox_right span").text(getCookie("groupItem"));
         })
     </script>
+
 </head>
 <body>
-
 <div class="layout_right">
     <div class="wrapper_center">
         <div class="wrapper_bg">
@@ -26,41 +25,38 @@
             <div class="tabBoxall">
                 <div class="tabBox">
                     <ul>
-                        <!--集团地图-->
-                        <li><a href="./hr-blocmap.html" target="main">地图</a></li>
-                        <li><a href="./hr-blochome.html" target="main" >概览</a></li>
-                        <li><a href="./hr-blocuser.html" target="main">用户总览</a></li>
-                        <li><a href="./hr-bloctenement.html" target="main">物业服务</a></li>
-                        <li><a href="./hr-blocfacility.html" target="main" class="clickstyle">设备状态</a></li>
-                        <li><a href="./hr-blocbusiness.html" target="main">商业服务</a></li>
+                        <!--社区地图-->
+                        <li><a href="./hr-group-map.html" target="main" >地图</a></li>
+                        <li><a href="./hr-grouphome.html" target="main">概览</a></li>
+                        <li><a href="./hr-groupuser.html" target="main" >用户总览</a></li>
+                        <li><a href="./hr-grouptenement.html" target="main">物业服务</a></li>
+                        <li><a href="./hr-groupfacility.html" target="main" class="clickstyle">设备状态</a></li>
+                        <li><a href="./hr-groupbusiness.html" target="main">商业服务</a></li>
                     </ul>
                 </div>
                 <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
             <!--echarts-->
-            <div class="hr_blocfacility public">
+            <div class="hr_communityfacility public">
                 <!--section 1-->
-                <div class="special">
-                    <!--left-->
-                    <div class="facility_l bg_icon_img">
+                <div class="hr_special clearfix">
+                    <div class="com_facility_l bg_com_img">
                         <img src="../images/view.png" alt="">
                         <p>总览</p>
                     </div>
-                    <!--mid-->
-                    <div class="facility_r clearfix">
-                        <div class="facility_r_top clearfix">
-                            <div class="bar_title">设备构成</div>
-                            <div id="ecAdapt"></div>
+                    <div class="com_facility_r">
+                        <div class="com_facility_r_top clearfix">
+                            <div class="com_bar_title">设备构成</div>
+                            <div id="ecAdaptCount"></div>
                         </div>
-                        <div class="facility_r_botttom clearfix">
-                            <div class="bar_title">故障设备构成</div>
-                            <div id="ecOpen"></div>
+                        <div class="com_facility_r_botttom">
+                            <div class="com_bar_title">故障设备构成</div>
+                            <div id="ecOpenCount"></div>
                         </div>
                     </div>
-                    <!--right-->
-                    <div class="facility_r_info">
-                        <div class="info_all">
-                            <h1 class="title_info">
+                    <div class="com_facility_r_info">
+                        <div class="com_info_all">
+                            <h1 class="com_title_info">
                                 实时报警信息
                             </h1>
                             <ul>
@@ -81,39 +77,34 @@
                     </div>
                 </div>
                 <!--section 2-->
-                <div class="commen">
-                    <!--left-->
-                    <div class="facility_l">
-                        <h1 class="common_title">视频监控</h1>
-                        <div id="ecSell"></div>
+                <div class="hr_commen clearfix">
+                    <div class="com_facility_l">
+                        <h1 class="com_common_title">视频监控</h1>
+                        <div id="ecSellCount"></div>
                     </div>
-                    <!--right-->
-                    <div class="facility_r">
-                        <h1 class="common_title">电梯监控</h1>
-                        <div id="ecLine"></div>
+                    <div class="com_facility_r">
+                        <h1 class="com_common_title">电梯监控</h1>
+                        <div id="ecFairly"></div>
                     </div>
                 </div>
                 <!--section 3-->
-                <div class="commen">
-                    <div class="facility_l">
-                        <h1 class="common_title">可视对讲</h1>
-                        <!--echarts 1-->
-                        <div id="ecStop"></div>
+                <div class="hr_commen clearfix">
+                    <div class="com_facility_l">
+                        <h1 class="com_common_title">可视对讲</h1>
+                        <div id="ecPath"></div>
                     </div>
-                    <div class="facility_r">
-                        <h1 class="common_title">人员定位</h1>
-                        <div id="ecPaking"></div>
+                    <div class="com_facility_r">
+                        <h1 class="com_common_title">人员定位</h1>
+                        <div id="ecInspect"></div>
                     </div>
                 </div>
                 <!--section 4-->
-                <div class="system_info">
-                    <!--left-->
-                    <div class="facility_l">
-                        <h1 class="system_title">门禁系统</h1>
-                        <div class="system_facility_r">
+                <div class="com_system_info">
+                    <div class="com_facility_l">
+                        <h1 class="com_system_title">门禁系统</h1>
+                        <div class="com_system_facility_r">
                             <ul>
                                 <li>
-
                                     <span>在线小区</span>
                                     <i>58</i>
                                 </li>
@@ -128,10 +119,9 @@
                             </ul>
                         </div>
                     </div>
-                    <!--right-->
-                    <div class="facility_r">
-                        <h1 class="system_title">信息发布</h1>
-                        <div class="system_facility_r">
+                    <div class="com_facility_r">
+                        <h1 class="com_system_title">信息发布</h1>
+                        <div class="com_system_facility_r">
                             <div>
                                 <span>终端总数</span>
                                 <i>58</i>
@@ -145,11 +135,10 @@
                     </div>
                 </div>
                 <!--section 5-->
-                <div class="system_info">
-                    <!--left-->
-                    <div class="facility_l">
-                        <h1 class="system_title">入侵报警</h1>
-                        <div class="system_facility_r">
+                <div class="com_system_info">
+                    <div class="com_facility_l">
+                        <h1 class="com_system_title">入侵报警</h1>
+                        <div class="com_system_facility_r">
                             <ul>
                                 <li>
 
@@ -168,11 +157,9 @@
 
                         </div>
                     </div>
-                    <!--right-->
-                    <div class="facility_r">
-                        <h1 class="system_title">停车场</h1>
-                        <div class="system_facility_r system_r">
-
+                    <div class="com_facility_r">
+                        <h1 class="com_system_title">停车场</h1>
+                        <div class="com_system_facility_r com_system_r">
                             <ul>
                                 <li>
                                     <span>在线数</span>
@@ -195,11 +182,10 @@
                     </div>
                 </div>
                 <!--section 6-->
-                <div class="system_info">
-                    <!--left-->
-                    <div class="facility_l">
-                        <h1 class="system_title">广播通信</h1>
-                        <div class="system_facility_r">
+                <div class="com_system_info">
+                    <div class="com_facility_l">
+                        <h1 class="com_system_title">广播通信</h1>
+                        <div class="com_system_facility_r">
 
                             <ul>
                                 <li>
@@ -218,10 +204,9 @@
 
                         </div>
                     </div>
-                    <!--right-->
-                    <div class="facility_r">
-                        <h1 class="system_title">信息发布</h1>
-                        <div class="system_facility_r">
+                    <div class="com_facility_r">
+                        <h1 class="com_system_title">信息发布</h1>
+                        <div class="com_system_facility_r">
                             <div>
                                 <span>终端总数</span>
                                 <i>58</i>
@@ -234,13 +219,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-</div>
 </body>
-<script src="../js/echarts/haier-bloc/haier-bloc-facility-ec.js"></script>
+<script src="../js/echarts/haier-community/haier-community-facility-ec.js"></script>
 <script src="../js/common/common.js"></script>
 <script src="../js/common/setcookie.js"></script>
 </html>

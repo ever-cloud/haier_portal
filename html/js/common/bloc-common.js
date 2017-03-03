@@ -1,18 +1,4 @@
 $(function () {
-    ////左侧项目点击事件
-    //$(".nav_top").on("click", function () {
-    //    $(this).next("div").children(".ul").slideToggle();
-    //});
-    //
-    ////左侧点击A-Z显示隐藏切换
-    //$(".ul>li").on("click", function () {
-    //    $(this).next(".box").slideToggle();
-    //});
-    //$(".box > li").on("click", function () {
-    //    $(".box > li").removeClass("clickshow");
-    //    $(this).addClass("clickshow");
-    //});
-
     //点击显示隐藏问题
     $(".menu_bloc").on("click", function () {
         $(this).siblings(".trends").slideToggle();
@@ -34,6 +20,9 @@ $(function () {
     $(".community_name").on("click", function () {
         $(".community_name").removeClass("clickshow");
         $(this).addClass("clickshow");
+        var communityName=  $(this).children('a').text();
+        //console.log(communityName);
+        setCookie("communityItem",communityName);
     });
 
 

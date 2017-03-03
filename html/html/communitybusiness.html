@@ -11,21 +11,30 @@
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../js/common/tab-click.js"></script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("communityItem"));
+        })
+    </script>
 </head>
 <body>
 <div class="layout_right">
     <div class="wrapper_center">
         <div class="wrapper_bg">
             <!--topbar-->
-            <div class="tabBox">
-                <ul>
-                    <li><a href="./communitymain.html" target="communitymain">首页</a></li>
-                    <li><a href="./communityuser.html" target="communitymain">用户总览</a></li>
-                    <li><a href="./communitytenement.html" target="communitymain">物业服务</a></li>
-                    <li><a href="./communityfacility.html" target="communitymain">设备状态</a></li>
-                    <li><a href="./communitybusiness.html" target="communitymain"  class="clickstyle">商业服务</a></li>
-                </ul>
+            <div class="tabBoxall">
+                <div class="tabBox">
+                    <ul>
+                        <li><a href="./communitymain.html" target="communitymain">首页</a></li>
+                        <li><a href="./communityuser.html" target="communitymain">用户总览</a></li>
+                        <li><a href="./communitytenement.html" target="communitymain">物业服务</a></li>
+                        <li><a href="./communityfacility.html" target="communitymain">设备状态</a></li>
+                        <li><a href="./communitybusiness.html" target="communitymain"  class="clickstyle">商业服务</a></li>
+                    </ul>
+                </div>
+                <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
+
             <!--echarts-->
             <div class="communitybusiness">
                 <div class="com_business_top_new">
@@ -59,5 +68,5 @@
 </body>
 <script src="../js/echarts/community/community-Business-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 </html>

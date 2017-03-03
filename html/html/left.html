@@ -57,7 +57,9 @@
         </div>
         <!--首页展示所有信息-->
         <div class="nav_top nav_item hr_homenav"><a href="./main.html" target="main">首页</a></div>
+        <!--集团+大区+小区-->
         <div class="nav_section nav_top nav_item" id="nav_item"></div>
+       <!--样板间-->
         <div class="nav_prototypeRoom nav_all">
             <div class="nav_top nav_room">
                 <span>样板间</span>
@@ -85,7 +87,7 @@
         <!--大区-->
         <div class="trends" style="display: none;">
             <!--区名字-->
-            <div class="trends_group"><a href="#">{{group.bloc}}</a></div>
+            <div class="trends_group"><a href="./hr-group-map.html" target="main">{{group.bloc}}</a></div>
 
             {{each group.spe_community as arr}}
             <!--小区-->
@@ -145,6 +147,7 @@
 //            点击刷新
             window.parent.frames["main"].location.reload();
         });
+
 //        兼容ie浏览器
         if ("ActiveXObject" in window) {
             $("#nav_item .tabBox ul li a").on("click", function (){

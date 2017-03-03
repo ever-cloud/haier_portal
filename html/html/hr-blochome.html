@@ -10,6 +10,12 @@
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../lib/echarts/echarts.js"></script>
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("item"));
+
+        })
+    </script>
 </head>
 <body>
 <div class="layout_right">
@@ -28,7 +34,7 @@
                         <li><a href="./hr-blocbusiness.html" target="main">商业服务</a></li>
                     </ul>
                 </div>
-                <!--<div class="tabBox_right"><a href="./blocindex.html" target="_blank">集团详情</a></div>-->
+                <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
             <!--echarts-->
             <div class="hr_blocHome public">
@@ -121,5 +127,5 @@
 </body>
 <script src="../js/echarts/haier-bloc/haier-bloc-home-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 </html>

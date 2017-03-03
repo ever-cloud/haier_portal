@@ -14,6 +14,11 @@
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../js/common/tab-click.js"></script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("communityItem"));
+        })
+    </script>
 </head>
 <body>
 <div class="layout_right">
@@ -29,6 +34,7 @@
                     <li><a href="./communitybusiness.html" target="communitymain">商业服务</a></li>
                 </ul>
             </div>
+            <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             <!--echarts-->
             <div class="communityUser">
                 <!--top section-->
@@ -111,7 +117,7 @@
 </script>
 <script src="../js/echarts/community/community-user-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 <!--swiper轮播图插件-->
 <script src="../dist/js/swiper.min.js"></script>
 <script>

@@ -10,22 +10,32 @@
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../lib/echarts/echarts.js"></script>
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("communityItem"));
+        })
+    </script>
 </head>
 <body>
 <div class="layout_right">
     <div class="wrapper_center">
         <div class="wrapper_bg">
             <!--topbar-->
-            <div class="tabBox">
-                <ul>
-                    <li><a href="./blocmain.html" target="blocmain">地图</a></li>
-                    <li><a href="./blochome.html" target="blocmain">首页</a></li>
-                    <li><a href="./blocuser.html" target="blocmain">用户总览</a></li>
-                    <li><a href="./bloctenement.html" target="blocmain">物业服务</a></li>
-                    <li><a href="./blocfacility.html" target="blocmain"   class="clickstyle">设备状态</a></li>
-                    <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
-                </ul>
+            <div class="tabBoxall">
+                <div class="tabBox">
+                    <ul>
+                        <li><a href="./blocmain.html" target="blocmain">地图</a></li>
+                        <li><a href="./blochome.html" target="blocmain">首页</a></li>
+                        <li><a href="./blocuser.html" target="blocmain">用户总览</a></li>
+                        <li><a href="./bloctenement.html" target="blocmain">物业服务</a></li>
+                        <li><a href="./blocfacility.html" target="blocmain"   class="clickstyle">设备状态</a></li>
+                        <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
+                    </ul>
+                </div>
+                <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
+
+
             <!--echarts-->
             <div class="hr_communityfacility public">
                 <!--section 1-->
@@ -215,5 +225,5 @@
 </body>
 <script src="../js/echarts/haier-community/haier-community-facility-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 </html>

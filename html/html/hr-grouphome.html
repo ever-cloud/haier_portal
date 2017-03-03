@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>海尔社区</title>
+    <title>海尔安图集团社区</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/community.css">
+    <link rel="stylesheet" href="../css/hr-community.css">
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../lib/echarts/echarts.js"></script>
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
     <script>
         $(function(){
-            $(".tabBox_right span").text(getCookie("communityItem"));
+            $(".tabBox_right span").text(getCookie("groupItem"));
         })
     </script>
+
 </head>
 <body>
 <div class="layout_right">
@@ -24,46 +25,50 @@
             <div class="tabBoxall">
                 <div class="tabBox">
                     <ul>
-                        <li><a href="./hr-community-map.html" target="main">地图</a></li>
-                        <li><a href="./hr-communityhome.html" target="main"  class="clickstyle">概览</a></li>
-                        <li><a href="./hr-communityuser.html" target="main">用户总览</a></li>
-                        <li><a href="./hr-communitytenement.html" target="main">物业服务</a></li>
-                        <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
-                        <li><a href="./hr-communitybusiness.html" target="main">商业服务</a></li>
+                        <!--社区地图-->
+                        <li><a href="./hr-group-map.html" target="main" >地图</a></li>
+                        <li><a href="./hr-grouphome.html" target="main"  class="clickstyle">概览</a></li>
+                        <li><a href="./hr-groupuser.html" target="main">用户总览</a></li>
+                        <li><a href="./hr-grouptenement.html" target="main">物业服务</a></li>
+                        <li><a href="./hr-groupfacility.html" target="main">设备状态</a></li>
+                        <li><a href="./hr-groupbusiness.html" target="main">商业服务</a></li>
                     </ul>
                 </div>
                 <div class="tabBox_right"><i>当前位置：</i><span></span></div>
+
             </div>
             <!--echarts-->
-            <div class="communityHome">
+            <div class="hr_communityHome public">
                 <!--top section-->
-                <div class="com_top clearfix">
+                <div class="community_top">
                     <!--left-->
-                    <div class="com_user">
-                        <div class="com_userStatus">
-                            <div class="com_user_l">
+                    <div class="community_user">
+                        <div class="community_userStatus">
+                            <div class="community_user_l">
                                 <img src="../images/photo.png" alt="">
                                 <span>用户情况</span>
                             </div>
-                            <a href="./communityuser.html">详情></a>
+                            <a href="./hr-communityuser.html">详情></a>
                         </div>
-                        <div id="ecDetailsleft"></div>
-                        <div id="ecDetailsright"></div>
+                        <!--echarts 1-->
+                        <div id="ecDetailsTop"></div>
+                        <div id="ecDetailsDown"></div>
                     </div>
                     <!--mid-->
-                    <div class="com_commerce">
-                        <div class="com_commerceState">
-                            <div class="com_commerceState_l">
+                    <div class="community_commerce">
+                        <div class="community_commerceState">
+                            <div class="community_commerceState_l">
                                 <img src="../images/shop.png" alt="">
                                 <span>商业服务</span>
                             </div>
-                            <a href="./communitybusiness.html">详情></a>
+                            <a href="./hr-communitybusiness.html">详情></a>
                         </div>
-                        <div id="eclimitleft"></div>
-                        <div id="ecConfineright"></div>
+                        <!--echarts 2-->
+                        <div id="eclimit"></div>
+                        <div id="ecConfine"></div>
                     </div>
                     <!--right-->
-                    <div class="com_scale">
+                    <div class="community_scale">
                         <ul>
                             <li>
                                 <i>1290</i>
@@ -81,30 +86,34 @@
                     </div>
                 </div>
                 <!--bottom section-->
-                <div class="com_bottom clearfix">
+                <div class="community_bottom">
                     <!--left-->
-                    <div class="com_tenement">
-                        <div class="com_tenementState">
-                            <div class="com_tenementState_l">
+                    <div class="community_tenement">
+                        <div class="community_tenementState">
+                            <div class="community_tenementState_l">
                                 <img src="../images/people.png" alt="">
                                 <span>物业服务</span>
                             </div>
-                            <a href="./communitytenement.html">详情></a>
+                            <a href="./hr-communitytenement.html">详情></a>
+
                         </div>
-                        <div id="ecMendseverleft"></div>
-                        <div id="ecProcessright"></div>
+                        <!--echarts 3-->
+                        <div id="ecMendsever"></div>
+                        <div id="ecProcess"></div>
                     </div>
                     <!--right-->
-                    <div class="com_facility">
-                        <div class="com_facilityState">
-                            <div class="com_facilityState_l">
+                    <div class="community_facility">
+                        <div class="community_facilityState">
+                            <div class="community_facilityState_l">
                                 <img src="../images/circle.png" alt="">
                                 <span>设备状态</span>
                             </div>
-                            <a href="./communityfacility.html">详情></a>
+                            <a href="./hr-communityfacility.html">详情></a>
+
                         </div>
-                        <div id="ecPushleft"></div>
-                        <div id="ecReferenceright"></div>
+                        <!--echarts 4-->
+                        <div id="ecPush"></div>
+                        <div id="ecReference"></div>
                     </div>
                 </div>
             </div>
@@ -112,7 +121,7 @@
     </div>
 </div>
 </body>
-<script src="../js/echarts/community/community-home-ec.js"></script>
+<script src="../js/echarts/haier-community/haier-community-home-ec.js"></script>
 <script src="../js/common/common.js"></script>
 <script src="../js/common/setcookie.js"></script>
 </html>

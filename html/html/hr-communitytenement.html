@@ -4,67 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>海尔安图集团社区</title>
+    <title>海尔社区</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/hr-community.css">
-    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="../css/community.css">
     <script src="../lib/echarts/echarts.js"></script>
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("communityItem"));
+        })
+    </script>
 </head>
 <body>
 <div class="layout_right">
     <div class="wrapper_center">
         <div class="wrapper_bg">
             <!--topbar-->
-            <div class="tabBox">
-                <ul>
-                    <!--社区地图-->
-                    <li><a href="./main.html" target="main">地图</a></li>
-                    <li><a href="./hr-communityhome.html" target="main">首页</a></li>
-                    <li><a href="./hr-communityuser.html" target="main">用户总览</a></li>
-                    <li><a href="./hr-communitytenement.html" target="main"  class="clickstyle">物业服务</a></li>
-                    <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
-                    <li><a href="./hr-communitybusiness.html" target="main">商业服务</a></li>
-                </ul>
+            <div class="tabBoxall">
+                <div class="tabBox">
+                    <ul>
+                        <li><a href="./hr-community-map.html" target="main">地图</a></li>
+                        <li><a href="./hr-communityhome.html" target="main">概览</a></li>
+                        <li><a href="./hr-communityuser.html" target="main" >用户总览</a></li>
+                        <li><a href="./hr-communitytenement.html" target="main" class="clickstyle">物业服务</a></li>
+                        <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
+                        <li><a href="./hr-communitybusiness.html" target="main">商业服务</a></li>
+                    </ul>
+                </div>
+                <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
             <!--echarts-->
-            <div class="hr_communitytenement public">
+            <div class="communitytenement">
                 <!--top section-->
-                <div class="com_tenement_top">
-                    <div class="com_tenement_l">
-                        <div class="caseTitle">投诉趋势图</div>
-                        <div id="ecDescribe"></div>
+                <div class="com_tenement_top_new">
+                    <div class="com_tenement_l_new">
+                        <div class="caseTitlenew">投诉趋势图</div>
+                        <div id="ecDescribenew"></div>
                     </div>
-                    <div class="com_tenement_r">
-                        <div class="measureTitle">代发件情况统计</div>
-                        <div id="eccombox"></div>
+                    <div class="com_tenement_r_new">
+                        <div class="measureTitlenew">代发件情况统计</div>
+                        <div id="eccomboxnew"></div>
                     </div>
+
                 </div>
                 <!--bottom section-->
-                <div class="com_tenement_bottom">
-                    <div class="com_tenementbottom_all">
-                        <div id="ensureTitle">报修趋势图</div>
-                        <div id="ecEnsure"></div>
+                <div class="com_tenement_bottom_new">
+                    <div class="com_tenement_all_new">
+                        <div class="ensureTitlenew">报修趋势图</div>
+                        <div id="ecEnsurenew"></div>
                     </div>
-                    <div class="com_tenementbottom_l">
-                        <div class="houseTitle">
-                            居家报修趋势图
-                        </div>
-                        <div id="ecHouseRepair"></div>
+                    <div class="com_tenementbottom_l_new">
+                        <div class="houseTitlenew">居家报修趋势图</div>
+                        <div id="ecHouseRepairnew"></div>
                     </div>
-                    <div class="com_tenementbottom_r">
-                        <div class="typeTitle">
-                            公共报修趋势图
-                        </div>
-                        <div id="ecType"></div>
+                    <div class="com_tenementbottom_r_new">
+                        <div class="typeTitlenew">公共报修趋势图</div>
+                        <div id="ecTypenew"></div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
 </div>
 </body>
-<script src="../js/echarts/haier-community/haier-community-tenement-ec.js"></script>
+
+
+<script src="../js/echarts/community/community-tenement-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 </html>
