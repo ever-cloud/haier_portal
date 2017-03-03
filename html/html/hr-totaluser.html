@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!--swiper轮播图插件-->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../dist/css/myswiper.css">
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../js/common/tab-click.js"></script>
+
+</head>
+<body>
+<div class="layout_right">
+    <div class="wrapper_center">
+        <div class="wrapper_bg">
+            <!--topbar-->
+            <div class="tabBox">
+                <ul>
+                    <!--集团地图-->
+                    <li><a href="./main.html" target="main">地图</a></li>
+                    <li><a href="./hr-totalhome.html" target="main">概览</a></li>
+                    <li><a href="./hr-totaluser.html" target="main"  class="clickstyle">用户总览</a></li>
+                    <li><a href="./hr-totaltenement.html" target="main">物业服务</a></li>
+                    <li><a href="./hr-totalfacility.html" target="main">设备状态</a></li>
+                    <li><a href="./hr-totalbusiness.html" target="main">商业服务</a></li>
+                </ul>
+            </div>
+            <!--echarts-->
+            <div class="hr_totalUser public">
+                <!--top section-->
+                <div class="hr_total_user_top">
+                    <div class="hr_total_user_top_l">
+                        <div class="ecUser_section_total" style="position: relative;">
+                            <!--echarts 1-->
+                            <div id="ecHouse_total" class="allTabitem"></div>
+                            <div id="ecHome_total" class="allTabitem"></div>
+                        </div>
+                        <div class="monthTab_total">
+                            <p class="tabMonth_total run_total">月活跃用户数</p>
+
+                            <p class="tabDay_total">日活跃用户数</a></p>
+                        </div>
+                    </div>
+                    <div class="hr_total_user_top_r">
+                        <!--echarts 2-->
+                        <div id="ecBloctop_total"></div>
+                        <div id="ecBlocbottom_total"></div>
+                        <div class="countTab_total clearfix">
+                            <div class="mouthUsers_total">
+                                当月新增用户数：
+                                <span>94</span>
+                            </div>
+                            <div class="mouthActive_total">
+                                当月活跃用户数：
+                                <span>3100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--bottom section===swiper轮播图部分-->
+                <div class="swiper-container hr_total_user_bottom">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hr_total_user_bottom_l">
+                                <!--echarts 3-->
+                                <div id="ecExcellent_total"></div>
+                            </div>
+
+                            <div class="hr_total_user_bottom_r">
+                                <!--echarts 4-->
+                                <div id="ecEducation_total"></div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide hr_total_user_two">
+                            <div class="gender_total">
+                                <img src="../images/gender.png" alt="" class="boy_total"/>
+                                <!--echarts 5-->
+                                <div id="ecGender_total"></div>
+                                <img src="../images/girl.png" alt="" class="girl_total"/>
+                            </div>
+
+                            <div class="age_total">
+                                <img src="../images/baby.png" alt="" class="baby_total"/>
+                                <img src="../images/boy.png" alt="" class="young_total"/>
+                                <img src="../images/father.png" alt="" class="father_total"/>
+                                <img src="../images/grandpa.png" alt="" class="grandpa_total"/>
+                                <!--echarts 6-->
+                                <div id="ecAge_total"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/echarts/haier-total/haier-total-user-ec.js"></script>
+<script src="../js/common/common.js"></script>
+
+
+
+<!--swiper轮播图插件-->
+<script src="../dist/js/swiper.min.js"></script>
+
+<script>
+    var swiper;
+
+    function getUser() {
+
+        swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+        });
+    }
+    getUser();
+</script>
+</html>

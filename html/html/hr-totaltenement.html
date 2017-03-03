@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海尔安图集团社区</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../lib/jquery/jquery-1.11.3.js"></script>
+    <script src="../lib/echarts/echarts.js"></script>
+    <script src="../lib/echarts/themes/echartsThemes.js"></script>
+</head>
+<body>
+<div class="layout_right">
+    <div class="wrapper_center">
+        <div class="wrapper_bg">
+            <!--topbar-->
+            <div class="tabBox">
+                <ul>
+                    <!--集团地图-->
+                    <li><a href="./main.html" target="main">地图</a></li>
+                    <li><a href="./hr-totalhome.html" target="main">概览</a></li>
+                    <li><a href="./hr-totaluser.html" target="main">用户总览</a></li>
+                    <li><a href="./hr-totaltenement.html" target="main"  class="clickstyle">物业服务</a></li>
+                    <li><a href="./hr-totalfacility.html" target="main">设备状态</a></li>
+                    <li><a href="./hr-totalbusiness.html" target="main">商业服务</a></li>
+                </ul>
+            </div>
+            <!--echarts-->
+            <div class="hr_totaltenement public">
+                <!--top section-->
+                <div class="hr_total_tenement_top">
+                    <!--top left-->
+                    <div class="hr_total_tenement_top_l">
+                        <!--echarts 1-->
+                        <div class="measureTitle_total">投诉趋势图</div>
+                        <div id="ecMeasure_total"></div>
+                    </div>
+                    <!--top right-->
+                    <div class="hr_total_tenement_top_r">
+                        <div class="hr_total_left">
+                            <div class="measureTitle_total">代发件情况统计</div>
+                            <div id="ecOutbox_total"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--bottom section-->
+                <div class="hr_total_tenement_bottom">
+                    <!--left-->
+                    <div class="hr_total_tenement_bottom_l">
+                        <div class="mendTitle_total">报修趋势图</div>
+                        <div id="ecMend_total"></div>
+                    </div>
+                    <!--middle-->
+                    <div class="hr_total_tenement_mid">
+                        <!--echarts 2-->
+                        <div class="fixTitle_total">居家报修趋势图</div>
+                        <div id="ecFix_total"></div>
+                    </div>
+                    <!--right-->
+                    <div class="hr_total_tenement_bottom_r">
+                        <div class="maintainTitle_total">公共报修趋势图</div>
+                        <div id="ecMaintain_total"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/echarts/haier-total/haier-total-tenement-ec.js"></script>
+<script src="../js/common/common.js"></script>
+
+</html>

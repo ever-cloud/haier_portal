@@ -317,18 +317,7 @@ function getRed() {
     map.centerAndZoom(point, 5);
     var marker = new BMap.Marker(point);
     map.addOverlay(marker);
-    //map.setCurrentCity("中国");
-    //利用当前点创建一个新标注
-    var new_point = new BMap.Point(lat[0], lat[1]);
-
-    //console.log(new_point);
-    //    // 创建标注
-    var marker = new BMap.Marker(new_point);
-    //console.log(marker);
-    //console.log(marker);
-    //将新标注添加到地图上panTo
-    map.addOverlay(marker);
-    map.panTo(new_point);
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
 
     //给每个项目一个图标
     for (var key in items) {
@@ -336,16 +325,7 @@ function getRed() {
         map.addOverlay(items[key]);
         //   }
     }
-    var marker = new BMap.Marker(new BMap.Point(lat[0], lat[1])); // 创建点
-    map.addOverlay(marker);
-    var newIcon = new BMap.Icon("../images/red.png", new BMap.Size(50, 50), {
-        offset: new BMap.Size(0, 5),    //相当于CSS精灵
-        imageOffset: new BMap.Size(0, 0)    //图片的偏移量。为了是图片底部中心对准坐标点。
-    });
 
-    marker.setIcon(newIcon);
-    //marker.setAnimation(BMAP_ANIMATION_BOUNCE);
-    /*添加显示info窗口*/
     for (var key in info) {
         //var itemName = info[key].content.match(reg)[1];
         var itemName = info[key].content.match(reg)[1];
@@ -353,9 +333,7 @@ function getRed() {
             Out(marker, info[key]);
             Over(marker, info[key]);
             itemClick(marker, info[key]);
-            /*显示项目名字和地址*/
-            //$(".title").text(val);
-            //$(".titleName>p").eq(0).text(info[key].content.match(reg)[3]);
+
         }
     }
     //setCookie("red", '')

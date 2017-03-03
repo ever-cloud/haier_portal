@@ -20,38 +20,38 @@
             <div class="tabBox">
                 <ul>
                     <!--集团地图-->
-                    <li><a href="./hr-blocmap.html" target="main">地图</a></li>
-                    <li><a href="./hr-blochome.html" target="main">概览</a></li>
-                    <li><a href="./hr-blocuser.html" target="main">用户总览</a></li>
-                    <li><a href="./hr-bloctenement.html" target="main">物业服务</a></li>
-                    <li><a href="./hr-blocfacility.html" target="main"  class="clickstyle">设备状态</a></li>
-                    <li><a href="./hr-blocbusiness.html" target="main">商业服务</a></li>
+                    <li><a href="./main.html" target="main">地图</a></li>
+                    <li><a href="./hr-totalhome.html" target="main">概览</a></li>
+                    <li><a href="./hr-totaluser.html" target="main">用户总览</a></li>
+                    <li><a href="./hr-totaltenement.html" target="main">物业服务</a></li>
+                    <li><a href="./hr-totalfacility.html" target="main"  class="clickstyle">设备状态</a></li>
+                    <li><a href="./hr-totalbusiness.html" target="main">商业服务</a></li>
                 </ul>
             </div>
             <!--echarts-->
-            <div class="hr_blocfacility public">
+            <div class="hr_totalfacility public">
                 <!--section 1-->
-                <div class="special">
+                <div class="hr_total_special">
                     <!--left-->
-                    <div class="facility_l bg_icon_img">
+                    <div class="hr_total_facility_l hr_total_bg_icon_img">
                         <img src="../images/view.png" alt="">
                         <p>总览</p>
                     </div>
                     <!--mid-->
-                    <div class="facility_r clearfix">
-                        <div class="facility_r_top clearfix">
-                            <div class="bar_title">设备构成</div>
-                            <div id="ecAdapt"></div>
+                    <div class="hr_total_facility_r clearfix">
+                        <div class="hr_total_facility_r_top clearfix">
+                            <div class="hr_total_bar_title">设备构成</div>
+                            <div id="ecAdapt_total"></div>
                         </div>
-                        <div class="facility_r_botttom clearfix">
-                            <div class="bar_title">故障设备构成</div>
-                            <div id="ecOpen"></div>
+                        <div class="hr_total_facility_r_botttom clearfix">
+                            <div class="hr_total_bar_title">故障设备构成</div>
+                            <div id="ecOpen_total"></div>
                         </div>
                     </div>
                     <!--right-->
-                    <div class="facility_r_info">
-                        <div class="info_all">
-                            <h1 class="title_info">
+                    <div class="facility_r_info_total">
+                        <div class="info_all_total">
+                            <h1 class="title_info_total">
                                 实时报警信息
                             </h1>
                             <ul>
@@ -72,36 +72,36 @@
                     </div>
                 </div>
                 <!--section 2-->
-                <div class="commen">
+                <div class="hr_total_commen">
                     <!--left-->
-                    <div class="facility_l">
-                        <h1 class="common_title">视频监控</h1>
-                        <div id="ecSell"></div>
+                    <div class="hr_total_facility_l">
+                        <h1 class="common_title_total">视频监控</h1>
+                        <div id="ecSell_total"></div>
                     </div>
                     <!--right-->
-                    <div class="facility_r">
-                        <h1 class="common_title">电梯监控</h1>
-                        <div id="ecLine"></div>
+                    <div class="hr_total_facility_r">
+                        <h1 class="common_title_total">电梯监控</h1>
+                        <div id="ecLine_total"></div>
                     </div>
                 </div>
                 <!--section 3-->
-                <div class="commen">
-                    <div class="facility_l">
-                        <h1 class="common_title">可视对讲</h1>
+                <div class="hr_total_commen">
+                    <div class="hr_total_facility_l">
+                        <h1 class="common_title_total">可视对讲</h1>
                         <!--echarts 1-->
-                        <div id="ecStop"></div>
+                        <div id="ecStop_total"></div>
                     </div>
-                    <div class="facility_r">
-                        <h1 class="common_title">人员定位</h1>
-                        <div id="ecPaking"></div>
+                    <div class="hr_total_facility_r">
+                        <h1 class="common_title_total">人员定位</h1>
+                        <div id="ecPaking_total"></div>
                     </div>
                 </div>
                 <!--section 4-->
-                <div class="system_info">
+                <div class="hr_total_system_info">
                     <!--left-->
-                    <div class="facility_l">
-                        <h1 class="system_title">门禁系统</h1>
-                        <div class="system_facility_r">
+                    <div class="hr_total_facility_l">
+                        <h1 class="system_title_total">门禁系统</h1>
+                        <div class="system_facility_r_total">
                             <ul>
                                 <li>
 
@@ -120,9 +120,9 @@
                         </div>
                     </div>
                     <!--right-->
-                    <div class="facility_r">
-                        <h1 class="system_title">信息发布</h1>
-                        <div class="system_facility_r">
+                    <div class="hr_total_facility_r">
+                        <h1 class="system_title_total">信息发布</h1>
+                        <div class="system_facility_r_total">
                             <div>
                                 <span>终端总数</span>
                                 <i>58</i>
@@ -136,11 +136,11 @@
                     </div>
                 </div>
                 <!--section 5-->
-                <div class="system_info">
+                <div class="hr_total_system_info">
                     <!--left-->
-                    <div class="facility_l">
-                        <h1 class="system_title">入侵报警</h1>
-                        <div class="system_facility_r">
+                    <div class="hr_total_facility_l">
+                        <h1 class="system_title_total">入侵报警</h1>
+                        <div class="system_facility_r_total">
                             <ul>
                                 <li>
 
@@ -160,9 +160,9 @@
                         </div>
                     </div>
                     <!--right-->
-                    <div class="facility_r">
-                        <h1 class="system_title">停车场</h1>
-                        <div class="system_facility_r system_r">
+                    <div class="hr_total_facility_r">
+                        <h1 class="system_title_total">停车场</h1>
+                        <div class="system_facility_r_total system_r_total">
 
                             <ul>
                                 <li>
@@ -186,11 +186,11 @@
                     </div>
                 </div>
                 <!--section 6-->
-                <div class="system_info">
+                <div class="hr_total_system_info">
                     <!--left-->
-                    <div class="facility_l">
-                        <h1 class="system_title">广播通信</h1>
-                        <div class="system_facility_r">
+                    <div class="hr_total_facility_l">
+                        <h1 class="system_title_total">广播通信</h1>
+                        <div class="system_facility_r_total">
 
                             <ul>
                                 <li>
@@ -210,9 +210,9 @@
                         </div>
                     </div>
                     <!--right-->
-                    <div class="facility_r">
-                        <h1 class="system_title">信息发布</h1>
-                        <div class="system_facility_r">
+                    <div class="hr_total_facility_r">
+                        <h1 class="system_title_total">信息发布</h1>
+                        <div class="system_facility_r_total">
                             <div>
                                 <span>终端总数</span>
                                 <i>58</i>
@@ -231,7 +231,7 @@
 </div>
 </div>
 </body>
-<script src="../js/echarts/haier-bloc/haier-bloc-facility-ec.js"></script>
+<script src="../js/echarts/haier-total/haier-total-facility-ec.js"></script>
 <script src="../js/common/common.js"></script>
 <!--<script src="../js/common/setcookie.js"></script>-->
 </html>

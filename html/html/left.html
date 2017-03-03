@@ -55,6 +55,8 @@
             <input type="text" class="text" placeholder="例:请输入国奥天地">
             <input type="button" class="btn">
         </div>
+        <!--首页展示所有信息-->
+        <div class="nav_top nav_item hr_homenav"><a href="./main.html" target="main">首页</a></div>
         <div class="nav_section nav_top nav_item" id="nav_item"></div>
         <div class="nav_prototypeRoom nav_all">
             <div class="nav_top nav_room">
@@ -78,12 +80,12 @@
     {{each key as value}}
     <div id="nav-item">
         <!--集团名-->
-        <div class="menu_bloc"><a href="./main.html" target="main">{{value.spe_name}}</a></div>
+        <div class="menu_bloc"><a href="./hr-blochome.html" target="main">{{value.spe_name}}</a></div>
         {{each value.spe_group as group}}
         <!--大区-->
         <div class="trends" style="display: none;">
             <!--区名字-->
-            <div class="trends_group">{{group.bloc}}</div>
+            <div class="trends_group"><a href="#">{{group.bloc}}</a></div>
 
             {{each group.spe_community as arr}}
             <!--小区-->

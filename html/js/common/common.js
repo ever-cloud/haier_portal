@@ -73,7 +73,9 @@ $(function () {
         });
 
     });
-    //回车键搜索名称
+
+
+    //回车键/搜索名称
     $(".text").keydown(function (e) {
         if (e.keyCode == "13") {
             var textval = $(this).val();
@@ -520,4 +522,6 @@ $(function () {
         // /  var nameUp = name.charAt(name).toUpperCase();
         return name.toUpperCase();
     }
+
+
 });

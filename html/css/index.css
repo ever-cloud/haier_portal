@@ -1,3 +1,995 @@
+/*hr-totalhome start*/
+.hr_totalHome {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.hr_total_top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+/*top-left*/
+.hr_total_top .hr_total {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+#ecBand_total {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+/*top-mid*/
+.hr_total_top .hr_total_user {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.hr_total_user .hr_total_userStates,
+.hr_total_commerce .hr_total_commerceState,
+.hr_total_tenement .hr_total_tenementState,
+.hr_total_facility .hr_total_facilityState {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.hr_total_user .hr_total_user_l,
+.hr_total_commerce .hr_total_commerceState_l,
+.hr_total_tenement .hr_total_tenementState_l,
+.hr_total_facility .hr_total_facilityState_l {
+    position: relative;
+    float: left;
+}
+
+.hr_total_user_l img {
+    position: absolute;
+    top: 7px;
+    left: 18px;
+}
+
+.hr_total_commerceState_l img {
+    position: absolute;
+    top: 6px;
+    left: 13px;
+}
+
+.hr_total_tenementState_l img {
+    position: absolute;
+    top: 7px;
+    left: 19px;
+}
+
+.hr_total_facilityState_l img {
+    position: absolute;
+    top: 3px;
+    left: 17px;
+}
+
+.hr_total_user_l span,
+.hr_total_commerceState_l span,
+.hr_total_tenementState_l span,
+.hr_total_facilityState_l span {
+    padding-left: 50px;
+    font-size: 14px;
+}
+
+.hr_total_userStates a,
+.hr_total_commerceState a,
+.hr_total_tenementState a,
+.hr_total_facilityState a {
+    float: right;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+#ecAdd_total {
+    width: 100%;
+    height: 50%;
+}
+
+#ecReduce_total {
+    width: 100%;
+    height: 38%;
+    padding-bottom: 1%;
+}
+
+/*top-right*/
+.hr_total_scale {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.hr_total_scale ul {
+    width: 100%;
+    height: 100%;
+}
+
+.hr_total_scale ul li {
+    width: 100%;
+    height: 33.3%;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.hr_total_scale ul li i {
+    font-size: 24px;
+    color: #333333;
+    height: 30%;
+}
+
+.hr_total_scale ul li p {
+    font-size: 14px;
+    color: #333333;
+    height: 40%;
+    line-height: 40%;
+    padding-top: 5%;
+}
+
+/*bottom section*/
+.hr_total_bottom {
+    width: 100%;
+    height: 50%;
+}
+
+/*top-left*/
+.hr_total_commerce {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+#ecSuccess_total {
+    width: 100%;
+    height: 49%;
+    padding-bottom:1%;
+}
+
+#ecDefeat_total {
+    width: 100%;
+    height: 39%;
+    padding-bottom: 1%;
+}
+
+/*top-mid*/
+.hr_total_tenement {
+    width: 33.3%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+#ecFinish_total {
+    width: 100%;
+    height: 45%;
+}
+
+#ecReceive_total {
+    width: 100%;
+    height: 43%;
+    padding-bottom: 2%;
+}
+
+/*top-right*/
+.hr_total_facility {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+#ecStart_total {
+    width: 100%;
+    height: 45%;
+}
+
+#ecEnd_total {
+    width: 100%;
+    height: 43%;
+    padding-bottom: 3%;
+}
+
+/*hr-totalhome end*/
+/*hr-totaluser start*/
+.hr_totalUser {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.hr_totalUser .hr_total_user_top {
+    width: 100%;
+    height: 50%;
+}
+
+.hr_total_user_top .hr_total_user_top_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.hr_total_user_top_l .ecUser_section_total {
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+}
+
+#ecHouse_total {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    display: block !important;
+    left: 0 !important;
+    margin-top: 34px;
+}
+
+#ecHome_total {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    margin-top: 34px;
+    display: block !important;
+    top: 300px;
+    left: 0 !important;
+}
+
+.hr_total_user_top_l .monthTab_total {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    float: left;
+    font-size:14px;
+    cursor: pointer;
+}
+
+.hr_total_user_top_l .monthTab_total p {
+    float: left;
+}
+
+.hr_total_user_top_l .monthTab_total p.run_total {
+    color: #336699;
+    cursor: pointer;
+}
+
+.hr_total_user_top_l .monthTab_total p:first-child {
+    margin-left: 30%;
+}
+
+.hr_total_user_top_l .monthTab_total p:nth-child(2) {
+    margin-left: 15%;
+}
+
+#ecBloctop_total {
+    width: 50%;
+    height: 85%;
+    float: left;
+    padding-top: 3%;
+}
+
+#ecBlocbottom_total{
+    width: 50%;
+    height: 85%;
+    float: left;
+    padding-top: 3%;
+}
+
+.hr_total_user_top .hr_total_user_top_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.hr_total_user_top_r .countTab_total {
+    width: 100%;
+    font-size:14px;
+    text-align: center;
+}
+
+.hr_total_user_top_r .countTab_total .mouthUsers_total {
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    margin-left: 12%;
+    width: 40%;
+    text-align: left;
+}
+
+.hr_total_user_top_r .countTab_total .mouthActive_total {
+    width: 36%;
+    height: 37px;
+    line-height: 37px;
+    float: right;
+    text-align: left;
+    /*padding-left:5%;*/
+}
+
+/*bottom section*/
+
+.hr_total_user_bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.hr_total_user_bottom .hr_total_user_bottom_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#ecExcellent_total {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 3% 10%;
+}
+
+.hr_total_user_bottom_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#ecEducation_total{
+    width: 100%;
+    height: 100%;
+    padding-right: 10%;
+}
+
+.hr_total_user_two .gender_total {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.gender_total .boy_total {
+    position: absolute;
+    top: 37%;
+    left: 20%;
+}
+
+#ecGender_total {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 10%;
+}
+
+.gender_total .girl_total {
+    position: absolute;
+    top: 37%;
+    left: 80%;
+}
+
+.hr_total_user_two .age_total {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.age_total .baby_total {
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+}
+
+.age_total .young_total {
+    position: absolute;
+    bottom: 3%;
+    left: 31%;
+}
+
+.age_total .father_total {
+    position: absolute;
+    bottom: 3%;
+    right: 47%;
+}
+
+.age_total .grandpa_total {
+    position: absolute;
+    bottom: 3%;
+    right: 31%;
+}
+
+#ecAge_total {
+    width: 100%;
+    height: 80%;
+    padding: 0 10% 0 0;
+}
+/*hr-totaluser end*/
+/*hr-totaltenement start*/
+.hr_totaltenement {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.hr_total_tenement_top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.hr_total_tenement_top .hr_total_tenement_top_l {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    border-right:4px solid #bbdff2;
+}
+
+.measureTitle_total {
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    font-size: 20px;
+}
+
+#ecMeasure_total {
+    width: 100%;
+    height: 100%;
+    padding:1%;
+}
+
+.hr_total_tenement_top_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.hr_total_tenement_top_r .hr_total_left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#ecMeasure_total {
+    width: 100%;
+    height:100%;
+    padding: 1%;
+}
+.measureTitle_total  {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    font-size: 20px;
+}
+
+#ecOutbox_total {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+
+/*bottom section*/
+.hr_total_tenement_bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.hr_total_tenement_bottom .hr_total_tenement_bottom_l {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.mendTitle_total{
+    position: absolute;
+    top: 5%;
+    left: 28%;
+    font-size: 20px;
+}
+#ecMend_total {
+    width: 100%;
+    height: 100%;
+    padding:1%;
+}
+.hr_total_tenement_bottom .hr_total_tenement_mid {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.hr_total_tenement_bottom_l .measureTitle_total {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    font-size: 20px;
+}
+
+
+.fixTitle_total {
+    position: absolute;
+    top: 5%;
+    left: 28%;
+    font-size: 20px;
+}
+
+#ecFix_total {
+    width: 100%;
+    height: 100%;
+}
+
+
+.hr_total_tenement_bottom .hr_total_tenement_bottom_r {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+
+
+.maintainTitle_total {
+    position: absolute;
+    top: 6%;
+    left: 38%;
+    font-size: 20px;
+}
+
+#ecMaintain_total {
+    width: 100%;
+    height: 100%;
+}
+
+/*hr-totaltenement end*/
+/*hr-totalfacility start*/
+.hr_totalfacility {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+}
+
+.hr_totalfacility::-webkit-scrollbar {
+    display: none;
+}
+
+/*section 1*/
+.hr_totalfacility .hr_total_special {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.hr_total_special .hr_total_facility_l {
+    width: 15%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.hr_total_bg_icon_img img {
+    position: absolute;
+    top: 26%;
+    left: 41%;
+}
+
+.hr_total_special .hr_total_facility_l p {
+    position: absolute;
+    top: 72%;
+    left: 46%;
+    font-size: 14px;
+}
+
+.hr_total_special .hr_total_facility_r {
+    width: 70%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.hr_total_facility_r .hr_total_facility_r_top {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.hr_total_facility_r_top .hr_total_bar_title {
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ecAdapt_total {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.hr_total_facility_r_botttom {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.hr_total_facility_r_botttom .hr_total_bar_title {
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ecOpen_total {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.facility_r_info_total {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.facility_r_info_total .info_all_total {
+    padding: 5% 0;
+    text-align: center;
+    height: 100%;
+}
+
+.info_all_total .title_info_total {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.info_all_total ul {
+    width: 100%;
+    height: 90%;
+    padding-top: 10%;
+}
+
+.info_all_total ul li {
+    width: 100%;
+    height: 30%;
+}
+
+.info_all_total ul li i {
+    font-size: 16px;
+    color: #333333;
+    height: 50%;
+    display: block;
+}
+
+.info_all_total ul li p {
+    font-size: 18px;
+    color: #333333;
+    height: 50%;
+    padding-top: 3%;
+    line-height: 50%;
+}
+
+/*section 2*/
+.hr_totalfacility .hr_total_commen {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.hr_total_facility_l {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-right: 4px solid #bbdff2;
+}
+
+.hr_total_commen .common_title_total {
+    width: 3%;
+    padding: 8% 5%;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#ecSell_total {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.hr_total_commen .hr_total_facility_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#ecLine_total{
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+/*section 3*/
+#ecStop_total {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+#ecPaking_total {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+/*section 4*/
+.hr_total_system_info {
+    width: 100%;
+    height: 36%;
+    border-bottom: 4px solid #bbdff2;
+}
+
+.hr_total_system_info .hr_total_facility_l {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+
+.hr_total_system_info .system_title_total {
+    width: 3%;
+    padding: 7% 5%;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+
+.hr_total_facility_l .system_facility_r_total {
+    width: 87%;
+    height: 100%;
+    float: left;
+}
+
+.system_facility_r_total ul {
+    width: 100%;
+    height: 100%;
+
+}
+
+.system_facility_r_total ul li {
+    width: 29%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.system_facility_r_total ul li span {
+    width: 100%;
+    height: 15%;
+    font-size: 14px;
+    display: block;
+    padding-top: 40%;
+}
+
+.system_facility_r_total ul li i {
+    width: 100%;
+    height: 15%;
+    font-size: 26px;
+    display: block;
+    padding-top: 20%;
+
+}
+
+.hr_total_system_info .hr_total_facility_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.system_facility_r_total {
+    width: 87%;
+    height: 100%;
+    float: left;
+
+}
+
+.system_facility_r_total div {
+    width: 48%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.system_facility_r_total div span {
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    display: block;
+    padding-top: 25%;
+}
+
+.system_facility_r_total div i {
+    width: 100%;
+    height: 15%;
+    padding-top: 11%;
+    font-size: 24px;
+    display: block;
+
+}
+
+.system_r_total ul {
+    width: 100%;
+    height: 100%;
+
+}
+
+.system_r_total ul li {
+    width: 24%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.system_r_total ul li span {
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    display: block;
+    padding-top: 48%;
+}
+
+.system_r_total ul li i {
+    width: 100%;
+    height: 15%;
+    padding-top: 26%;
+    font-size: 24px;
+    display: block;
+
+}
+
+.hr_total_system_info:last-child {
+    border-bottom: none;
+}
+/*hr-totalfacility end*/
+/*hr-totalbusiness start*/
+.hr_totalbusiness {
+    width: 100%;
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #fff;
+    border: 4px solid #bbdff2;
+    position: absolute;
+    top: 40px;
+}
+
+/*top section*/
+.hr_total_business_top {
+    width: 100%;
+    height: 50%;
+}
+
+.hr_total_business_top_l {
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    border-bottom: 4px solid #bbdff2;
+    float: left;
+}
+
+.hr_total_business_top_l .visit_total {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+#ecVolume_total {
+    width: 100%;
+    height: 88%;
+    padding: 0 0 3% 0;
+}
+
+.hr_total_business_top_r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.hr_total_business_top_r .visit_total {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+#ecAppraise_total {
+    width: 100%;
+    height: 87%;
+    float: left;
+}
+
+/*bottom section*/
+.hr_total_business_bottom {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.hr_total_business_bottom_l {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecCategory_total {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#ecSort_total {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.hr_total_business_bottom_r {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#ecServeorder_total {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+/*hr-totalbusiness end*/
 /*hr-blochome start*/
 .hr_blocHome {
     width: 100%;

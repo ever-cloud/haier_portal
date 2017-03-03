@@ -4,9 +4,9 @@ var objData = {
         "spe_id": "1",
         "spe_name": "海尔集团",
         "spe_group": [
-            {"bloc": "华东区", "spe_community": [{"late": "B", "name": ["北苑小区"]},{"late": "Z", "name": ["中海国际社区"]}]},
-            {"bloc": "华北区", "spe_community": [{"late": "F", "name": ["富丽新城"]},{"late": "Z", "name": ["湛山小区"]}]},
-            {"bloc": "华南区", "spe_community": [{"late": "G", "name": ["国奥天地"]},{"late": "Q", "name": ["泉星小区"]}]}
+            {"bloc": "华东区", "spe_community": [{"late": "B", "name": ["北苑小区"]}, {"late": "Z", "name": ["中海国际社区"]}]},
+            {"bloc": "华北区", "spe_community": [{"late": "F", "name": ["富丽新城"]}, {"late": "Z", "name": ["湛山小区"]}]},
+            {"bloc": "华南区", "spe_community": [{"late": "G", "name": ["国奥天地"]}, {"late": "Q", "name": ["泉星小区"]}]}
         ]
     },
 
@@ -14,7 +14,10 @@ var objData = {
             "spe_id": "2",
             "spe_name": "斐雪派克集团",
             "spe_group": [
-                {"bloc": "华南区", "spe_community": [{"late": "H", "name": ["华辉东方城"]}, {"late": "X", "name": ["香港平远国际城"]}]},
+                {
+                    "bloc": "华南区",
+                    "spe_community": [{"late": "H", "name": ["华辉东方城"]}, {"late": "X", "name": ["香港平远国际城"]}]
+                },
                 {"bloc": "华北区", "spe_community": [{"late": "H", "name": ["华乐公馆"]}, {"late": "W", "name": ["五彩都会"]}]}
             ]
         },
@@ -25,34 +28,95 @@ var objData = {
                 {"bloc": "华南区", "spe_community": [{"late": "M", "name": ["美航康悦城"]}, {"late": "Z", "name": ["中节能健康城"]}]},
                 {
                     "bloc": "华北区",
-                    "spe_community": [{"late": "L", "name": ["龙溪城"]},{"late": "L", "name": ["揽胜公馆"]}, {"late": "X", "name": ["想象国际"]}, ]
+                    "spe_community": [{"late": "L", "name": ["龙溪城"]}, {"late": "L", "name": ["揽胜公馆"]}, {
+                        "late": "X",
+                        "name": ["想象国际"]
+                    },]
                 }
             ]
         },
         {
             "spe_id": "4",
             "spe_name": "统帅集团",
-            //"spe_group": "华东区",
-            //"spe_community": ["星河盛世城", "翰林观天下", "天阳御龙湾", "东胜紫御府", , "福瑞福海门"]
+
             "spe_group": [
-                {"bloc": "华南区", "spe_community": [{"late": "H", "name": ["翰林观天下"]},{"late": "X", "name": ["星河盛世城"]}]},
-                {"bloc": "华北区", "spe_community": [{"late": "D", "name": ["东胜紫御府"]},{"late": "F", "name": ["福瑞福海门"]},{"late": "T", "name": ["天阳御龙湾"]}]}
+                {"bloc": "华南区", "spe_community": [{"late": "H", "name": ["翰林观天下"]}, {"late": "X", "name": ["星河盛世城"]}]},
+                {
+                    "bloc": "华北区",
+                    "spe_community": [{"late": "D", "name": ["东胜紫御府"]}, {"late": "F", "name": ["福瑞福海门"]}, {
+                        "late": "T",
+                        "name": ["天阳御龙湾"]
+                    }]
+                }
             ]
         },
 
         {
             "spe_id": "5",
             "spe_name": "卡萨帝集团",
-            //"spe_group": "华北区",
-            //"spe_community": ["九龙湾", "幸福城", "金地格林世界", "海信天山郡", "上居和园"]
             "spe_group": [
                 {"bloc": "华南区", "spe_community": [{"late": "J", "name": ["九龙湾"]}, {"late": "X", "name": ["幸福城"]}]},
-                {"bloc": "华北区", "spe_community": [{"late": "H", "name": ["海信天山郡"]}, {"late": "J", "name": ["金地格林世界"]}, {"late": "S", "name": ["上居和园"]}]}
+                {
+                    "bloc": "华北区",
+                    "spe_community": [{"late": "H", "name": ["海信天山郡"]}, {"late": "J", "name": ["金地格林世界"]}, {
+                        "late": "S",
+                        "name": ["上居和园"]
+                    }]
+                }
             ]
         }
     ]
 };
+var objData1 = {
+    key: [{
+        "spe_id": "1",
+        "spe_group": [{"bloc": "华东区", "spe_community": [{"late": "B", "name": ["北苑小区"]}, {"late": "Z", "name": ["中海国际社区"]}]}]
+    },
 
+        {
+            "spe_id": "2",
+            "spe_group": [
+                {"bloc": "华南区", "spe_community": [{"late": "G", "name": ["国奥天地"]}, {"late": "H", "name": ["华辉东方城"]}, {"late": "H", "name": ["翰林观天下"]}, {"late": "J", "name": ["九龙湾"]}, {
+                        "late": "M",
+                        "name": ["美航康悦城"]
+                    }, {"late": "Q", "name": ["泉星小区"]}, {"late": "X", "name": ["香港平远国际城"]}, {
+                        "late": "X",
+                        "name": ["幸福城"]
+                    }, {"late": "X", "name": ["星河盛世城"]}, {
+                        "late": "Z",
+                        "name": ["中节能健康城"]
+                    }]
+                }
+            ]
+        },
+        {
+            "spe_id": "3",
+            "spe_group": [
+                {
+                    "bloc": "华北区",
+                    "spe_community": [{"late": "D", "name": ["东胜紫御府"]}, {"late": "F", "name": ["福瑞福海门"]}, {
+                        "late": "F",
+                        "name": ["富丽新城"]
+                    }, {"late": "H", "name": ["华乐公馆"]}, {"late": "H", "name": ["海信天山郡"]},
+                        {"late": "J", "name": ["金地格林世界"]}, {
+                            "late": "L",
+                            "name": ["龙溪城"]
+                        }, {"late": "L", "name": ["揽胜公馆"]}, {
+                            "late": "S",
+                            "name": ["上居和园"]
+                        }, {"late": "W", "name": ["五彩都会"]}, {
+                            "late": "X",
+                            "name": ["想象国际"]
+                        }, {
+                            "late": "T",
+                            "name": ["天阳御龙湾"]
+                        }, {"late": "Z", "name": ["湛山小区"]}
+                    ]
+                }
+            ]
+        }
+    ]
+};
 var objData2 = [
     {
         "id": 1,

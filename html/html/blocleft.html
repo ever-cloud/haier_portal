@@ -7,6 +7,7 @@
     <title>安图集团管理端</title>
     <link rel="stylesheet" href="../lib/jquery/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/blocindex.css">
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../lib/jquery/jquery-ui.min.js"></script>
     <!--map 秘钥-->
@@ -55,13 +56,7 @@
             <input type="button" class="btn">
         </div>
         <div class="nav_section">
-            <div class="nav_community">
-                <div class="nav_top">
-                    <span>大区</span>
-                </div>
-                <!--模板引擎创建div传数据==项目-->
-                <div id="nav_group" class="nav_item"></div>
-            </div>
+            <div class="nav_section nav_top nav_item" id="nav_group"></div>
         </div>
     </div>
     <!--nav  end-->
@@ -75,27 +70,39 @@
 
 <!--模板引擎创建div传数据==项目-->
 <script id="group" type="text/html">
-    <ul class="ul" style="display: none;">
-        {{each list as value}}
-        <li>
-            <a href="#">{{value.letter}}</a>
-        </li>
-        <div class="box" style="display: none;">
-            {{each value.data as key}}
-            <li>
-                <a href="./blocmain.html" target="blocmain">{{key.name}}</a>
-            </li>
+    {{each key as value}}
+    <div id="nav-item">
+        {{each value.spe_group as group}}
+        <!--大区-->
+        <div class="trends">
+            <!--区名字-->
+            <div class="trends_group"><a href="#">{{group.bloc}}</a></div>
+
+            {{each group.spe_community as arr}}
+            <!--小区-->
+            <div class="community_group" style="display: none;">
+                <!--字母-->
+                <div class="com_letter">{{arr.late}}</div>
+                <!--小区名-->
+                <ul style="display: none;">
+                    {{each arr.name as name }}
+                    <li class="community_name"><a href="./blocmain.html" target="blocmain">{{name}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
             {{/each}}
         </div>
         {{/each}}
-    </ul>
+    </div>
+    {{/each}}
 </script>
 
 
 <script>
     //   模板引擎创建div传数据==项目
-    var htmlgroup = template('group', setList(objData2));
-    document.getElementById('nav_group').innerHTML = htmlgroup;
+    var myHtml = template('group', objData1);
+    document.getElementById('nav_group').innerHTML = myHtml;
+
 
     //    清空没有值的字母选项A-Z
     $(".ul>.box").each(function (e) {
@@ -108,7 +115,7 @@
 
 <script>
     $(function () {
-        $(".tabBox ul li").click(function () {
+        $(".community_name a").click(function () {
             window.parent.frames["blocmain"].location.reload();
 //            var titlebloc = $(this).parent().parent().parent().prev("li").children("a").text();
 //            $(".bg_name").text(titlebloc);

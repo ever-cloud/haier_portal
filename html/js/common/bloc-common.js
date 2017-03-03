@@ -1,14 +1,50 @@
 $(function () {
-    //左侧项目点击事件
-    $(".nav_top").on("click", function () {
-        $(this).next("div").children(".ul").slideToggle();
+    ////左侧项目点击事件
+    //$(".nav_top").on("click", function () {
+    //    $(this).next("div").children(".ul").slideToggle();
+    //});
+    //
+    ////左侧点击A-Z显示隐藏切换
+    //$(".ul>li").on("click", function () {
+    //    $(this).next(".box").slideToggle();
+    //});
+    //$(".box > li").on("click", function () {
+    //    $(".box > li").removeClass("clickshow");
+    //    $(this).addClass("clickshow");
+    //});
+
+    //点击显示隐藏问题
+    $(".menu_bloc").on("click", function () {
+        $(this).siblings(".trends").slideToggle();
+        //手风琴样式
+        $(".trends").hide();
+        $(this).parent().parent().next("div").children("#nav_room").hide();
+        $(this).siblings(".trends").show();
+
     });
 
-    //左侧点击A-Z显示隐藏切换
-    $(".ul>li").on("click", function () {
-        $(this).next(".box").slideToggle();
+    $(".trends_group").on("click", function () {
+        $(this).siblings(".community_group").slideToggle();
     });
+
+    $(".com_letter").on("click", function () {
+        $(this).siblings("ul").slideToggle();
+    });
+
+    $(".community_name").on("click", function () {
+        $(".community_name").removeClass("clickshow");
+        $(this).addClass("clickshow");
+    });
+
+
+
+
+    $(".ul>li").on("click", function () {
+        $(this).next(".box").slideToggle()
+    });
+
     $(".box > li").on("click", function () {
+        $(".community_name").removeClass("clickshow");
         $(".box > li").removeClass("clickshow");
         $(this).addClass("clickshow");
     });
@@ -21,25 +57,34 @@ $(function () {
     //搜索名称
     $(".btn").click(function () {
         var textval = $(".text").val();
-        $(".nav_item>ul>li").each(function () {
-            if ($.trim($(this).text()) == getFirst(textval)) {
-                $(this).next(".box").show();
-                $(this).parent().parent().parent().css("display", "block");
+        $(".community_group>ul>li>a").each(function () {
+            if (getFirst($.trim($(this).text())) == getFirst(textval)) {
+                $(this).parent().parent().show().parent().show()
+                    .siblings().show().parent().show().siblings().show();
 
             }
         });
+        //$(".nav_item>ul>li").each(function () {
+        //    if ($.trim($(this).text()) == getFirst(textval)) {
+        //        $(this).next(".box").show();
+        //        $(this).parent().parent().parent().css("display", "block");
+        //
+        //    }
+        //});
 
     });
     //回车键搜索名称
     $(".text").keydown(function (e) {
         if (e.keyCode == "13") {
             var textval = $(this).val();
-            $(".nav_item>ul>li").each(function () {
-                if ($.trim($(this).text()) == getFirst(textval)) {
-                    $(this).next(".box").show();
-                    $(this).parent().parent().parent().parent().css("display", "block");
+            $(".community_group>ul>li>a").each(function () {
+                if (getFirst($.trim($(this).text())) == getFirst(textval)) {
+                    $(this).parent().parent().show().parent().show()
+                        .siblings().show().parent().show().siblings().show();
+
                 }
             });
+
         }
 
     });

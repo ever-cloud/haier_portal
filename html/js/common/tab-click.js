@@ -1,3 +1,24 @@
+//海尔总计用户总览切换
+$(function () {
+    //获取文字
+    $(".tabMonth_total").click(function () {
+        $(this).addClass("run_total").siblings().removeClass("run_total");
+        $("#ecHouse_total").siblings().css("top", "300px");
+        $("#ecHouse_total").css("top", 0);
+
+    });
+
+    //获取文字标签
+    $(".tabDay_total").click(function () {
+        $(this).addClass("run_total").siblings().removeClass("run_total");
+        $("#ecHome_total").siblings().css("top", "300px");
+        $("#ecHome_total").css("top", 0);
+
+    });
+
+});
+
+
 //海尔用户总览tab切换
 $(function () {
     //获取文字
@@ -151,6 +172,17 @@ $(function () {
 
 
 $(function(){
+    /**海尔总计
+     *
+     */
+    $(".hr_totalUser").hover(function () {
+        $(".swiper-button-next").css("display", "block");
+        $(".swiper-button-prev").css("display", "block");
+    }, function () {
+        $(".swiper-button-next").css("display", "none");
+        $(".swiper-button-prev").css("display", "none");
+    });
+
     /**
      * 海尔集团-轮播图两端小箭头鼠标移入移除事件
      */

@@ -13,6 +13,16 @@
     box-shadow: inset -2px -2px 4px #cccccc;
     background-color: #fff;
 }
+.trends_group a{
+    padding: 5px 0 5px 22px;
+    border-bottom: 1.5px solid #1c84d9;
+    background: url(../images/icon_new.png) no-repeat 88% center #2eade9;
+}
+
+.trends_group:hover {
+    color: #FFFFFF;
+    background: url(../images/icon_old.png) no-repeat 88% center #0998d7;
+}
 /*communityHome start*/
 .communityHome {
     width: 100%;
