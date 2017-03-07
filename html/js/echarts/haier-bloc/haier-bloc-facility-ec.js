@@ -186,7 +186,7 @@ title: {
             //"color": "#000",
             "fontFamily": "SimSun"
     },
-    "subtext": "                               在线社区      设备总数     摄像机总数   DVR总数",
+    "subtext": "                               在线系统      设备总数     摄像机总数   DVR总数",
         "subtextStyle": {
         "fontSize": "14",
             "color": "#000",
@@ -284,7 +284,7 @@ getechart("ecLine", "themeSixteen", {
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                  在线社区       电梯总数",
+        "subtext": "                  在线系统       电梯总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -358,7 +358,7 @@ getechart("ecStop", "themeSixteen",{
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "       在线社区         设备总数",
+        "subtext": "       在线系统         设备总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -433,7 +433,7 @@ getechart("ecPaking", "themeSixteen", {
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                                           在线社区       设备总数       发卡人数        报警人次",
+        "subtext": "                                           在线系统       设备总数       发卡人数        报警人次",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",

@@ -180,13 +180,13 @@ getechart("ecOpenspecial", "themeFourteen",{
 });
 getechart("ecSellspecial", "themeFiveteen",{
     title: {
-        "text": "                378    453     273   180",
+        "text": "                1    453     273   180",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                               在线社区      设备总数     摄像机总数   DVR总数",
+        "subtext": "                               在线系统      设备总数     摄像机总数   DVR总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -278,13 +278,13 @@ getechart("ecSellspecial", "themeFiveteen",{
 } );
 getechart("ecFairlyspecial", "themeSixteen",{
     title: {
-        "text": "         230     453",
+        "text": "         1     453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                  在线社区       电梯总数",
+        "subtext": "                  在线系统       电梯总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -352,13 +352,13 @@ getechart("ecFairlyspecial", "themeSixteen",{
 });
 getechart("ecPathspecial", "themeSixteen",{
     title: {
-        "text": "    380      453",
+        "text": "    0      453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "       在线社区         设备总数",
+        "subtext": "       在线系统         设备总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -427,13 +427,13 @@ getechart("ecPathspecial", "themeSixteen",{
 });
 getechart("ecInspectspecial", "themeSixteen", {
     title: {
-        "text": "                      390     580    23404    234",
+        "text": "                      1     580    23404    234",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                                           在线社区       设备总数       发卡人数        报警人次",
+        "subtext": "                                           在线系统       设备总数       发卡人数        报警人次",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
