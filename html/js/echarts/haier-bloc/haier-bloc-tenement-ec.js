@@ -269,7 +269,7 @@ getechart("ecMeasure", "themeEightteen", {
     legend: {
         "top": '15%',
         "right": '6%',
-        data: ['新投诉', '对话中', '已完成']
+        data: ['总投诉', '对话中', '已完成']
     },
     grid: {
         bottom: '10%',
@@ -295,7 +295,7 @@ getechart("ecMeasure", "themeEightteen", {
         },
         {
             type: 'value',
-            name: '新投诉',
+            name: '总投诉',
             min: 0,
             max: 600,
             interval: 200,
@@ -316,7 +316,7 @@ getechart("ecMeasure", "themeEightteen", {
             data: [131, 234, 146, 181, 290, 320,390]
         },
         {
-            name: '新投诉',
+            name: '总投诉',
             type: 'line',
             yAxisIndex: 1,
             data: [260, 280, 170, 190, 300, 380,320]

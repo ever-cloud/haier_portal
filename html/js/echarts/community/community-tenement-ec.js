@@ -23,7 +23,7 @@ getechart("ecDescribenew", "themeEightteen", {
     legend: {
         //"right":'3%',
         "top": '20%',
-        data: ['新投诉', '对话中', '已完成']
+        data: ['总投诉', '对话中', '已完成']
     },
     grid: {
         //left: '3%',
@@ -51,7 +51,7 @@ getechart("ecDescribenew", "themeEightteen", {
         },
         {
             type: 'value',
-            name: '新投诉',
+            name: '总投诉',
             min: 0,
             max: 600,
             interval: 200,
@@ -72,7 +72,7 @@ getechart("ecDescribenew", "themeEightteen", {
             data: [ 220, 182, 191, 234, 290, 330, 310]
         },
         {
-            name: '新投诉',
+            name: '总投诉',
             type: 'line',
             yAxisIndex: 1,
             data: [320, 302, 301, 334, 390, 330, 320]

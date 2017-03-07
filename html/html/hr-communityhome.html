@@ -12,7 +12,11 @@
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
     <script>
         $(function(){
-            $(".tabBox_right span").text(getCookie("communityItem"));
+            if(getCookie("strkey")==1){
+                $(".tabBox_right span").text(getCookie("communityItem"));
+            }else if(getCookie("strkey")==0){
+                $(".tabBox_right span").text(getCookie("strItem"));
+            }
         })
     </script>
 </head>

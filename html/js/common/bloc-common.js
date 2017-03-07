@@ -23,6 +23,7 @@ $(function () {
         var communityName=  $(this).children('a').text();
         //console.log(communityName);
         setCookie("communityItem",communityName);
+        setCookie("strkey",1);
     });
 
 

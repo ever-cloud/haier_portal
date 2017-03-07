@@ -39,10 +39,15 @@ getechart("ecAdapt_total", "themeThreeteen", {
             center: ['50%', '50%'],
             data: [
                 {value: 335, name: '视频监控'},
-                {value: 310, name: '电梯'},
-                {value: 274, name: '人员定位'},
-                {value: 235, name: '健康管理'},
-                {value: 400, name: '可视对讲'}
+                {value: 310, name: '入侵报警'},
+                {value: 274, name: '门禁管理'},
+                {value: 235, name: '电梯控制'},
+                {value: 200, name: '广播通讯'},
+                {value: 290, name: '信息发布'},
+                {value: 310, name: '可视对讲'},
+                {value: 350, name: '人员定位'},
+                {value: 270, name: '车辆管理'},
+                {value: 390, name: '电子巡更'}
             ].sort(function (a, b) {
                 return a.value - b.value
             }),
@@ -128,11 +133,7 @@ getechart("ecOpen_total", "themeFourteen", {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"
     },
-    //legend: {
-    //    orient: 'vertical',
-    //    left: 'left',
-    //    data: ['dvr设备', '人员定位', '摄像头', '电梯, '可视对讲 ']
-    //},
+
     series: [
         {
             name: '访问来源',
@@ -142,7 +143,7 @@ getechart("ecOpen_total", "themeFourteen", {
             data: [
                 {value: 1480, name: 'dvr设备'},
                 {value: 310, name: '人员定位'},
-                {value: 234, name: '摄像头'},
+                {value: 234, name: '摄像机'},
                 {value: 135, name: '电梯'},
                 {value: 335, name: '可视对讲'}
             ],
@@ -175,13 +176,13 @@ getechart("ecOpen_total", "themeFourteen", {
 });
 getechart("ecSell_total", "themeFiveteen",{
 title: {
-    "text": "453",
+    "text": "        453   273   180",
         "textStyle": {
         "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
     },
-    "subtext": "设备总数",
+    "subtext": "                 设备总数   摄像机总数   DVR总数",
         "subtextStyle": {
         "fontSize": "14",
             "color": "#000",
@@ -195,18 +196,14 @@ title: {
     trigger: 'item',
         formatter: "{a} <br/>{b}: {c} ({d}%)"
 },
-//legend: {
-//    orient: 'vertical',
-//    x: 'left',
-//    data:['设备dvr','营销广告','搜索引擎','邮件营销','联盟广告','视频广告','百度','谷歌','必应','其他']
-//}
+
 series: [
     {
         name: '访问来源',
         type: 'pie',
         selectedMode: 'single',
         radius: [0, '25%'],
-
+        center: ['58%', '71%'],
         label: {
             normal: {
                 position: 'inner',
@@ -229,19 +226,19 @@ series: [
 
         data: [
             {value: 335, name: 'dvr', selected: true},
-            {value: 679, name: '摄像头'},
+            {value: 679, name: '摄像机'},
         ]
     },
     {
         name: '访问来源',
         type: 'pie',
         radius: ['40%', '55%'],
-
+        center: ['58%', '71%'],
         data: [
             {value: 335, name: '故障dvr'},
             {value: 310, name: '正常dvr'},
-            {value: 234, name: '故障摄像头'},
-            {value: 135, name: '正常摄像头'},
+            {value: 234, name: '故障摄像机'},
+            {value: 135, name: '正常摄像机'},
 
         ],
         label: {
@@ -378,11 +375,11 @@ getechart("ecStop_total", "themeSixteen",{
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '60%'],
+            center: ['55%', '60%'],
             data: [
-                {value: 335, name: '报警电梯'},
-                {value: 310, name: '故障电梯'},
-                {value: 234, name: '正常电梯'},
+                {value: 335, name: '报警设备'},
+                {value: 310, name: '故障设备'},
+                {value: 234, name: '正常设备'},
                 //{value: 135, name: '电梯'},
                 //{value: 1548, name: '可视对讲'}
             ],
@@ -455,8 +452,8 @@ getechart("ecPaking_total", "themeSixteen", {
             center: ['50%', '70%'],
             data: [
                 //{value: 335, name: '报警电梯'},
-                {value: 504, name: '正常电梯'},
-                {value: 310, name: '故障电梯'},
+                {value: 504, name: '正常设备'},
+                {value: 310, name: '故障设备'},
                 //{value: 135, name: '电梯'},
                 //{value: 1548, name: '可视对讲'}
             ],

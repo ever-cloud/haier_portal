@@ -2,7 +2,7 @@
 var map = new BMap.Map("allmap");
 // 初始化地图,设置中心点坐标和地图级别
 //var point = new BMap.Point(108.940715,34.350591);
-map.centerAndZoom("中国",6);
+map.centerAndZoom("中国", 6);
 //map.setCenter("中国");
 // 设置地图显示的城市 此项是必须设置的
 //map.setCurrentCity("中国");
@@ -13,7 +13,10 @@ map.addControl(new BMap.ScaleControl());
 
 map.enableAutoResize(true);
 //右下角，仅包含平移和缩放按钮
-var bottom_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, type: BMAP_NAVIGATION_CONTROL_LARGE});
+var bottom_right_navigation = new BMap.NavigationControl({
+    anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+    type: BMAP_NAVIGATION_CONTROL_LARGE
+});
 //把控件添加到地图上
 map.addControl(bottom_right_navigation);
 //高清地图
@@ -28,8 +31,6 @@ function resizeMap() {
     map.checkResize();
     map.setCenter(center);
 }
-
-
 
 
 var blocMap = {
@@ -101,22 +102,22 @@ var points = [new BMap.Point(120.195098, 35.976978),
     new BMap.Point(121.33827, 37.535523),
     new BMap.Point(121.235958, 37.477977),
     new BMap.Point(114.312808, 38.096436),
-    new BMap.Point(116.957912,40.072805),//北京
-    new BMap.Point(116.109337,39.951671),
-    new BMap.Point(116.649758,40.303857),
-    new BMap.Point(117.367252,38.948786),//天津
-    new BMap.Point(117.093592,39.065419),
-    new BMap.Point(121.403159,31.211351),//上海
-    new BMap.Point(121.258281,31.043188),
-    new BMap.Point(121.281277,31.381186),
-    new BMap.Point(112.390783,23.916471),//广州
-    new BMap.Point(112.151619,22.974361),
-    new BMap.Point(107.598288,34.405411),//西安
-    new BMap.Point(107.524698,33.08366),
-    new BMap.Point(105.096255,33.516252),
-    new BMap.Point(114.902015,33.624062),//河南
-    new BMap.Point(114.110931,34.053936),
-    new BMap.Point(113.926958,34.770585)
+    new BMap.Point(116.957912, 40.072805),//北京
+    new BMap.Point(116.109337, 39.951671),
+    new BMap.Point(116.649758, 40.303857),
+    new BMap.Point(117.367252, 38.948786),//天津
+    new BMap.Point(117.093592, 39.065419),
+    new BMap.Point(121.403159, 31.211351),//上海
+    new BMap.Point(121.258281, 31.043188),
+    new BMap.Point(121.281277, 31.381186),
+    new BMap.Point(112.390783, 23.916471),//广州
+    new BMap.Point(112.151619, 22.974361),
+    new BMap.Point(107.598288, 34.405411),//西安
+    new BMap.Point(107.524698, 33.08366),
+    new BMap.Point(105.096255, 33.516252),
+    new BMap.Point(114.902015, 33.624062),//河南
+    new BMap.Point(114.110931, 34.053936),
+    new BMap.Point(113.926958, 34.770585)
 
 ];
 map.setViewport(points);
@@ -184,26 +185,11 @@ var reg = /[\u4e00-\u9fa5]+/g;
 //点击事件
 function itemClick(mark, info) {
     mark.addEventListener("click", function () {
-        //alert('您点击了')
         this.openInfoWindow(info);
         var str = info.content.match(reg)[1];
-        //console.log(str);
-        //console.log(getFirst(str));
-
-
-        $(".nav_item").hide();
-        $(".box").hide();
-        $(".nav_item").eq(1).show();
-        //console.log($(".nav_item").eq(1));
-        $(".nav_item ul li").each(function () {
-            //console.log(this);
-            //console.log($(this).text());
-            if ($(this).text() == getFirst(str)) {
-
-                $(this).next().show();
-                //console.log($(this).next().show());
-            }
-        })
+        setCookie("strItem",str);
+        window.open("./hr-communityhome.html","main","true");
+        setCookie("strkey",0);
     });
 }
 /**

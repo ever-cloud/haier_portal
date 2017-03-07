@@ -24,7 +24,7 @@
                     <li><a href="./hr-totalhome.html" target="main">概览</a></li>
                     <li><a href="./hr-totaluser.html" target="main">用户总览</a></li>
                     <li><a href="./hr-totaltenement.html" target="main">物业服务</a></li>
-                    <li><a href="./hr-totalfacility.html" target="main"  class="clickstyle">设备状态</a></li>
+                    <li><a href="./hr-totalfacility.html" target="main" class="clickstyle">设备状态</a></li>
                     <li><a href="./hr-totalbusiness.html" target="main">商业服务</a></li>
                 </ul>
             </div>
@@ -55,6 +55,10 @@
                                 实时报警信息
                             </h1>
                             <ul>
+                                <li>
+                                    <i>电梯报警</i>
+                                    <p>4</p>
+                                </li>
                                 <li>
                                     <i>入侵报警</i>
                                     <p>3</p>
@@ -102,11 +106,10 @@
                     <div class="hr_total_facility_l">
                         <h1 class="system_title_total">门禁系统</h1>
                         <div class="system_facility_r_total">
-                            <ul>
+                            <ul class="door_system">
                                 <li>
-
-                                    <span>在线小区</span>
-                                    <i>58</i>
+                                    <span>在线总数</span>
+                                    <i>23903</i>
                                 </li>
                                 <li>
                                     <span>门禁总数</span>
@@ -123,15 +126,20 @@
                     <div class="hr_total_facility_r">
                         <h1 class="system_title_total">信息发布</h1>
                         <div class="system_facility_r_total">
-                            <div>
-                                <span>终端总数</span>
-                                <i>58</i>
-                            </div>
-                            <div>
-                                <span>在线数</span>
-                                <i>34</i>
-                            </div>
-
+                            <ul class="info_system">
+                                <li>
+                                    <span>在线总数</span>
+                                    <i>34</i>
+                                </li>
+                                <li>
+                                    <span>终端总数</span>
+                                    <i>58</i>
+                                </li>
+                                <li>
+                                    <span>故障设备个数</span>
+                                    <i>34</i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -141,10 +149,9 @@
                     <div class="hr_total_facility_l">
                         <h1 class="system_title_total">入侵报警</h1>
                         <div class="system_facility_r_total">
-                            <ul>
+                            <ul class="invade_system">
                                 <li>
-
-                                    <span>在线数</span>
+                                    <span>在线总数</span>
                                     <i>58</i>
                                 </li>
                                 <li>
@@ -161,13 +168,13 @@
                     </div>
                     <!--right-->
                     <div class="hr_total_facility_r">
-                        <h1 class="system_title_total">停车场</h1>
+                        <h1 class="system_title_total">车辆管理</h1>
                         <div class="system_facility_r_total system_r_total">
 
-                            <ul>
+                            <ul class="manage_system">
                                 <li>
-                                    <span>在线数</span>
-                                    <i>58</i>
+                                    <span>在线总数</span>
+                                    <i>263</i>
                                 </li>
                                 <li>
                                     <span>当日入车数</span>
@@ -192,13 +199,17 @@
                         <h1 class="system_title_total">广播通信</h1>
                         <div class="system_facility_r_total">
 
-                            <ul>
+                            <ul class="communicate_system">
+                                <li>
+                                    <span>在线总数</span>
+                                    <i>230</i>
+                                </li>
                                 <li>
                                     <span>在线分区</span>
                                     <i>58</i>
                                 </li>
                                 <li>
-                                    <span>离线分区</span>
+                                    <span>广播分区</span>
                                     <i>204</i>
                                 </li>
                                 <li>
@@ -211,16 +222,30 @@
                     </div>
                     <!--right-->
                     <div class="hr_total_facility_r">
-                        <h1 class="system_title_total">信息发布</h1>
+                        <h1 class="system_title_total">电子巡更</h1>
                         <div class="system_facility_r_total">
-                            <div>
-                                <span>终端总数</span>
-                                <i>58</i>
-                            </div>
-                            <div>
-                                <span>在线数</span>
-                                <i>34</i>
-                            </div>
+                            <ul class="electron">
+                                <li>
+                                    <span>在线总数</span>
+                                    <i>89</i>
+                                </li>
+                                <li>
+                                    <span>终端总数</span>
+                                    <i>58</i>
+                                </li>
+                                <li>
+                                    <span>巡更总次数</span>
+                                    <i>34</i>
+                                </li>
+                                <li>
+                                    <span>已巡更次数</span>
+                                    <i>34</i>
+                                </li>
+                                <li>
+                                    <span>未巡更次数</span>
+                                    <i>34</i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -233,5 +258,5 @@
 </body>
 <script src="../js/echarts/haier-total/haier-total-facility-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 </html>

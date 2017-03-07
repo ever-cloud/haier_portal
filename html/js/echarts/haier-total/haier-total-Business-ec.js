@@ -52,23 +52,23 @@ getechart("ecVolume_total", "themeEight",{
         }
     ],
     "series": [
-        {
-            "name": "访问量",
-            "type": "line",
-            "stack": "总量",
-            "areaStyle": {
-                "normal": {}
-            },
-            "data": [
-                120,
-                132,
-                101,
-                134,
-                90,
-                230,
-                210
-            ]
-        },
+        //{
+        //    "name": "访问量",
+        //    "type": "line",
+        //    "stack": "总量",
+        //    "areaStyle": {
+        //        "normal": {}
+        //    },
+        //    "data": [
+        //        120,
+        //        132,
+        //        101,
+        //        134,
+        //        90,
+        //        230,
+        //        210
+        //    ]
+        //},
         {
             "name": "PV",
             "type": "line",

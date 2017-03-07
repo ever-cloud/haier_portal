@@ -42,6 +42,11 @@
 
         });
     </script>
+    <script>
+        $(function(){
+            $(".tabBox_right span").text(getCookie("strItem"));
+        })
+    </script>
 </head>
 <body>
 <div class="layout_left">
@@ -59,7 +64,7 @@
         <div class="nav_top nav_item hr_homenav"><a href="./main.html" target="main">首页</a></div>
         <!--集团+大区+小区-->
         <div class="nav_section nav_top nav_item" id="nav_item"></div>
-       <!--样板间-->
+        <!--样板间-->
         <div class="nav_prototypeRoom nav_all">
             <div class="nav_top nav_room">
                 <span>样板间</span>
@@ -97,7 +102,7 @@
                 <!--小区名-->
                 <ul style="display: none;">
                     {{each arr.name as name }}
-                    <li class="community_name"><a href="./hr-community-map.html" target="main">{{name}}</a></li>
+                    <li class="community_name"><a href="./hr-communityhome.html" target="main">{{name}}</a></li>
                     {{/each}}
                 </ul>
             </div>
@@ -142,15 +147,15 @@
 <!--调用地图点击事件必须引入-->
 <script src="../js/map/room-map-click.js"></script>
 <script>
-    $(function(){
-        $(".community_name a").click(function(){
+    $(function () {
+        $(".community_name a").click(function () {
 //            点击刷新
             window.parent.frames["main"].location.reload();
         });
 
 //        兼容ie浏览器
         if ("ActiveXObject" in window) {
-            $("#nav_item .tabBox ul li a").on("click", function (){
+            $("#nav_item .tabBox ul li a").on("click", function () {
                 window.parent.frames["main"].cookie = ["item", $(this).attr("href").split("#")[1]];
                 window.parent.frames["main"].location.href = $(this).attr("href");
                 return false;
@@ -167,7 +172,8 @@
                 return false;
             });
 
-        };
+        }
+        ;
     });
 </script>
 

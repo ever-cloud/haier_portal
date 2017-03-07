@@ -14,6 +14,15 @@
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script src="../js/common/tab-click.js"></script>
+    <script>
+        $(function () {
+            if (getCookie("strkey") == 1) {
+                $(".tabBox_right span").text(getCookie("communityItem"));
+            } else if (getCookie("strkey") == 0) {
+                $(".tabBox_right span").text(getCookie("strItem"));
+            }
+        })
+    </script>
 </head>
 <body>
 <div class="layout_right">
@@ -21,15 +30,15 @@
         <div class="wrapper_bg">
             <!--topbar-->
             <div class="tabBoxall">
-               <div class="tabBox">
-                  <ul>
-                    <li><a href="./hr-community-map.html" target="main">地图</a></li>
-                    <li><a href="./hr-communityhome.html" target="main">概览</a></li>
-                    <li><a href="./hr-communityuser.html" target="main"  class="clickstyle">用户总览</a></li>
-                    <li><a href="./hr-communitytenement.html" target="main">物业服务</a></li>
-                    <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
-                    <li><a href="./hr-communitybusiness.html" target="main">商业服务</a></li>
-                   </ul>
+                <div class="tabBox">
+                    <ul>
+                        <li><a href="./hr-community-map.html" target="main">地图</a></li>
+                        <li><a href="./hr-communityhome.html" target="main">概览</a></li>
+                        <li><a href="./hr-communityuser.html" target="main" class="clickstyle">用户总览</a></li>
+                        <li><a href="./hr-communitytenement.html" target="main">物业服务</a></li>
+                        <li><a href="./hr-communityfacility.html" target="main">设备状态</a></li>
+                        <li><a href="./hr-communitybusiness.html" target="main">商业服务</a></li>
+                    </ul>
                 </div>
                 <div class="tabBox_right"><i>当前位置：</i><span></span></div>
             </div>
@@ -115,7 +124,7 @@
 </script>
 <script src="../js/echarts/community/community-user-ec.js"></script>
 <script src="../js/common/common.js"></script>
-<!--<script src="../js/common/setcookie.js"></script>-->
+<script src="../js/common/setcookie.js"></script>
 <!--swiper轮播图插件-->
 <script src="../dist/js/swiper.min.js"></script>
 <script>

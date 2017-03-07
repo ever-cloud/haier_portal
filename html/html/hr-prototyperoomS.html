@@ -12,7 +12,9 @@
     <script src="../lib/jquery/jquery-1.11.3.js"></script>
     <script>
         var str = location.hash;
+        console.log(str);
         var str = str.substr(1).split("&");
+        console.log(str);
         $(function () {
             $("#roomName").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])
             $("#roomView>p").text(str[0].indexOf("%") != -1 ? decodeURIComponent(location.href).match(/[\u4e00-\u9fa5]+/g)[0] : str[0])

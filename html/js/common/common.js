@@ -1,4 +1,6 @@
+
 $(function () {
+
     //点击显示隐藏问题
     $(".menu_bloc").on("click", function () {
         $(this).siblings(".trends").slideToggle();
@@ -32,7 +34,7 @@ $(function () {
         var communityName=  $(this).children('a').text();
         //console.log(communityName);
         setCookie("communityItem",communityName);
-
+        setCookie("strkey",1);
     });
 
 

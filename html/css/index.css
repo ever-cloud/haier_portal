@@ -158,7 +158,7 @@
 #ecSuccess_total {
     width: 100%;
     height: 49%;
-    padding-bottom:1%;
+    padding-bottom: 1%;
 }
 
 #ecDefeat_total {
@@ -261,7 +261,7 @@
     line-height: 37px;
     text-align: center;
     float: left;
-    font-size:14px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -289,7 +289,7 @@
     padding-top: 3%;
 }
 
-#ecBlocbottom_total{
+#ecBlocbottom_total {
     width: 50%;
     height: 85%;
     float: left;
@@ -304,7 +304,7 @@
 
 .hr_total_user_top_r .countTab_total {
     width: 100%;
-    font-size:14px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -351,7 +351,7 @@
     float: left;
 }
 
-#ecEducation_total{
+#ecEducation_total {
     width: 100%;
     height: 100%;
     padding-right: 10%;
@@ -418,6 +418,7 @@
     height: 80%;
     padding: 0 10% 0 0;
 }
+
 /*hr-totaluser end*/
 /*hr-totaltenement start*/
 .hr_totaltenement {
@@ -443,7 +444,7 @@
     height: 100%;
     position: relative;
     float: left;
-    border-right:4px solid #bbdff2;
+    border-right: 4px solid #bbdff2;
 }
 
 .measureTitle_total {
@@ -456,7 +457,7 @@
 #ecMeasure_total {
     width: 100%;
     height: 100%;
-    padding:1%;
+    padding: 1%;
 }
 
 .hr_total_tenement_top_r {
@@ -471,12 +472,14 @@
     height: 100%;
     position: relative;
 }
+
 #ecMeasure_total {
     width: 100%;
-    height:100%;
+    height: 100%;
     padding: 1%;
 }
-.measureTitle_total  {
+
+.measureTitle_total {
     position: absolute;
     top: 10%;
     left: 37%;
@@ -488,7 +491,6 @@
     height: 100%;
     padding: 1%;
 }
-
 
 /*bottom section*/
 .hr_total_tenement_bottom {
@@ -502,17 +504,20 @@
     float: left;
     position: relative;
 }
-.mendTitle_total{
+
+.mendTitle_total {
     position: absolute;
     top: 5%;
     left: 28%;
     font-size: 20px;
 }
+
 #ecMend_total {
     width: 100%;
     height: 100%;
-    padding:1%;
+    padding: 1%;
 }
+
 .hr_total_tenement_bottom .hr_total_tenement_mid {
     width: 33.3%;
     height: 100%;
@@ -527,7 +532,6 @@
     font-size: 20px;
 }
 
-
 .fixTitle_total {
     position: absolute;
     top: 5%;
@@ -540,15 +544,12 @@
     height: 100%;
 }
 
-
 .hr_total_tenement_bottom .hr_total_tenement_bottom_r {
     width: 33.3%;
     height: 100%;
     float: left;
     position: relative;
 }
-
-
 
 .maintainTitle_total {
     position: absolute;
@@ -679,13 +680,13 @@
 
 .info_all_total ul {
     width: 100%;
-    height: 90%;
-    padding-top: 10%;
+    height: 92%;
+    padding-top: 3%;
 }
 
 .info_all_total ul li {
     width: 100%;
-    height: 30%;
+    height: 25%;
 }
 
 .info_all_total ul li i {
@@ -740,7 +741,7 @@
     position: relative;
 }
 
-#ecLine_total{
+#ecLine_total {
     width: 80%;
     height: 100%;
     float: right;
@@ -789,107 +790,207 @@
     float: left;
 }
 
-.system_facility_r_total ul {
+.door_system {
     width: 100%;
-    height: 100%;
-
-}
-
-.system_facility_r_total ul li {
-    width: 29%;
-    height: 100%;
-    text-align: center;
-    display: inline-block;
-}
-
-.system_facility_r_total ul li span {
-    width: 100%;
-    height: 15%;
-    font-size: 14px;
-    display: block;
-    padding-top: 40%;
-}
-
-.system_facility_r_total ul li i {
-    width: 100%;
-    height: 15%;
-    font-size: 26px;
-    display: block;
-    padding-top: 20%;
-
-}
-
-.hr_total_system_info .hr_total_facility_r {
-    width: 50%;
     height: 100%;
     float: left;
 }
 
-.system_facility_r_total {
+.door_system li {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.door_system li span {
+    font-size: 16px;
+    padding-top:30%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.door_system li i {
+    font-size: 24px;
+    padding-top: 7%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+.hr_total_facility_r{
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+.system_facility_r_total{
     width: 87%;
     height: 100%;
     float: left;
-
 }
 
-.system_facility_r_total div {
-    width: 48%;
+.info_system {
+    width: 100%;
     height: 100%;
-    text-align: center;
-    display: inline-block;
-
+    float: left;
 }
 
-.system_facility_r_total div span {
-    width: 100%;
-    height: 15%;
+.info_system li {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.info_system li span {
     font-size: 16px;
-    display: block;
-    padding-top: 25%;
+    padding-top: 30%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
 }
 
-.system_facility_r_total div i {
+.info_system li i {
+    font-size: 24px;
+    padding-top: 7%;
     width: 100%;
-    height: 15%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*ruqin*/
+
+.invade_system {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.invade_system li {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.invade_system li span {
+    font-size: 16px;
+    padding-top: 30%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.invade_system li i {
+    font-size: 24px;
+    padding-top: 7%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+/*cheliang*/
+
+.manage_system {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.manage_system li {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.manage_system li span {
+    font-size: 16px;
+    padding-top: 38%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.manage_system li i {
+    font-size: 24px;
     padding-top: 11%;
-    font-size: 24px;
-    display: block;
-
-}
-
-.system_r_total ul {
     width: 100%;
-    height: 100%;
-
-}
-
-.system_r_total ul li {
-    width: 24%;
-    height: 100%;
-    text-align: center;
+    height: 28%;
     display: inline-block;
+    text-align: center;
+}
+/*guangbo*/
+.communicate_system {
+    width: 100%;
+    height: 100%;
+    float: left;
 }
 
-.system_r_total ul li span {
-    width: 100%;
-    height: 15%;
+.communicate_system li {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.communicate_system li span {
     font-size: 16px;
-    display: block;
-    padding-top: 48%;
-}
-
-.system_r_total ul li i {
+    padding-top: 40%;
     width: 100%;
-    height: 15%;
-    padding-top: 26%;
-    font-size: 24px;
-    display: block;
-
+    height: 28%;
+    display: inline-block;
+    text-align: center;
 }
+
+.communicate_system li i {
+    font-size: 24px;
+    padding-top: 11%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+/*xungeng*/
+.electron {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.electron li {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.electron li span {
+    font-size: 16px;
+    padding-top: 50%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.electron li i {
+    font-size: 24px;
+    padding-top: 14%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
 
 .hr_total_system_info:last-child {
     border-bottom: none;
 }
+
 /*hr-totalfacility end*/
 /*hr-totalbusiness start*/
 .hr_totalbusiness {
@@ -989,6 +1090,7 @@
     height: 100%;
     float: left;
 }
+
 /*hr-totalbusiness end*/
 /*hr-blochome start*/
 .hr_blocHome {
@@ -1150,7 +1252,7 @@
 #ecSuccess {
     width: 100%;
     height: 49%;
-    padding-bottom:1%;
+    padding-bottom: 1%;
 }
 
 #ecDefeat {
@@ -1254,7 +1356,7 @@
     line-height: 37px;
     text-align: center;
     float: left;
-    font-size:14px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -1297,7 +1399,7 @@
 
 .user_top_r .countTab {
     width: 100%;
-    font-size:14px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -1439,7 +1541,7 @@
     height: 100%;
     position: relative;
     float: left;
-    border-right:4px solid #bbdff2;
+    border-right: 4px solid #bbdff2;
 }
 
 .mendTitle {
@@ -1452,7 +1554,7 @@
 #ecMend {
     width: 100%;
     height: 100%;
-    padding:1%;
+    padding: 1%;
 }
 
 .tenement_top_r {
@@ -1515,7 +1617,7 @@
 
 #ecMeasure {
     width: 100%;
-    height:100%;
+    height: 100%;
     padding: 1%;
 }
 
@@ -1663,13 +1765,13 @@
 
 .info_all ul {
     width: 100%;
-    height: 90%;
-    padding-top: 10%;
+    height: 92%;
+    padding-top: 3%;
 }
 
 .info_all ul li {
     width: 100%;
-    height: 30%;
+    height: 25%;
 }
 
 .info_all ul li i {
@@ -1808,100 +1910,200 @@
 .system_facility_r ul {
     width: 100%;
     height: 100%;
-
+    float: left;
 }
 
-.system_facility_r ul li {
-    width: 29%;
-    height: 100%;
-    text-align: center;
-    display: inline-block;
-}
-
-.system_facility_r ul li span {
-    width: 100%;
-    height: 15%;
-    font-size: 14px;
-    display: block;
-    padding-top: 40%;
-}
-
-.system_facility_r ul li i {
-    width: 100%;
-    height: 15%;
-    font-size: 26px;
-    display: block;
-    padding-top: 20%;
-
-}
-
-.system_info .facility_r {
-    width: 50%;
+.door_system_r li {
+    width: 33.3%;
     height: 100%;
     float: left;
 }
 
-.system_facility_r {
+.door_system_r li span {
+    font-size: 16px;
+    padding-top:30%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.door_system_r li i {
+    font-size: 24px;
+    padding-top: 7%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+.facility_r{
+    width: 50%;
+    height: 100%;
+    border-right: 4px solid #bbdff2;
+    float: left;
+}
+.system_facility_r{
     width: 87%;
     height: 100%;
     float: left;
-
 }
 
-.system_facility_r div {
-    width: 48%;
+.info_system_r {
+    width: 100%;
     height: 100%;
-    text-align: center;
-    display: inline-block;
-
+    float: left;
 }
 
-.system_facility_r div span {
-    width: 100%;
-    height: 15%;
+.info_system_r li {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.info_system_r li span {
     font-size: 16px;
-    display: block;
-    padding-top: 25%;
+    padding-top: 30%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
 }
 
-.system_facility_r div i {
+.info_system_r li i {
+    font-size: 24px;
+    padding-top: 7%;
     width: 100%;
-    height: 15%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*ruqin*/
+
+.invade_system_r {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.invade_system_r li {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.invade_system_r li span {
+    font-size: 16px;
+    padding-top: 30%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.invade_system_r li i {
+    font-size: 24px;
+    padding-top: 7%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+/*cheliang*/
+
+.manage_system_r {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.manage_system_r li {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.manage_system_r li span {
+    font-size: 16px;
+    padding-top: 38%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.manage_system_r li i {
+    font-size: 24px;
     padding-top: 11%;
-    font-size: 24px;
-    display: block;
-
-}
-
-.system_r ul {
     width: 100%;
-    height: 100%;
-
-}
-
-.system_r ul li {
-    width: 24%;
-    height: 100%;
-    text-align: center;
+    height: 28%;
     display: inline-block;
+    text-align: center;
+}
+/*guangbo*/
+.communicate_system_r {
+    width: 100%;
+    height: 100%;
+    float: left;
 }
 
-.system_r ul li span {
-    width: 100%;
-    height: 15%;
+.communicate_system_r li {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.communicate_system_r li span {
     font-size: 16px;
-    display: block;
-    padding-top: 48%;
-}
-
-.system_r ul li i {
+    padding-top: 40%;
     width: 100%;
-    height: 15%;
-    padding-top: 26%;
-    font-size: 24px;
-    display: block;
-
+    height: 28%;
+    display: inline-block;
+    text-align: center;
 }
+
+.communicate_system_r li i {
+    font-size: 24px;
+    padding-top: 11%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+/*xungeng*/
+.electron_r {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.electron_r li {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.electron_r li span {
+    font-size: 16px;
+    padding-top: 50%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+.electron_r li i {
+    font-size: 24px;
+    padding-top: 14%;
+    width: 100%;
+    height: 28%;
+    display: inline-block;
+    text-align: center;
+}
+
+
 
 .system_info:last-child {
     border-bottom: none;

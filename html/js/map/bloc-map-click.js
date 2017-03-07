@@ -183,23 +183,10 @@ function itemClick(mark, info) {
     mark.addEventListener("click", function () {
         this.openInfoWindow(info);
         var str = info.content.match(reg)[1];
-        // alert(str);
-        //alert(getFirst(str));
+        setCookie("strItem",str);
+        window.open("./hr-communityhome.html","main","true");
+        setCookie("strkey",0);
 
-        $(".nav_item").hide();
-        $(".box").hide();
-        $("#nav_group").show();
-        //alert($("#nav_group ul li")) ;
-        $("#nav_group ul li").each(function () {
-            if($(this).text()==getFirst(str)) {
-                $(this).next().show()
-            }
-        })
-
-
-        //console.log("hair name"+str);
-        //setCookie("name", str);
-        //window.location.href="../haier-community/haier-communnity-home.html";
     });
 }
 /**
