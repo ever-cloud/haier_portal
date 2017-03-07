@@ -176,13 +176,13 @@ getechart("ecOpen_total", "themeFourteen", {
 });
 getechart("ecSell_total", "themeFiveteen",{
 title: {
-    "text": "        453   273   180",
+    "text": "                378    453     273   180",
         "textStyle": {
         "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
     },
-    "subtext": "                 设备总数   摄像机总数   DVR总数",
+    "subtext": "                               在线社区      设备总数     摄像机总数   DVR总数",
         "subtextStyle": {
         "fontSize": "14",
             "color": "#000",
@@ -270,13 +270,13 @@ series: [
 });
 getechart("ecLine_total", "themeSixteen", {
     title: {
-        "text": "453",
+        "text": "         230     453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "电梯总数",
+        "subtext": "                  在线社区       电梯总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -344,13 +344,13 @@ getechart("ecLine_total", "themeSixteen", {
 });
 getechart("ecStop_total", "themeSixteen",{
     title: {
-        "text": "453",
+        "text": "    380      453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "设备总数",
+        "subtext": "       在线社区         设备总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -419,13 +419,13 @@ getechart("ecStop_total", "themeSixteen",{
 });
 getechart("ecPaking_total", "themeSixteen", {
     title: {
-        "text": "                  580    23404    234",
+        "text": "                      390     580    23404    234",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                                  设备总数       发卡人数        报警人次",
+        "subtext": "                                           在线社区       设备总数       发卡人数        报警人次",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
