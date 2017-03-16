@@ -53,18 +53,6 @@ $(function () {
 
 
 
-//样板间
-    $(".nav_room").on("click", function () {
-        $(this).next("div").slideToggle();
-        //手风琴
-        $(".trends").hide();
-        $(this).next("div").show();
-    })
-
-//样板间关闭图片
-    $(".close").on("click", function () {
-        window.open("./hr-prototyperoom.html", "main", "true");
-    });
 
 
     $(".text").focus(function () {

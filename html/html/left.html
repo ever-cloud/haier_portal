@@ -64,14 +64,6 @@
         <div class="nav_top nav_item hr_homenav"><a href="./main.html" target="main">首页</a></div>
         <!--集团+大区+小区-->
         <div class="nav_section nav_top nav_item" id="nav_item"></div>
-        <!--样板间-->
-        <div class="nav_prototypeRoom nav_all">
-            <div class="nav_top nav_room">
-                <span>样板间</span>
-            </div>
-            <!--模板引擎创建div传数据 ===样板间-->
-            <div id="nav_room" class="nav_item clearfix" style="display: none;"></div>
-        </div>
     </div>
     <!--nav  end-->
 </div>
@@ -112,30 +104,11 @@
     </div>
     {{/each}}
 </script>
-<!--模板引擎创建div传数据 ===样板间-->
-<script id="room" type="text/html">
-    <ul class="ul">
-        {{each list as value}}
-        <li>
-            <a href="#">{{value.letter}}</a>
-        </li>
-        <div class="box" style="display: none;">
-            {{each value.data as key}}
-            <li><a href="./hr-prototyperoom.html#{{key.name}}" target="main" onclick="bindMouseenter()">{{key.name}}</a>
-            </li>
-            {{/each}}
-        </div>
-        {{/each}}
-    </ul>
-</script>
 
 <script>
-    //模板引擎创建div传数据==集团
+    //集团
     var myHtml = template('test', objData);
     document.getElementById('nav_item').innerHTML = myHtml;
-    //   模板引擎创建div传数据 ===样板间
-    var htmlroom = template('room', setList(objData2));
-    document.getElementById('nav_room').innerHTML = htmlroom;
     //    清空没有值的字母选项A-Z
     $(".ul>.box").each(function (e) {
         if (!$(this).children().html()) {
@@ -144,8 +117,6 @@
         }
     });
 </script>
-<!--调用地图点击事件必须引入-->
-<script src="../js/map/room-map-click.js"></script>
 <script>
     $(function () {
         $(".community_name a").click(function () {
@@ -165,12 +136,7 @@
                 window.parent.frames["main"].location.href = $(this).attr("href");
                 return false;
             })
-            $("#nav_room .box li a").on("click", function () {
-                window.parent.frames["main"].location.href = "./hr-prototyperoom.html";
-                window.parent.frames["main"].location.href = $(this).attr("href");
-                bindMouseenterCopy($(this).text());
-                return false;
-            });
+
 
         }
         ;

@@ -157,13 +157,13 @@
 
 #ecSuccess_total {
     width: 100%;
-    height: 49%;
-    padding-bottom: 1%;
+    height: 45%;
+    /*padding-bottom: 2%;*/
 }
 
 #ecDefeat_total {
     width: 100%;
-    height: 39%;
+    height: 44%;
     padding-bottom: 1%;
 }
 
@@ -201,7 +201,7 @@
 #ecEnd_total {
     width: 100%;
     height: 43%;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 /*hr-totalhome end*/

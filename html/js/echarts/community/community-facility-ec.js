@@ -180,13 +180,13 @@ getechart("ecOpenspecial", "themeFourteen",{
 });
 getechart("ecSellspecial", "themeFiveteen",{
     title: {
-        "text": "                1    453     273   180",
+        "text": "                    1    453     273   180",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                               在线系统      设备总数     摄像机总数   DVR总数",
+        "subtext": "                                   在线系统    设备总数     摄像机总数   DVR总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -278,7 +278,7 @@ getechart("ecSellspecial", "themeFiveteen",{
 } );
 getechart("ecFairlyspecial", "themeSixteen",{
     title: {
-        "text": "         1     453",
+        "text": "          1      453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
@@ -308,7 +308,7 @@ getechart("ecFairlyspecial", "themeSixteen",{
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '60%'],
+            center: ['60%', '65%'],
             data: [
                 {value: 335, name: '报警电梯'},
                 {value: 310, name: '故障电梯'},
@@ -352,13 +352,13 @@ getechart("ecFairlyspecial", "themeSixteen",{
 });
 getechart("ecPathspecial", "themeSixteen",{
     title: {
-        "text": "    0      453",
+        "text": "       0       453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "       在线系统         设备总数",
+        "subtext": "           在线系统         设备总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -383,7 +383,7 @@ getechart("ecPathspecial", "themeSixteen",{
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '60%'],
+            center: ['60%', '65%'],
             data: [
                 {value: 335, name: '报警设备'},
                 {value: 310, name: '故障设备'},
@@ -427,7 +427,7 @@ getechart("ecPathspecial", "themeSixteen",{
 });
 getechart("ecInspectspecial", "themeSixteen", {
     title: {
-        "text": "                      1     580    23404    234",
+        "text": "                       1      580    23404    234",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
@@ -458,7 +458,7 @@ getechart("ecInspectspecial", "themeSixteen", {
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '70%'],
+            center: ['60%', '65%'],
             data: [
                 //{value: 335, name: '报警电梯'},
                 {value: 504, name: '正常设备'},

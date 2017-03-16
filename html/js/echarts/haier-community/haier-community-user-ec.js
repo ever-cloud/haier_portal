@@ -23,7 +23,7 @@ getechart("ecHouse_com", "themeFour", {
     },
 
     grid: {
-        height: '70%'
+        height: '50%'
     },
     xAxis: [
         {
@@ -93,7 +93,7 @@ getechart("ecHome_com", "themeFour", {
     },
 
     grid: {
-        height: '70%'
+        height: '50%'
     },
     xAxis: [
         {
@@ -581,11 +581,12 @@ getechart("ecAge_com", "themeTen", {
     "yAxis": [
         {
             "type": "value",
+            "name": "直接访问(万人)",
             "position": "right",
-            "axisLabel": {
-                "formatter": "{value}%"
-            },
-            "max": "100"
+            //"axisLabel": {
+            //    "formatter": "{value}"
+            //},
+            //"max": "100"
         }
     ],
     "series": [
@@ -596,7 +597,7 @@ getechart("ecAge_com", "themeTen", {
             "data": [
                 10,
                 27,
-                50,
+                20,
                 13
             ]
         }

@@ -128,7 +128,7 @@ getechart("ecMonthnew", "theme",{
     yAxis: [
         {
             type: 'value',
-            name: '收货数(件)',
+            name: '已发货(件)',
             min: 0,
             max: 250,
             interval: 50,
@@ -138,10 +138,10 @@ getechart("ecMonthnew", "theme",{
         },
         {
             type: 'value',
-            name: '评价数(个)',
+            name: '成交额(万元)',
             min: 0,
-            max: 25,
-            interval: 5,
+            max: 300,
+            interval: 60,
             axisLabel: {
                 formatter: '{value}'
             }
@@ -154,15 +154,17 @@ getechart("ecMonthnew", "theme",{
             data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
         },
         {
-            name: '已评价',
+            name: '成交额',
             type: 'bar',
+
             data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         },
         {
-            name: '成交额',
+            name: '已评价',
             type: 'line',
             yAxisIndex: 1,
-            data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+
+            data: [2.0, 9.0, 26.4,28.7, 70.7, 175.6, 182.2,23.4, 23.0, 16.5, 12.0, 6.2]
         }
     ]
 });

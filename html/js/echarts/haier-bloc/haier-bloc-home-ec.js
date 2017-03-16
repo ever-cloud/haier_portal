@@ -2,11 +2,12 @@ getechart("ecBand", "theme", {
     title: {
         text: '246',
         "textStyle": {
-            "fontSize": "26",
+            "fontSize": "24",
             "color": "#000",
             "fontFamily": "SimSun"
 
         },
+        "itemGap":3,
         subtext: '项目总数',
         "subtextStyle": {
             "fontSize": "14",
@@ -21,6 +22,18 @@ getechart("ecBand", "theme", {
         "left": "10%",
         "bottom": "20%",
         height: "15%"
+    },
+    legend:{
+        show:true,
+        data:['完工阶段','施工阶段','签约阶段'],
+        orient:'vertical',
+        //center:0,
+        left:18,
+        top:70,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}'
     },
     tooltip: {
         trigger: 'axis',
@@ -48,10 +61,11 @@ getechart("ecBand", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": 'top',
-                        formatter: '{c}\n{a}\n',
+                        "position": ['10','5'],
+                        formatter: '{c}',
                         "textStyle": {
-                            "color": "#000000"
+                            "color": "#ffffff",
+                            "fontSize":12
                         }
                     }
                 }
@@ -67,10 +81,11 @@ getechart("ecBand", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": 'top',
-                        formatter: '{c}\n{a}\n',
+                        "position": ['10','5'],
+                        formatter: '{c}',
                         "textStyle": {
-                            "color": "#000000"
+                            "color": "#ffffff",
+                            "fontSize":12
                         }
                     }
                 }
@@ -86,10 +101,11 @@ getechart("ecBand", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        position: 'top',
-                        formatter: '{c}\n{a}\n',
+                        "position": ['10','5'],
+                        formatter: '{c}',
                         "textStyle": {
-                            "color": "#000000"
+                            "color": "#ffffff",
+                            "fontSize":12
                         }
                     }
                 }
@@ -107,6 +123,7 @@ getechart("ecAdd", "themeFour", {
             "fontFamily": "SimSun"
 
         },
+        "itemGap":3,
         "subtext": "用户总数",
         "subtextStyle": {
             "fontSize": "14",
@@ -122,14 +139,23 @@ getechart("ecAdd", "themeFour", {
             "type": "shadow"
         }
     },
-    "legend": {
-        "data": []
+    legend:{
+        show:true,
+        data:['用户活跃总数','其他'],
+        orient:'vertical',
+        //center:0,
+        left:50,
+        top:25,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}'
     },
     "grid": {
         "left": "10%",
         "bottom": "1%",
         "containLabel": true,
-        "height": "30%"
+        "height": "50"
     },
     "xAxis": {
         "type": "value"
@@ -146,13 +172,16 @@ getechart("ecAdd", "themeFour", {
             "type": "bar",
             "stack": "总量",
             barWidth: '25',
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": [10,-40],
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['10','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12
+                        }
                     }
                 }
             },
@@ -164,10 +193,17 @@ getechart("ecAdd", "themeFour", {
             "name": "其他",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "insideRight"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['10','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12
+                        }
+                    }
                 }
             },
             "data": [
@@ -183,8 +219,17 @@ getechart("ecReduce", "themeTwo", {
             "type": "shadow"
         }
     },
-    "legend": {
-        "data": []
+    legend:{
+        show:true,
+        data:['月新增用户数','其他'],
+        orient:'vertical',
+        //center:0,
+        left:50,
+        //top:1,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}',
     },
     "grid": {
         "left": "10%",
@@ -206,13 +251,17 @@ getechart("ecReduce", "themeTwo", {
             "name": "月新增用户数",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['10','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                            "fontWeight":'bold'
+                        }
                     }
                 }
             },
@@ -224,10 +273,18 @@ getechart("ecReduce", "themeTwo", {
             "name": "其他",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "insideRight"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['10','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                            "fontWeight":'bold'
+                        }
+                    }
                 }
             },
             "data": [
@@ -240,10 +297,11 @@ getechart("ecSuccess", "themeTwo", {
     "title": {
         "text": "674,993",
         "textStyle": {
-            "fontSize": "26",
+            "fontSize": "24",
             "color": "#000",
             "fontFamily": "SimSun"
         },
+        "itemGap":3,
         "subtext": "成交总额",
         "subtextStyle": {
             "fontSize": "14",
@@ -258,8 +316,17 @@ getechart("ecSuccess", "themeTwo", {
             "type": "shadow"
         }
     },
-    "legend": {
-        "data": []
+    legend:{
+        show:true,
+        data:['月增成交额','其他'],
+        orient:'vertical',
+        //center:0,
+        left:35,
+        top:10,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}'
     },
     "grid": {
         "left": "10%",
@@ -269,8 +336,8 @@ getechart("ecSuccess", "themeTwo", {
     },
     "xAxis": {
         "type": "value",
-        "axisLabel": {show: false}
-
+        //"axisLabel": {show: false}
+        "boundaryGap":['5%','15%']
     },
     "yAxis": {
         "type": "category",
@@ -283,13 +350,16 @@ getechart("ecSuccess", "themeTwo", {
             "name": "月增成交额",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['-4','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },
@@ -301,10 +371,18 @@ getechart("ecSuccess", "themeTwo", {
             "name": "其他",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "insideRight"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['10','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":10,
+                            "fontWeight":'bold'
+                        }
+                    }
                 }
             },
             "data": [
@@ -317,7 +395,7 @@ getechart("ecDefeat", "themeTwo", {
     "title": {
         "text": "540",
         "textStyle": {
-            "fontSize": "26",
+            "fontSize": "24",
             "color": "#000",
             "fontFamily": "SimSun"
         },
@@ -330,7 +408,7 @@ getechart("ecDefeat", "themeTwo", {
             "fontFamily": "SimSun"
         },
         "x": "center",
-        "y":'-5%'
+        "y":'-7%'
     },
     "tooltip": {
         "trigger": "axis",
@@ -338,9 +416,18 @@ getechart("ecDefeat", "themeTwo", {
             "type": "shadow"
         }
     },
-    //"legend": {
-    //    "data": []
-    //},
+    legend:{
+        show:true,
+        data:['月新增订单量','其他'],
+        orient:'vertical',
+        //center:0,
+        left:35,
+        top:5,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}'
+    },
     "grid": {
         "left": "10%",
         "bottom": "1%",
@@ -348,7 +435,8 @@ getechart("ecDefeat", "themeTwo", {
         "containLabel": true
     },
     "xAxis": {
-        "type": "value"
+        "type": "value",
+
     },
     "yAxis": {
         "type": "category",
@@ -361,13 +449,17 @@ getechart("ecDefeat", "themeTwo", {
             "name": "月新增订单量",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['10','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                            "fontWeight":'bold'
+                        }
                     }
                 }
             },
@@ -379,10 +471,17 @@ getechart("ecDefeat", "themeTwo", {
             "name": "其他",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "insideRight"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['10','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12
+                        }
+                    }
                 }
             },
             "data": [
@@ -395,12 +494,12 @@ getechart("ecFinish", "themeThree", {
     "title": {
         "text": "147",
         "textStyle": {
-            "fontSize": "26",
+            "fontSize": "24",
             "color": "#000",
             "fontFamily": "SimSun"
 
         },
-
+        "itemGap":3,
         "subtext": "报修状态",
         "subtextStyle": {
             "fontSize": "14",
@@ -416,8 +515,17 @@ getechart("ecFinish", "themeThree", {
             "type": "shadow"
         }
     },
-    "legend": {
-        "data": []
+    legend:{
+        show:true,
+        data:['已完成','已受理','未受理'],
+        orient:'vertical',
+        //center:0,
+        left:50,
+        //top:1,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}',
     },
     "grid": {
         "left": "10%",
@@ -439,13 +547,17 @@ getechart("ecFinish", "themeThree", {
             "name": "已完成",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": [10, -40],
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                            "fontWeight":'bold'
+                        }
                     }
                 }
             },
@@ -457,13 +569,17 @@ getechart("ecFinish", "themeThree", {
             "name": "已受理",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": "top",  //修改每段柱形图上面标题的位置
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                            "fontWeight":'bold'
+                        }
                     }
                 }
             },
@@ -475,13 +591,17 @@ getechart("ecFinish", "themeThree", {
             "name": "未受理",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                            "fontWeight":'bold'
+                        }
                     }
                 }
             },
@@ -495,7 +615,7 @@ getechart("ecReceive", "themeThree", {
     "title": {
         "text": "120",
         "textStyle": {
-            "fontSize": "26",
+            "fontSize": "24",
             "color": "#000",
             "fontFamily": "SimSun"
 
@@ -518,8 +638,17 @@ getechart("ecReceive", "themeThree", {
             "type": "shadow"
         }
     },
-    "legend": {
-        "data": []
+    legend:{
+        show:true,
+        data:['已完成','对话中','新投诉'],
+        orient:'vertical',
+        //center:0,
+        left:50,
+        top:-5,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}'
     },
     "grid": {
         "left": "10%",
@@ -541,13 +670,16 @@ getechart("ecReceive", "themeThree", {
             "name": "已完成",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": [10, -40],
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },
@@ -559,13 +691,16 @@ getechart("ecReceive", "themeThree", {
             "name": "对话中",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },
@@ -577,13 +712,16 @@ getechart("ecReceive", "themeThree", {
             "name": "新投诉",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": true,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },
@@ -597,12 +735,12 @@ getechart("ecStart", "themeFour", {
     "title": {
         "text": "160",
         "textStyle": {
-            "fontSize": "26",
+            "fontSize": "24",
             "color": "#000",
             "fontFamily": "SimSun"
 
         },
-
+        "itemGap":3,
         "subtext": "设备在线数",
         "subtextStyle": {
             "fontSize": "14",
@@ -619,8 +757,17 @@ getechart("ecStart", "themeFour", {
             "type": "shadow"
         }
     },
-    "legend": {
-        "data": []
+    legend:{
+        show:true,
+        data:['在线','非在线'],
+        orient:'vertical',
+        //center:0,
+        left:50,
+        top:10,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}'
     },
     "grid": {
         "left": "10%",
@@ -642,13 +789,16 @@ getechart("ecStart", "themeFour", {
             "name": "在线",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },
@@ -660,13 +810,16 @@ getechart("ecStart", "themeFour", {
             "name": "非在线",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },
@@ -680,7 +833,7 @@ getechart("ecEnd", "themeTwo", {
     "title": {
         "text": "56",
         "textStyle": {
-            "fontSize": "26",
+            "fontSize": "24",
             "color": "#000",
             "fontFamily": "SimSun"
 
@@ -695,7 +848,7 @@ getechart("ecEnd", "themeTwo", {
 
         },
         "x": "center",
-        "y":'-5%'
+        "y":'-8%'
     },
     "tooltip": {
         "trigger": "axis",
@@ -703,8 +856,17 @@ getechart("ecEnd", "themeTwo", {
             "type": "shadow"
         }
     },
-    "legend": {
-        "data": []
+    legend:{
+        show:true,
+        data:['故障','非故障'],
+        orient:'vertical',
+        //center:0,
+        left:50,
+        //top:10,
+        itemGap:5,
+        itemWidth:10,
+        itemHeight:8,
+        formatter: '{name}'
     },
     "grid": {
         "left": "10%",
@@ -726,13 +888,16 @@ getechart("ecEnd", "themeTwo", {
             "name": "故障",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },
@@ -744,13 +909,16 @@ getechart("ecEnd", "themeTwo", {
             "name": "非故障",
             "type": "bar",
             "stack": "总量",
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "formatter": "{c}\n{a}\n",
-                    "textStyle": {
-                        "color": "#000000"
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        "position": ['5','5'],
+                        formatter: '{c}',
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontSize":12,
+                        }
                     }
                 }
             },

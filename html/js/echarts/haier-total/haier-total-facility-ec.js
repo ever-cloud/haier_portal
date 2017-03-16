@@ -176,13 +176,13 @@ getechart("ecOpen_total", "themeFourteen", {
 });
 getechart("ecSell_total", "themeFiveteen",{
 title: {
-    "text": "                378    453     273   180",
+    "text": "                      1      453    273   180",
         "textStyle": {
         "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
     },
-    "subtext": "                               在线系统      设备总数     摄像机总数   DVR总数",
+    "subtext": "                                        在线系统     设备总数     摄像机总数   DVR总数",
         "subtextStyle": {
         "fontSize": "14",
             "color": "#000",
@@ -270,7 +270,7 @@ series: [
 });
 getechart("ecLine_total", "themeSixteen", {
     title: {
-        "text": "         230     453",
+        "text": "          1     453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
@@ -300,7 +300,7 @@ getechart("ecLine_total", "themeSixteen", {
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '60%'],
+            center: ['60%', '65%'],
             data: [
                 {value: 335, name: '报警电梯'},
                 {value: 310, name: '故障电梯'},
@@ -344,13 +344,13 @@ getechart("ecLine_total", "themeSixteen", {
 });
 getechart("ecStop_total", "themeSixteen",{
     title: {
-        "text": "    380      453",
+        "text": "       1       453",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "       在线系统         设备总数",
+        "subtext": "           在线系统          设备总数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -375,7 +375,7 @@ getechart("ecStop_total", "themeSixteen",{
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['55%', '60%'],
+            center: ['60%', '65%'],
             data: [
                 {value: 335, name: '报警设备'},
                 {value: 310, name: '故障设备'},
@@ -419,7 +419,7 @@ getechart("ecStop_total", "themeSixteen",{
 });
 getechart("ecPaking_total", "themeSixteen", {
     title: {
-        "text": "                      390     580    23404    234",
+        "text": "                       1      580    23404    234",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
@@ -449,7 +449,7 @@ getechart("ecPaking_total", "themeSixteen", {
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '70%'],
+            center: ['60%', '65%'],
             data: [
                 //{value: 335, name: '报警电梯'},
                 {value: 504, name: '正常设备'},
