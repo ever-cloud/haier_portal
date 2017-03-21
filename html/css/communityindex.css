@@ -83,7 +83,7 @@
 
 #ecDetailsright {
     width: 100%;
-    height: 43%;
+    height: 88%;
     padding: 0 0 2% 0;
 }
 
@@ -135,7 +135,7 @@
 
 #ecConfineright {
     width: 100%;
-    height: 45%;
+    height: 88%;
     padding-bottom: 2%;
 }
 
@@ -791,7 +791,7 @@ font-size: 20px;
 }
 .com_commen_facility_l .com_commen_title{
     width:3%;
-    padding:12% 5%;
+    padding:7% 5%;
     vertical-align:middle;
     font-size:18px;
     font-weight:bold;

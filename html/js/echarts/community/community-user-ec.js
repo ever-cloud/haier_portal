@@ -579,7 +579,7 @@ getechart("ecAgenew", "themeTen", {
     "yAxis": [
         {
             "type": "value",
-            "name": "直接访问(万人)",
+            "name": "用户数(万人)",
             "position": "right",
             //"axisLabel": {
             //    "formatter": "{value}"

@@ -22,7 +22,7 @@ getechart("ecMend", "themeEightteen", {
 
     legend: {
         "right":'10%',
-        "top": '15%',
+        "top": '13%',
         data: ['未受理', '已受理', '已完成']
     },
     grid: {
@@ -267,8 +267,8 @@ getechart("ecMeasure", "themeEightteen", {
     },
 
     legend: {
-        "top": '15%',
-        "right": '6%',
+        "top": '16%',
+        "right": '30%',
         data: ['总投诉', '对话中', '已完成']
     },
     grid: {
@@ -349,8 +349,8 @@ getechart("ecOutbox", "themeEightteen", {
         }
     },
     legend: {
-        "top": '20%',
-        "right": '10%',
+        "top": '18%',
+        "right": '30%',
         data: ['待评价', '已评价']
     },
     grid: {

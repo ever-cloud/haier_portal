@@ -267,8 +267,8 @@ getechart("ecMeasure_total", "themeEightteen", {
     },
 
     legend: {
-        "top": '15%',
-        "right": '6%',
+        "top": '17%',
+        "right": '20%',
         data: ['总投诉', '对话中', '已完成']
     },
     grid: {
@@ -350,7 +350,7 @@ getechart("ecOutbox_total", "themeEightteen", {
     },
     legend: {
         "top": '20%',
-        "right": '10%',
+        "right": '30%',
         data: ['待评价', '已评价']
     },
     grid: {

@@ -417,8 +417,8 @@ getechart("eccomboxnew", "themeEightteen", {
         }
     },
     legend: {
-        "top": '25%',
-        "right": '20%',
+        "top": '20%',
+        "right": '25%',
         data: ['待评价', '已评价']
     },
     grid: {

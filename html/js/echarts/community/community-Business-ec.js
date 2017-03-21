@@ -13,7 +13,7 @@ getechart("ecExportnew", "themeEight",{
     },
     "legend": {
         "right": "20%",
-        "top": "15%",
+        "top": "5%",
         "data": [
             "访问量",
             "PV",

@@ -20,7 +20,7 @@ getechart("ecDescribe", "themeEightteen", {
     },
 
     legend: {
-        "right":'15%',
+        "right":'25%',
         "top": '20%',
         data: ['总投诉', '对话中', '已完成']
     },
@@ -416,8 +416,8 @@ getechart("eccombox", "themeEightteen", {
         }
     },
     legend: {
-        "top": '25%',
-        "right": '20%',
+        "top": '20%',
+        "right": '30%',
         data: ['待评价', '已评价']
     },
     grid: {
