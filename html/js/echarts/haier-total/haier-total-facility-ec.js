@@ -270,13 +270,13 @@ series: [
 });
 getechart("ecLine_total", "themeSixteen", {
     title: {
-        "text": "          1     453",
+        "text": "          1      544    134",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                  在线系统       电梯总数",
+        "subtext": "                  在线系统       电梯总数      报警电梯数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -302,11 +302,9 @@ getechart("ecLine_total", "themeSixteen", {
             radius: '55%',
             center: ['60%', '65%'],
             data: [
-                {value: 335, name: '报警电梯'},
+                //{value: 335, name: '报警电梯'},
                 {value: 310, name: '故障电梯'},
                 {value: 234, name: '正常电梯'},
-                //{value: 135, name: '电梯'},
-                //{value: 1548, name: '可视对讲'}
             ],
             itemStyle: {
                 emphasis: {

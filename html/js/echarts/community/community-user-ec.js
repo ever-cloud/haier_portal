@@ -248,14 +248,15 @@ getechart("eccombottomnew", "theme",{
 getechart("ecExcellentnew", "theme",{
     "title": {
         "text": "月销售趋势图",
-        "x": "10%"
+        "x": "10%",
+        "top": "30",
     },
     "tooltip": {
         "trigger": "axis"
     },
     "legend": {
-        "top": "10%",
-        "right": "5%",
+        "top": "13%",
+        "right":"5%",
         "data": [
             "订单量",
             "成交额"

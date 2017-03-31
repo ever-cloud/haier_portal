@@ -277,13 +277,13 @@ getechart("ecSellCount", "themeFiveteen",{
 });
 getechart("ecFairly","themeSixteen",{
     title: {
-        "text": "             1       453",
+        "text": "               1         544      134",
         "textStyle": {
             "fontSize": "24",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "                  在线系统     电梯总数",
+        "subtext": "                       在线系统       电梯总数      报警电梯数",
         "subtextStyle": {
             "fontSize": "16",
             "color": "#000",
@@ -309,7 +309,7 @@ getechart("ecFairly","themeSixteen",{
             radius: '55%',
             center: ['60%', '65%'],
             data: [
-                {value: 335, name: '报警电梯'},
+                //{value: 335, name: '报警电梯'},
                 {value: 310, name: '故障电梯'},
                 {value: 234, name: '正常电梯'},
                 //{value: 135, name: '电梯'},
