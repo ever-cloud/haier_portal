@@ -352,13 +352,13 @@ getechart("ecLine", "themeSixteen", {
 });
 getechart("ecStop", "themeSixteen",{
     title: {
-        "text": "      1      453",
+        "text": "                 1      453     345",
         "textStyle": {
             "fontSize": "26",
             //"color": "#000",
             "fontFamily": "SimSun"
         },
-        "subtext": "           在线系统         设备总数",
+        "subtext": "                              在线系统       设备总数       报警设备数",
         "subtextStyle": {
             "fontSize": "14",
             "color": "#000",
@@ -385,7 +385,7 @@ getechart("ecStop", "themeSixteen",{
             radius: '55%',
             center: ['60%', '65%'],
             data: [
-                {value: 335, name: '报警设备'},
+                //{value: 335, name: '报警设备'},
                 {value: 310, name: '故障设备'},
                 {value: 234, name: '正常设备'},
                 //{value: 135, name: '电梯'},
