@@ -308,7 +308,7 @@ getechart("ecSort", "theme",{
 getechart("ecServeorder", "themeSeventeen",{
 
     title: {
-        "text": "集团商业服务订单状况分布",
+        "text": "商业服务订单状况分布",
         "textStyle": {
             "fontSize": "20",
             "color": "#000",
