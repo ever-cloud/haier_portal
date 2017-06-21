@@ -201,24 +201,53 @@ getechart("ecReduce", "theme", {
 
 });
 getechart("ecDefeat", "theme", {
-    "title": {
-        "text": "    674,993    540",
+    "title": [{
+        "text": "674,993",
         "textStyle": {
             "fontSize": "20",
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        //padding:100,//内边距，控制两个标题距离
-        "itemGap": 1,
-        "subtext": "           成交总额       总订单量",
-        "subtextStyle": {
-            "fontSize": "12",
-            "color": "#000",
-            "fontFamily": "SimSun"
-        },
-        "x": "center",
-        //"y": '-6%'
+        "itemGap": 5,
+        "x": "50%",
+        "textAlign":"center",
     },
+        {
+            "text": "9",
+            "textStyle": {
+                "fontSize": "20",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "itemGap": 5,
+            "x": "80%",
+            "textAlign":"center",
+        },
+//padding:100,//内边距，控制两个标题距离
+        {
+
+            "subtext": "成交总额",
+            "subtextStyle": {
+                "fontSize": "12",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "itemGap": 5,
+            "x": "50%",
+            "textAlign":"center",
+        },
+        {
+
+            "subtext": "总订单量",
+            "subtextStyle": {
+                "fontSize": "12",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "itemGap": 5,
+            "x": "80%",
+            "textAlign":"center",
+        }],
     tooltip: {
         trigger: 'axis'
     },

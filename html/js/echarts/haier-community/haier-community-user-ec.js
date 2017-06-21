@@ -1,23 +1,96 @@
 getechart("ecHouse_com", "themeFour", {
-    title: {
-        x: 'left',
-        text: '     3296  140   56   234',
-        subtext: '         总用户数     户数   注册用户数   活跃用户数',
+    title: [
+        {
+            x: '10%',
+            text: '3296',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
 
-
-        "textStyle": {
-            "fontSize": "24",
-            "color": "#000",
-            "fontFamily": "SimSun"
-
+            },
+            "textAlign":"center",
         },
-        "subtextStyle": {
-            "fontSize": "12",
-            "color": "#000",
-            "fontFamily": "SimSun"
+        {
+            x: '25%',
+            text: '140',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
 
-        }
-    },
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '40%',
+            text: '56',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '55%',
+            text: '234',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '10%',
+            subtext: '总用户数',
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '25%',
+            subtext: '户数',
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '40%',
+            subtext: '注册用户数',
+
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '55%',
+            subtext: '活跃用户数',
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+
+
+    ],
     tooltip: {
         trigger: 'item'
     },
@@ -70,24 +143,100 @@ getechart("ecHouse_com", "themeFour", {
     ]
 });
 getechart("ecHome_com", "themeFour", {
-    title: {
-        x: 'left',
-        text: '     3296  240   56   134',
-        subtext: '         总用户数     户数   注册用户数   活跃用户数',
+    title: [
+        {
+            x: '10%',
+            text: '32990',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
 
-        "textStyle": {
-            "fontSize": "24",
-            "color": "#000",
-            "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '25%',
+            text: '140',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '40%',
+            text: '560',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '55%',
+            text: '234',
+            "textStyle": {
+                "fontSize": "26",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '10%',
+            subtext: '总用户数',
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '25%',
+            subtext: '户数',
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
 
         },
-        "subtextStyle": {
-            "fontSize": "12",
-            "color": "#000",
-            "fontFamily": "SimSun"
+        {
+            x: '40%',
+            subtext: '注册用户数',
 
-        }
-    },
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+        {
+            x: '55%',
+            subtext: '活跃用户数',
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+
+            },
+            "textAlign":"center",
+        },
+
+
+    ],
     tooltip: {
         trigger: 'item'
     },
@@ -251,7 +400,7 @@ getechart("ecExcellent_com", "theme", {
     "title": {
         "text": "月销售趋势图",
         "x": "10%",
-        "top": "30",
+        "top": "15",
     },
     "tooltip": {
         "trigger": "axis"

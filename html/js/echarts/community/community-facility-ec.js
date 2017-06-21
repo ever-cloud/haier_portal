@@ -179,23 +179,98 @@ getechart("ecOpenspecial", "themeFourteen",{
     ]
 });
 getechart("ecSellspecial", "themeFiveteen",{
-    title: {
-        "text": "                    1    453     273   180",
-        "textStyle": {
-            "fontSize": "26",
-            //"color": "#000",
-            "fontFamily": "SimSun"
+    title:[
+        {
+            "text": "1",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%",
+            "y":"5%",
         },
-        "subtext": "                                   在线系统    设备总数     摄像机总数   DVR总数",
-        "subtextStyle": {
-            "fontSize": "14",
-            "color": "#000",
-            "fontFamily": "SimSun"
+        {
+            "text": "45",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%",
+            "y":"5%",
         },
-        "textAlign":"center",
-        "x": "10%",
-        "y":"5%",
-    },
+        {
+            "text": "273223",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%",
+            "y":"5%",
+        },
+        {
+            "text": "134580",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "70%",
+            "y":"5%",
+        },
+        {
+            "subtext": "在线系统",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%",
+            "y":"5%",
+        },
+        {
+            "subtext": "设备总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%",
+            "y":"5%",
+        },
+        {
+            "subtext": "摄像机总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%",
+            "y":"5%",
+        },
+        {
+            "subtext": "DVR总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "70%",
+            "y":"5%",
+        },
+
+
+    ],
     tooltip: {
         trigger: 'item',
         formatter: "{a} <br/>{b}: {c} ({d}%)"
@@ -277,23 +352,98 @@ getechart("ecSellspecial", "themeFiveteen",{
     ]
 } );
 getechart("ecFairlyspecial", "themeSixteen",{
-    title: {
-        "text": "           1      544    134",
-        "textStyle": {
-            "fontSize": "26",
-            //"color": "#000",
-            "fontFamily": "SimSun"
+    title:[
+        {
+            "text": "1",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%",
+            "y":"5%",
         },
-        "subtext": "                   在线系统       电梯总数      报警电梯数",
-        "subtextStyle": {
-            "fontSize": "14",
-            "color": "#000",
-            "fontFamily": "SimSun"
+        {
+            "text": "45",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%",
+            "y":"5%",
         },
-        "textAlign":"center",
-        "x": "10%",
-        "y":"5%",
-    },
+        {
+            "text": "273223",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%",
+            "y":"5%",
+        },
+        {
+            "text": "134580",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "70%",
+            "y":"5%",
+        },
+        {
+            "subtext": "在线系统",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%",
+            "y":"5%",
+        },
+        {
+            "subtext": "设备总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%",
+            "y":"5%",
+        },
+        {
+            "subtext": "摄像机总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%",
+            "y":"5%",
+        },
+        {
+            "subtext": "DVR总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "70%",
+            "y":"5%",
+        },
+
+
+    ],
     tooltip: {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -351,24 +501,74 @@ getechart("ecFairlyspecial", "themeSixteen",{
     ]
 });
 getechart("ecPathspecial", "themeSixteen",{
-    title: {
-        "text": "                 0      453     345",
-        "textStyle": {
-            "fontSize": "26",
-            //"color": "#000",
-            "fontFamily": "SimSun"
+    title:[
+        {
+            "text": "1",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%",
+            "y":"5%",
         },
-        "subtext": "                              在线系统       设备总数       报警设备数",
-        "subtextStyle": {
-            "fontSize": "14",
-            "color": "#000",
-            "fontFamily": "SimSun"
+        {
+            "text": "239453",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%",
+            "y":"5%",
         },
-        "textAlign":"center",
-        "x": "10%",
-        "y":"5%",
-    },
-
+        {
+            "text": "348905",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%",
+            "y":"5%",
+        },
+        {
+            "subtext": "在线系统",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%",
+            "y":"5%",
+        },
+        {
+            "subtext": "设备总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%",
+            "y":"5%",
+        },
+        {
+            "subtext": "报警设备数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%",
+            "y":"5%",
+        },
+    ],
     tooltip: {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -426,23 +626,90 @@ getechart("ecPathspecial", "themeSixteen",{
     ]
 });
 getechart("ecInspectspecial", "themeSixteen", {
-    title: {
-        "text": "                       1      580    23404    234",
-        "textStyle": {
-            "fontSize": "26",
-            //"color": "#000",
-            "fontFamily": "SimSun"
+    title:[
+        {
+            "text": "1",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%"
         },
-        "subtext": "                                           在线系统       设备总数       发卡人数        报警人次",
-        "subtextStyle": {
-            "fontSize": "14",
-            "color": "#000",
-            "fontFamily": "SimSun"
+        {
+            "text": "566680",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%"
         },
-        "textAlign":"center",
-        "x": "10%",
-        "y":"5%",
-    },
+        {
+            "text": "2663404",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%"
+        },
+        {
+            "text": "23554",
+            "textStyle": {
+                "fontSize": "26",
+                //"color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "70%"
+        },
+        {
+            "subtext": " 在线系统",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "10%"
+        },
+        {
+            "subtext": "设备总数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "30%"
+        },
+        {
+            "subtext": "发卡人数",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "50%"
+        },
+        {
+            "subtext": "报警人次",
+            "subtextStyle": {
+                "fontSize": "14",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "textAlign":"center",
+            "x": "70%"
+        },
+
+
+    ],
 
     tooltip: {
         trigger: 'item',

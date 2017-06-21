@@ -122,7 +122,7 @@ getechart("ecReduce_total", "theme", {
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        "itemGap":1,
+        "itemGap": 1,
         "subtext": "用户数",
         "subtextStyle": {
             "fontSize": "12",
@@ -177,7 +177,7 @@ getechart("ecReduce_total", "theme", {
             name: '月用户数',
             min: 0,
             max: 5000,
-            interval: 1000  ,
+            interval: 1000,
             axisLabel: {
                 formatter: '{value}'
             }
@@ -201,24 +201,53 @@ getechart("ecReduce_total", "theme", {
 
 });
 getechart("ecDefeat_total", "theme", {
-    "title": {
-        "text": "    674,993    540",
+    "title": [{
+        "text": "674,993",
         "textStyle": {
             "fontSize": "20",
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        //padding:100,//内边距，控制两个标题距离
-        "itemGap": 1,
-        "subtext": "           成交总额       总订单量",
-        "subtextStyle": {
-            "fontSize": "12",
-            "color": "#000",
-            "fontFamily": "SimSun"
-        },
-        "x": "center",
-        //"y": '-6%'
+        "itemGap": 5,
+        "x": "50%",
+        "textAlign":"center",
     },
+        {
+            "text": "9",
+            "textStyle": {
+                "fontSize": "20",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "itemGap": 5,
+            "x": "80%",
+            "textAlign":"center",
+        },
+//padding:100,//内边距，控制两个标题距离
+        {
+
+            "subtext": "成交总额",
+            "subtextStyle": {
+                "fontSize": "12",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "itemGap": 5,
+            "x": "50%",
+            "textAlign":"center",
+        },
+        {
+
+            "subtext": "总订单量",
+            "subtextStyle": {
+                "fontSize": "12",
+                "color": "#000",
+                "fontFamily": "SimSun"
+            },
+            "itemGap": 5,
+            "x": "80%",
+            "textAlign":"center",
+        }],
     tooltip: {
         trigger: 'axis'
     },
@@ -230,7 +259,7 @@ getechart("ecDefeat_total", "theme", {
         itemGap: 5,
         itemWidth: 15,
         itemHeight: 8,
-        data: ['月成交额','月订单量']
+        data: ['月成交额', '月订单量']
     },
     "grid": {
         "left": "10%",
@@ -272,10 +301,10 @@ getechart("ecDefeat_total", "theme", {
     ],
     series: [
         {
-            name:'月成交额',
-            type:'line',
+            name: '月成交额',
+            type: 'line',
             //stack: '总量',
-            data:[345893, 459087,87890, 90900, 509870,  74993]
+            data: [345893, 459087, 87890, 90900, 509870, 74993]
         },
         {
             name: '月订单量',
