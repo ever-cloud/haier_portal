@@ -357,7 +357,7 @@ getechart("ecLine_total", "themeSixteen", {
             "y":"5%",
         },
         {
-            "text": "45",
+            "text": "542334",
             "textStyle": {
                 "fontSize": "26",
                 //"color": "#000",
@@ -368,7 +368,7 @@ getechart("ecLine_total", "themeSixteen", {
             "y":"5%",
         },
         {
-            "text": "273223",
+            "text": "233134",
             "textStyle": {
                 "fontSize": "26",
                 //"color": "#000",
@@ -379,17 +379,7 @@ getechart("ecLine_total", "themeSixteen", {
             "y":"5%",
         },
         {
-            "text": "134580",
-            "textStyle": {
-                "fontSize": "26",
-                //"color": "#000",
-                "fontFamily": "SimSun"
-            },
-            "textAlign":"center",
-            "x": "70%",
-            "y":"5%",
-        },
-        {
+
             "subtext": "在线系统",
             "subtextStyle": {
                 "fontSize": "14",
@@ -401,7 +391,8 @@ getechart("ecLine_total", "themeSixteen", {
             "y":"5%",
         },
         {
-            "subtext": "设备总数",
+
+            "subtext": "电梯总数",
             "subtextStyle": {
                 "fontSize": "14",
                 "color": "#000",
@@ -412,7 +403,8 @@ getechart("ecLine_total", "themeSixteen", {
             "y":"5%",
         },
         {
-            "subtext": "摄像机总数",
+
+            "subtext": "报警电梯数",
             "subtextStyle": {
                 "fontSize": "14",
                 "color": "#000",
@@ -422,19 +414,6 @@ getechart("ecLine_total", "themeSixteen", {
             "x": "50%",
             "y":"5%",
         },
-        {
-            "subtext": "DVR总数",
-            "subtextStyle": {
-                "fontSize": "14",
-                "color": "#000",
-                "fontFamily": "SimSun"
-            },
-            "textAlign":"center",
-            "x": "70%",
-            "y":"5%",
-        },
-
-
     ],
 
     tooltip: {
