@@ -1,4 +1,3 @@
-
 $(function () {
 
     //点击显示隐藏问题
@@ -9,18 +8,18 @@ $(function () {
         $(this).parent().parent().next("div").children("#nav_room").hide();
         $(this).siblings(".trends").show();
 
-      var blocName=  $(this).children('a').text();
+        var blocName = $(this).children('a').text();
         //console.log(blocName);
-        setCookie("item",blocName);
+        setCookie("item", blocName);
 
 
     });
 
     $(".trends_group").on("click", function () {
         $(this).siblings(".community_group").slideToggle();
-        var groupName=  $(this).children('a').text();
+        var groupName = $(this).children('a').text();
         //console.log(groupName);
-        setCookie("groupItem",groupName);
+        setCookie("groupItem", groupName);
 
     });
 
@@ -31,13 +30,11 @@ $(function () {
     $(".community_name").on("click", function () {
         $(".community_name").removeClass("clickshow");
         $(this).addClass("clickshow");
-        var communityName=  $(this).children('a').text();
+        var communityName = $(this).children('a').text();
         //console.log(communityName);
-        setCookie("communityItem",communityName);
-        setCookie("strkey",1);
+        setCookie("communityItem", communityName);
+        setCookie("strkey", 1);
     });
-
-
 
 
     $(".ul>li").on("click", function () {
@@ -51,10 +48,6 @@ $(function () {
     });
 
 
-
-
-
-
     $(".text").focus(function () {
         $(".search_menu").css("display", "block");
     })
@@ -63,6 +56,8 @@ $(function () {
         var textval = $(".text").val();
         $(".community_group>ul>li>a").each(function () {
             if (getFirst($.trim($(this).text())) == getFirst(textval)) {
+                console.log($(this).parent());
+                console.log($(this).parent().parent());
                 $(this).parent().parent().show().parent().show()
                     .siblings().show().parent().show().siblings().show();
 
@@ -84,13 +79,29 @@ $(function () {
     $(".text").keydown(function (e) {
         if (e.keyCode == "13") {
             var textval = $(this).val();
-            $(".community_group>ul>li>a").each(function () {
-                if (getFirst($.trim($(this).text())) == getFirst(textval)) {
-                    $(this).parent().parent().show().parent().show()
-                        .siblings().show().parent().show().siblings().show();
+            // $(".community_group>ul>li>a").each(function () {
+            //     if (getFirst($.trim($(this).text())) == getFirst(textval)) {
+            //         $(this).parent().parent().show().parent().show()
+            //             .siblings().show().parent().show().siblings().show();
+            //
+            //     }
+            // });
+            if (textval == "" || textval == undefined || textval == "null") {
+                //如果成功
+              //  window.parent.frames["left"].location.reload();
+                alert("成功")
 
-                }
-            });
+            }
+            //如果不成功
+            // if (getFirst($.trim($(this).text())).indexOf(getFirst(textval)) !== -1) {
+            //     //console.log($(this).parent().parent().show().parent().show());
+            //     //console.log($(this).parent().parent().show().parent().show().siblings().show());
+            //     //console.log($(this).parent().parent().show().parent().show().siblings().show().parent().show());
+            //     //console.log($(this).parent().parent().show().parent().show().siblings().show().parent().show().siblings().show());
+            //     ////$(this).parent().parent().show().parent().show().siblings().show().parent().show().siblings().show();
+            // }else
+
+
             $(".nav_item>ul>li").each(function () {
                 if ($.trim($(this).text()) == getFirst(textval)) {
                     $(this).next(".box").show();
@@ -530,3 +541,6 @@ $(function () {
 
 
 });
+
+
+

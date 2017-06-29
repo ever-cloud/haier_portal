@@ -15,7 +15,7 @@
     <script src="../lib/echarts/themes/echartsThemes.js"></script>
     <script src="../js/common/tab-click.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $(".tabBox_right span").text(getCookie("communityItem"));
         })
     </script>
@@ -30,7 +30,7 @@
                     <ul>
                         <li><a href="./blocmain.html" target="blocmain">地图</a></li>
                         <li><a href="./blochome.html" target="blocmain">首页</a></li>
-                        <li><a href="./blocuser.html" target="blocmain"   class="clickstyle">用户总览</a></li>
+                        <li><a href="./blocuser.html" target="blocmain" class="clickstyle">用户总览</a></li>
                         <li><a href="./bloctenement.html" target="blocmain">物业服务</a></li>
                         <li><a href="./blocfacility.html" target="blocmain">设备状态</a></li>
                         <li><a href="./blocbusiness.html" target="blocmain">商业服务</a></li>
@@ -83,26 +83,8 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide com_user_two">
-                            <div class="gender">
-                                <img src="../images/gender.png" alt="" class="boy"/>
-                                <img src="../images/girl.png" alt="" class="girl"/>
-
-                                <div id="ecGender_com"></div>
-                            </div>
-                            <div class="age">
-                                <div id="ecAge_com"></div>
-                                <img src="../images/baby.png" alt="" class="baby"/>
-                                <img src="../images/boy.png" alt="" class="young"/>
-                                <img src="../images/father.png" alt="" class="father"/>
-                                <img src="../images/grandpa.png" alt="" class="grandpa"/>
-
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -113,22 +95,4 @@
 <script src="../js/common/common.js"></script>
 <script src="../js/common/setcookie.js"></script>
 
-
-<!--swiper轮播图插件-->
-<script src="../dist/js/swiper.min.js"></script>
-
-<script>
-    var swiper;
-
-    function getUser() {
-        swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 30
-        });
-    }
-    getUser();
-</script>
 </html>

@@ -170,53 +170,53 @@ $(function () {
 
 });
 
-
-$(function(){
-    /**海尔总计
-     *
-     */
-    $(".hr_totalUser").hover(function () {
-        $(".swiper-button-next").css("display", "block");
-        $(".swiper-button-prev").css("display", "block");
-    }, function () {
-        $(".swiper-button-next").css("display", "none");
-        $(".swiper-button-prev").css("display", "none");
-    });
-
-    /**
-     * 海尔集团-轮播图两端小箭头鼠标移入移除事件
-     */
-    $(".hr_blocUser").hover(function () {
-        $(".swiper-button-next").css("display", "block");
-        $(".swiper-button-prev").css("display", "block");
-    }, function () {
-        $(".swiper-button-next").css("display", "none");
-        $(".swiper-button-prev").css("display", "none");
-    });
-
-    /**
-     * 海尔社区-轮播图两端小箭头鼠标移入移除事件
-     */
-
-    $(".hr_communityUser").hover(function () {
-        $(".swiper-button-next").css("display", "block");
-        $(".swiper-button-prev").css("display", "block");
-    }, function () {
-        $(".swiper-button-next").css("display", "none");
-        $(".swiper-button-prev").css("display", "none");
-    });
-
-
-    $(".communityUser").hover(function () {
-        $(".swiper-button-next").css("display", "block");
-        $(".swiper-button-prev").css("display", "block");
-    }, function () {
-        $(".swiper-button-next").css("display", "none");
-        $(".swiper-button-prev").css("display", "none");
-    });
-
-
-})
+//
+// $(function(){
+//     /**海尔总计
+//      *
+//      */
+//     $(".hr_totalUser").hover(function () {
+//         $(".swiper-button-next").css("display", "block");
+//         $(".swiper-button-prev").css("display", "block");
+//     }, function () {
+//         $(".swiper-button-next").css("display", "none");
+//         $(".swiper-button-prev").css("display", "none");
+//     });
+//
+//     /**
+//      * 海尔集团-轮播图两端小箭头鼠标移入移除事件
+//      */
+//     $(".hr_blocUser").hover(function () {
+//         $(".swiper-button-next").css("display", "block");
+//         $(".swiper-button-prev").css("display", "block");
+//     }, function () {
+//         $(".swiper-button-next").css("display", "none");
+//         $(".swiper-button-prev").css("display", "none");
+//     });
+//
+//     /**
+//      * 海尔社区-轮播图两端小箭头鼠标移入移除事件
+//      */
+//
+//     $(".hr_communityUser").hover(function () {
+//         $(".swiper-button-next").css("display", "block");
+//         $(".swiper-button-prev").css("display", "block");
+//     }, function () {
+//         $(".swiper-button-next").css("display", "none");
+//         $(".swiper-button-prev").css("display", "none");
+//     });
+//
+//
+//     $(".communityUser").hover(function () {
+//         $(".swiper-button-next").css("display", "block");
+//         $(".swiper-button-prev").css("display", "block");
+//     }, function () {
+//         $(".swiper-button-next").css("display", "none");
+//         $(".swiper-button-prev").css("display", "none");
+//     });
+//
+//
+// })
 
 
 

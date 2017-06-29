@@ -79,26 +79,8 @@
                             </div>
 
                         </div>
-                        <div class="swiper-slide hr_total_user_two">
-                            <div class="gender_total">
-                                <img src="../images/gender.png" alt="" class="boy_total"/>
-                                <!--echarts 5-->
-                                <div id="ecGender_total"></div>
-                                <img src="../images/girl.png" alt="" class="girl_total"/>
-                            </div>
 
-                            <div class="age_total">
-                                <img src="../images/baby.png" alt="" class="baby_total"/>
-                                <img src="../images/boy.png" alt="" class="young_total"/>
-                                <img src="../images/father.png" alt="" class="father_total"/>
-                                <img src="../images/grandpa.png" alt="" class="grandpa_total"/>
-                                <!--echarts 6-->
-                                <div id="ecAge_total"></div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -109,23 +91,4 @@
 <script src="../js/common/common.js"></script>
 
 
-
-<!--swiper轮播图插件-->
-<script src="../dist/js/swiper.min.js"></script>
-
-<script>
-    var swiper;
-
-    function getUser() {
-
-        swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 30
-        });
-    }
-    getUser();
-</script>
 </html>
