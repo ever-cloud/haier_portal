@@ -289,7 +289,7 @@ getechart("ecSellCount", "themeFiveteen", {
             type: 'pie',
             selectedMode: 'single',
             radius: [0, '25%'],
-            center: ['58%', '71%'],
+            center: ['60%', '65%'],
             label: {
                 normal: {
                     position: 'inner',
@@ -319,7 +319,7 @@ getechart("ecSellCount", "themeFiveteen", {
             name: '访问来源',
             type: 'pie',
             radius: ['40%', '55%'],
-            center: ['58%', '71%'],
+            center: ['60%', '65%'],
             data: [
                 {value: 335, name: '故障dvr'},
                 {value: 310, name: '正常dvr'},
