@@ -92,7 +92,10 @@ getechart("ecHouse_total", "themeFour", {
 
     ],
     tooltip: {
-        trigger: 'item'
+        trigger: 'item',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
     },
 
     grid: {
@@ -229,7 +232,10 @@ getechart("ecHome_total", "themeFour", {
     ],
     //center:['80%','50%'],
     tooltip: {
-        trigger: 'item'
+        trigger: 'item',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
     },
 
     grid: {
@@ -385,33 +391,33 @@ getechart("ecExcellent_total", "theme", {
         "x": "10%",
         "top": "30",
     },
-    "tooltip": {
-        "trigger": "axis"
+    tooltip: {
+        trigger: "axis",
     },
-    "legend": {
+    legend: {
         "top": "13%",
         "right": "5%",
-        "data": [
+        data: [
             "订单量",
             "成交额"
         ]
     },
-    "dataZoom": {
+    dataZoom: {
         "show": false,
         "start": 0,
         "end": 100
     },
-    "grid": {
+    grid: {
         "left": "20%",
         "bottom": "1%",
         "containLabel": true,
         "height": "70%"
     },
-    "xAxis": [
+    xAxis: [
         {
             "type": "category",
             "boundaryGap": true,
-            "data": [
+            data: [
                 "16-01",
                 "16-02",
                 "16-03",
@@ -426,23 +432,23 @@ getechart("ecExcellent_total", "theme", {
         {
             "type": "category",
             "boundaryGap": true,
-            "data": [
-                "16-01",
-                "16-02",
-                "16-03",
-                "16-04",
-                "16-05",
-                "16-06",
-                "16-07",
-                "16-08",
-                "16-09"
+            data: [
+                // "16-01",
+                // "16-02",
+                // "16-03",
+                // "16-04",
+                // "16-05",
+                // "16-06",
+                // "16-07",
+                // "16-08",
+                // "16-09"
             ]
         }
     ],
-    "yAxis": [
+    yAxis: [
         {
             "type": "value",
-            "scale": true,
+            // "scale": true,
             "name": "订单量",
             "nameGap": 20,
             "max": 30,
@@ -450,11 +456,14 @@ getechart("ecExcellent_total", "theme", {
             "boundaryGap": [
                 0.2,
                 0.2
-            ]
+            ],
+            axisLabel: {
+                formatter: '{value}'
+            }
         },
         {
             "type": "value",
-            "scale": true,
+            // "scale": true,
             "name": "成交额",
             "nameGap": 20,
             "max": 1200,
@@ -462,14 +471,17 @@ getechart("ecExcellent_total", "theme", {
             "boundaryGap": [
                 0.2,
                 0.2
-            ]
+            ],
+            axisLabel: {
+                formatter: '{value}'
+            }
         }
     ],
     "series": [
         {
             "name": "订单量",
             "type": "line",
-            "data": [
+            data: [
                 6,
                 7,
                 5,
@@ -484,9 +496,9 @@ getechart("ecExcellent_total", "theme", {
         {
             "name": "成交额",
             "type": "bar",
-            "xAxisIndex": 1,
+            // "xAxisIndex": 1,
             "yAxisIndex": 1,
-            "data": [
+            data: [
                 600,
                 700,
                 500,

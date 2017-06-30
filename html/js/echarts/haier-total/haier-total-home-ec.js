@@ -201,7 +201,8 @@ getechart("ecReduce_total", "theme", {
 
 });
 getechart("ecDefeat_total", "theme", {
-    "title": [{
+    "title": [
+        {
         "text": "674,993",
         "textStyle": {
             "fontSize": "20",

@@ -92,7 +92,10 @@ getechart("ecHousenew", "themeFour",{
 
     ],
     tooltip: {
-        trigger: 'item'
+        trigger: 'item',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
     },
 
     grid: {
@@ -238,7 +241,10 @@ getechart("ecHomenew", "themeFour", {
 
     ],
     tooltip: {
-        trigger: 'item'
+        trigger: 'item',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
     },
 
     grid: {
@@ -444,15 +450,15 @@ getechart("ecExcellentnew", "theme",{
             "type": "category",
             "boundaryGap": true,
             "data": [
-                "16-01",
-                "16-02",
-                "16-03",
-                "16-04",
-                "16-05",
-                "16-06",
-                "16-07",
-                "16-08",
-                "16-09"
+                // "16-01",
+                // "16-02",
+                // "16-03",
+                // "16-04",
+                // "16-05",
+                // "16-06",
+                // "16-07",
+                // "16-08",
+                // "16-09"
             ]
         }
     ],
@@ -501,7 +507,7 @@ getechart("ecExcellentnew", "theme",{
         {
             "name": "成交额",
             "type": "bar",
-            "xAxisIndex": 1,
+            // "xAxisIndex": 1,
             "yAxisIndex": 1,
             "data": [
                 600,

@@ -1,12 +1,15 @@
+//bottom
 getechart("ecMend_total", "themeEightteen", {
     "title": {
         "text": "367",
+
         "textStyle": {
             "fontSize": "26",
             "color": "#000",
             "fontFamily": "SimSun"
 
         },
+
         "subtext": "月报修量",
         "subtextStyle": {
             "fontSize": "14",
@@ -243,6 +246,7 @@ getechart("ecMaintain_total", "themeEightteen", {
         }
     ]
 });
+//top
 getechart("ecMeasure_total", "themeEightteen", {
     "title": {
         "text": "289",

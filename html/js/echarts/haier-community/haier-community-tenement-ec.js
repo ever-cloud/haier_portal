@@ -20,7 +20,7 @@ getechart("ecDescribe", "themeEightteen", {
     },
 
     legend: {
-        "right":'25%',
+        "right": '25%',
         "top": '20%',
         data: ['总投诉', '对话中', '已完成']
     },
@@ -63,12 +63,12 @@ getechart("ecDescribe", "themeEightteen", {
         {
             name: '对话中',
             type: 'bar',
-            data: [ 120, 132, 101, 134, 90, 230, 210]
+            data: [120, 132, 101, 134, 90, 230, 210]
         },
         {
             name: '已完成',
             type: 'bar',
-            data: [ 220, 182, 191, 234, 290, 330, 310]
+            data: [220, 182, 191, 234, 290, 330, 310]
         },
         {
             name: '总投诉',
@@ -96,89 +96,91 @@ getechart("ecEnsure", "themeEightteen", {
         },
         "x": "left"
     },
+    tooltip: {
+        trigger: 'axis'
+    },
 
-
-legend: {
-      "top": '20%',
+    legend: {
+        "top": '20%',
         "right": '12%',
         data: ['未受理', '已受理', '已完成']
-},
-grid: {
-    right:'8%',
+    },
+    grid: {
+        right: '8%',
         bottom: '10%',
         "height": "50%",
         //"width": "70%"
-},
-xAxis: [
-    {
-        type: 'category',
-        data: ["6月",
-            "7月",
-            "8月",
-            "9月",
-            "10月",
-            "11月",
-            "12月"]
-    }
-],
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ["6月",
+                "7月",
+                "8月",
+                "9月",
+                "10月",
+                "11月",
+                "12月"]
+        }
+    ],
     yAxis: [
-    {
-        type: 'value',
-        name: '次数',
-        min: 0,
-        max: 600,
-        interval: 200,
-        axisLabel: {
-            formatter: '{value}'
+        {
+            type: 'value',
+            name: '次数',
+            min: 0,
+            max: 600,
+            interval: 200,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        },
+        {
+            type: 'value',
+            name: '未受理',
+            min: 0,
+            max: 600,
+            interval: 200,
+            axisLabel: {
+                formatter: '{value}'
+            }
         }
-    },
-    {
-        type: 'value',
-        name: '未受理',
-        min: 0,
-        max: 600,
-        interval: 200,
-        axisLabel: {
-            formatter: '{value}'
-        }
-    }
-],
+    ],
     series: [
-    {
-        name: '已受理',
-        type: 'bar',
-        data: [120,
-            132,
-            101,
-            134,
-            90,
-            230,
-            210]
-    },
-    {
-        name: '已完成',
-        type: 'bar',
-        data: [220,
-            182,
-            191,
-            234,
-            290,
-            330,
-            310]
-    },
-    {
-        name: '未受理',
-        type: 'line',
-        yAxisIndex: 1,
-        data: [320,
-            302,
-            301,
-            334,
-            390,
-            330,
-            320]
-    }
-]
+        {
+            name: '已受理',
+            type: 'bar',
+            data: [120,
+                132,
+                101,
+                134,
+                90,
+                230,
+                210]
+        },
+        {
+            name: '已完成',
+            type: 'bar',
+            data: [220,
+                182,
+                191,
+                234,
+                290,
+                330,
+                310]
+        },
+        {
+            name: '未受理',
+            type: 'line',
+            yAxisIndex: 1,
+            data: [320,
+                302,
+                301,
+                334,
+                390,
+                330,
+                320]
+        }
+    ]
 });
 getechart("ecHouseRepair", "themeEightteen", {
     "title": {
@@ -209,7 +211,7 @@ getechart("ecHouseRepair", "themeEightteen", {
         data: ['新报修', '对话中', '已完成']
     },
     grid: {
-        right:'8%',
+        right: '8%',
         bottom: '10%',
         "height": "50%",
         //"width": "70%"
@@ -275,7 +277,7 @@ getechart("ecHouseRepair", "themeEightteen", {
             name: '新报修',
             type: 'line',
             yAxisIndex: 1,
-            data: [  320,
+            data: [320,
                 302,
                 301,
                 334,
@@ -315,7 +317,7 @@ getechart("ecType", "themeEightteen", {
     },
     grid: {
         bottom: '10%',
-        right:'8%',
+        right: '8%',
         "height": "50%",
         //"width": "70%"
     },
@@ -380,7 +382,7 @@ getechart("ecType", "themeEightteen", {
             name: '新报修',
             type: 'line',
             yAxisIndex: 1,
-            data: [ 320,
+            data: [320,
                 302,
                 301,
                 334,
@@ -425,7 +427,7 @@ getechart("eccombox", "themeEightteen", {
         right: '4%',
         bottom: '3%',
         containLabel: true,
-        height:'55%'
+        height: '55%'
     },
     xAxis: [
         {
@@ -443,14 +445,14 @@ getechart("eccombox", "themeEightteen", {
             name: '待评价',
             type: 'bar',
             stack: '评价',
-            barWidth:'40',
+            barWidth: '40',
             data: [320, 332, 301, 334, 390]
         },
         {
             name: '已评价',
             type: 'bar',
             stack: '评价',
-            barWidth:'40',
+            barWidth: '40',
             data: [120, 132, 101, 134, 90]
         }
     ]

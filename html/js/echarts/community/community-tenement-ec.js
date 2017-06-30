@@ -97,8 +97,9 @@ getechart("ecEnsurenew", "themeEightteen", {
         },
         "x": "left"
     },
-
-
+    tooltip: {
+        trigger: 'axis'
+    },
     legend: {
         "top": '20%',
         "right": '12%',
