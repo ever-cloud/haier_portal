@@ -262,12 +262,12 @@ getechart("ecMendsever", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+
                         }
                     }
                 }
@@ -284,12 +284,12 @@ getechart("ecMendsever", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+
                         }
                     }
                 }
@@ -306,12 +306,12 @@ getechart("ecMendsever", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+
                         }
                     }
                 }
@@ -385,7 +385,7 @@ getechart("ecProcess", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -406,7 +406,7 @@ getechart("ecProcess", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -427,7 +427,7 @@ getechart("ecProcess", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -505,7 +505,7 @@ getechart("ecPush", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -526,7 +526,7 @@ getechart("ecPush", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -604,7 +604,7 @@ getechart("ecReference", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -625,7 +625,7 @@ getechart("ecReference", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",

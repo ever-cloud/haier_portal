@@ -13,7 +13,8 @@ getechart("ecAdaptCount", "themeThreeteen", {
         },
         {
             "subtext": "设备总数",
-            "x": "10%",
+            textAlign:'center',
+            x: "10%",
             "y": "5%",
             "subtextStyle": {
                 "fontSize": "14",
@@ -39,7 +40,7 @@ getechart("ecAdaptCount", "themeThreeteen", {
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '50%'],
+            center: ['50%', '45%'],
             data: [
                 {value: 335, name: '视频监控'},
                 {value: 310, name: '入侵报警'},
@@ -93,8 +94,7 @@ getechart("ecAdaptCount", "themeThreeteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
             //itemStyle: {
@@ -128,7 +128,8 @@ getechart("ecOpenCount", "themeFourteen", {
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        "x": "2%",
+        textAlign:'center',
+        x: "10%",
         "y": "5%",
     },
     tooltip: {
@@ -145,7 +146,7 @@ getechart("ecOpenCount", "themeFourteen", {
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['55%', '50%'],
+            center: ['60%', '45%'],
             data: [
                 {value: 1480, name: 'dvr设备'},
                 {value: 310, name: '人员定位'},
@@ -173,8 +174,7 @@ getechart("ecOpenCount", "themeFourteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             }
         }
@@ -288,7 +288,7 @@ getechart("ecSellCount", "themeFiveteen", {
             name: '访问来源',
             type: 'pie',
             selectedMode: 'single',
-            radius: [0, '25%'],
+            radius: [0, '30%'],
             center: ['60%', '65%'],
             label: {
                 normal: {
@@ -347,8 +347,7 @@ getechart("ecSellCount", "themeFiveteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -475,8 +474,7 @@ getechart("ecFairly", "themeSixteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -601,8 +599,7 @@ getechart("ecPath", "themeSixteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -746,8 +743,7 @@ getechart("ecInspect", "themeSixteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             }
         },

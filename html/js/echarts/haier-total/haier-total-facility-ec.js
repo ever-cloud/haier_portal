@@ -14,6 +14,7 @@ getechart("ecAdapt_total", "themeThreeteen", {
             "fontFamily": "SimSun"
         },
 
+        "textAlign": "center",
         "x": "10%",
         "y":"5%",
     },
@@ -36,7 +37,7 @@ getechart("ecAdapt_total", "themeThreeteen", {
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '50%'],
+            center: ['50%', '45%'],
             data: [
                 {value: 335, name: '视频监控'},
                 {value: 310, name: '入侵报警'},
@@ -52,19 +53,20 @@ getechart("ecAdapt_total", "themeThreeteen", {
                 return a.value - b.value
             }),
             roseType: 'angle',
-            //label: {
-            //    normal: {
-            //        show: false,
-            //        position: 'center'
-            //    },
-            //    emphasis: {
-            //        show: true,
-            //        textStyle: {
-            //            fontSize: '16',
-            //            fontWeight: 'bold'
-            //        }
-            //    }
-            //},
+            // label: {
+            //     normal: {
+            //         textStyle: {
+            //             fontSize: '16',
+            //             fontFamily: "SimSun"
+            //         }
+            //     },
+            //     emphasis: {
+            //         textStyle: {
+            //             fontSize: '16',
+            //             fontFamily: "SimSun"
+            //         }
+            //     }
+            // },
             //labelLine: {
             //    normal: {
             //        show: false
@@ -90,8 +92,7 @@ getechart("ecAdapt_total", "themeThreeteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
             //itemStyle: {
@@ -125,8 +126,8 @@ getechart("ecOpen_total", "themeFourteen", {
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        //"textAlign":"center",
-        "x": "2%",
+        "textAlign": "center",
+        "x": "10%",
         "y":"5%",
     },
     tooltip: {
@@ -139,7 +140,7 @@ getechart("ecOpen_total", "themeFourteen", {
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['55%', '50%'],
+            center: ['60%', '45%'],
             data: [
                 {value: 1480, name: 'dvr设备'},
                 {value: 310, name: '人员定位'},
@@ -167,8 +168,7 @@ getechart("ecOpen_total", "themeFourteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             }
         }
@@ -277,7 +277,7 @@ series: [
         name: '访问来源',
         type: 'pie',
         selectedMode: 'single',
-        radius: [0, '25%'],
+        radius: [0, '30%'],
         center: ['60%', '65%'],
         label: {
             normal: {
@@ -336,8 +336,7 @@ series: [
                     color: '#000'
                 },
                 smooth: 0.2,
-                length: 10,
-                length2: 20
+                length: 1
             }
         },
     }
@@ -463,8 +462,7 @@ getechart("ecLine_total", "themeSixteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -589,8 +587,7 @@ getechart("ecStop_total", "themeSixteen",{
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -734,9 +731,7 @@ getechart("ecPaking_total", "themeSixteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
-                }
+                    length: 1                }
             }
         },
     ]

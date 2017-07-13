@@ -262,12 +262,12 @@ getechart("ecMendseverleft", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+
                         }
                     }
                 }
@@ -284,7 +284,7 @@ getechart("ecMendseverleft", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -306,7 +306,7 @@ getechart("ecMendseverleft", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -385,7 +385,7 @@ getechart("ecProcessright", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -406,7 +406,7 @@ getechart("ecProcessright", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -427,7 +427,7 @@ getechart("ecProcessright", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -503,7 +503,7 @@ getechart("ecPushleft", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -524,7 +524,7 @@ getechart("ecPushleft", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -602,7 +602,7 @@ getechart("ecReferenceright", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -623,7 +623,7 @@ getechart("ecReferenceright", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        "position": ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",

@@ -61,7 +61,7 @@ getechart("ecBand", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['10','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -81,7 +81,7 @@ getechart("ecBand", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['10','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -101,7 +101,7 @@ getechart("ecBand", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['10','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -378,12 +378,12 @@ getechart("ecFinish", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+
                         }
                     }
                 }
@@ -400,12 +400,12 @@ getechart("ecFinish", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+
                         }
                     }
                 }
@@ -422,12 +422,12 @@ getechart("ecFinish", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+
                         }
                     }
                 }
@@ -501,7 +501,7 @@ getechart("ecReceive", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -522,7 +522,7 @@ getechart("ecReceive", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -543,7 +543,7 @@ getechart("ecReceive", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -620,7 +620,7 @@ getechart("ecStart", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -641,7 +641,7 @@ getechart("ecStart", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -719,7 +719,7 @@ getechart("ecEnd", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -740,7 +740,7 @@ getechart("ecEnd", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5','5'],
+                        position: ['1','5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",

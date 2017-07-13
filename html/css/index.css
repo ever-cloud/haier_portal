@@ -649,7 +649,7 @@
 .hr_total_facility_r_botttom .hr_total_bar_title {
     position: absolute;
     bottom: 4%;
-    left: 40%;
+    left: 43%;
     font-size: 18px;
     font-weight: bold;
 }
@@ -822,7 +822,7 @@
 .hr_total_facility_r{
     width: 50%;
     height: 100%;
-    border-right: 4px solid #bbdff2;
+    /*border-right: 4px solid #bbdff2;*/
     float: left;
 }
 .system_facility_r_total{
@@ -1734,7 +1734,7 @@
 .facility_r_botttom .bar_title {
     position: absolute;
     bottom: 4%;
-    left: 40%;
+    left: 43%;
     font-size: 18px;
     font-weight: bold;
 }
@@ -1939,7 +1939,7 @@
 .facility_r{
     width: 50%;
     height: 100%;
-    border-right: 4px solid #bbdff2;
+    /*border-right: 4px solid #bbdff2;*/
     float: left;
 }
 .system_facility_r{

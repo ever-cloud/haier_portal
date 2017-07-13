@@ -722,7 +722,7 @@
 .com_special_bar_title{
     position: absolute;
     bottom: 4%;
-    left: 40%;
+    left: 43%;
     font-size: 18px;
     font-weight: bold;
 
@@ -944,7 +944,7 @@
 .com_facility_r_new{
     width: 50%;
     height: 100%;
-    border-right: 4px solid #bbdff2;
+    /*border-right: 4px solid #bbdff2;*/
     float: left;
 }
 .com_system_facility_r_new{

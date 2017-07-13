@@ -368,8 +368,7 @@ getechart("ecOrderserve", "themeSeventeen",{
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             }
         }

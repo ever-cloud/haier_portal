@@ -17,7 +17,8 @@ getechart("ecMend_total", "themeEightteen", {
             "fontFamily": "SimSun"
         },
 
-        "x": "left"
+        "textAlign": "center",
+        "x": "10%",
     },
     tooltip: {
         trigger: 'axis'
@@ -98,7 +99,8 @@ getechart("ecFix_total", "themeEightteen", {
             "fontFamily": "SimSun"
 
         },
-        "x": "left"
+        "textAlign": "center",
+        "x": "10%",
     },
 
     tooltip: {
@@ -180,7 +182,8 @@ getechart("ecMaintain_total", "themeEightteen", {
             "fontFamily": "SimSun"
 
         },
-        "x": "left"
+        "textAlign": "center",
+        "x": "10%",
     },
 
     tooltip: {
@@ -256,6 +259,8 @@ getechart("ecMeasure_total", "themeEightteen", {
             "fontFamily": "SimSun"
 
         },
+        "textAlign": "center",
+        "x": "5%",
         "subtext": "月投诉量",
         "subtextStyle": {
             "fontSize": "14",
@@ -263,7 +268,7 @@ getechart("ecMeasure_total", "themeEightteen", {
             "fontFamily": "SimSun"
 
         },
-        "x": "left"
+
     },
 
     tooltip: {

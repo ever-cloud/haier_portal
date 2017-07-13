@@ -36,7 +36,7 @@ getechart("ecAdaptspecial", "themeThreeteen",{
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '50%'],
+            center: ['50%', '45%'],
             data: [
                 {value: 335, name: '视频监控'},
                 {value: 310, name: '入侵报警'},
@@ -90,8 +90,8 @@ getechart("ecAdaptspecial", "themeThreeteen",{
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length:1
+                    // length2: 20
                 }
             },
             //itemStyle: {
@@ -143,12 +143,16 @@ getechart("ecOpenspecial", "themeFourteen",{
             name: '访问来源',
             type: 'pie',
             radius: '55%',
-            center: ['50%', '50%'],
+            center: ['60%', '45%'],
             data: [
                 {value: 1480, name: 'dvr设备'},
                 {value: 310, name: '人员定位'},
                 {value: 234, name: '摄像机'},
                 {value: 135, name: '电梯'},
+                {value: 335, name: '可视对讲'},
+                {value: 335, name: '可视对讲'},
+                {value: 335, name: '可视对讲'},
+                {value: 335, name: '可视对讲'},
                 {value: 335, name: '可视对讲'}
             ],
             label: {
@@ -171,8 +175,8 @@ getechart("ecOpenspecial", "themeFourteen",{
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1,
+                    // length2: 20
                 }
             }
         }
@@ -285,7 +289,8 @@ getechart("ecSellspecial", "themeFiveteen",{
             name: '访问来源',
             type: 'pie',
             selectedMode: 'single',
-            radius: [0, '25%'],
+            // radius: [0, '25%'],
+            radius: [0, '30%'],
             center: ['60%', '65%'],
             label: {
                 normal: {
@@ -301,9 +306,9 @@ getechart("ecSellspecial", "themeFiveteen",{
                     lineStyle: {
                         color: '#000',
                     },
-                    //smooth: 0.2,
-                    //length: 10,
-                    //length2: 20
+
+                    length: 1,
+
                 }
             },
 
@@ -344,8 +349,7 @@ getechart("ecSellspecial", "themeFiveteen",{
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -472,8 +476,7 @@ getechart("ecFairlyspecial", "themeSixteen",{
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -597,8 +600,7 @@ getechart("ecPathspecial", "themeSixteen",{
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             },
         }
@@ -742,8 +744,7 @@ getechart("ecInspectspecial", "themeSixteen", {
                         color: '#000'
                     },
                     smooth: 0.2,
-                    length: 10,
-                    length2: 20
+                    length: 1
                 }
             }
         },

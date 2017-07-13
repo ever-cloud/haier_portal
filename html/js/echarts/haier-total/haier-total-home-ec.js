@@ -7,6 +7,7 @@ getechart("ecBand_total", "theme", {
             "fontFamily": "SimSun"
 
         },
+        textAlign:'center',
         "itemGap": 3,
         subtext: '项目总数',
         "subtextStyle": {
@@ -61,7 +62,7 @@ getechart("ecBand_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['10', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -71,7 +72,7 @@ getechart("ecBand_total", "theme", {
                 }
             },
             barWidth: '25',
-            data: [32]
+            data: [5]
         },
         {
             name: '施工阶段',
@@ -81,7 +82,7 @@ getechart("ecBand_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['10', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -101,7 +102,7 @@ getechart("ecBand_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['10', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -129,7 +130,9 @@ getechart("ecReduce_total", "theme", {
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        "x": "center"
+        "x": "center",
+        // textAlign:'center',
+
     },
     tooltip: {
         trigger: 'axis'
@@ -379,12 +382,12 @@ getechart("ecFinish_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize": 12,
-                            "fontWeight": 'bold'
+
                         }
                     }
                 }
@@ -401,12 +404,12 @@ getechart("ecFinish_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize": 12,
-                            "fontWeight": 'bold'
+
                         }
                     }
                 }
@@ -423,12 +426,12 @@ getechart("ecFinish_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize": 12,
-                            "fontWeight": 'bold'
+
                         }
                     }
                 }
@@ -502,7 +505,7 @@ getechart("ecReceive_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -523,7 +526,7 @@ getechart("ecReceive_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -544,7 +547,7 @@ getechart("ecReceive_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -621,7 +624,7 @@ getechart("ecStart_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -642,7 +645,7 @@ getechart("ecStart_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -720,7 +723,7 @@ getechart("ecEnd_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
@@ -741,7 +744,7 @@ getechart("ecEnd_total", "theme", {
                 normal: {
                     label: {
                         show: true,
-                        "position": ['5', '5'],
+                        "position": ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",

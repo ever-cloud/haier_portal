@@ -14,7 +14,8 @@ getechart("ecMend", "themeEightteen", {
             "fontFamily": "SimSun"
         },
 
-        "x": "left"
+        "textAlign": "center",
+        "x": "10%",
     },
     tooltip: {
         trigger: 'axis'
@@ -95,7 +96,8 @@ getechart("ecFix", "themeEightteen", {
             "fontFamily": "SimSun"
 
         },
-        "x": "left"
+        "textAlign": "center",
+        "x": "10%",
     },
 
     tooltip: {
@@ -177,7 +179,8 @@ getechart("ecMaintain", "themeEightteen", {
             "fontFamily": "SimSun"
 
         },
-        "x": "left"
+        "textAlign": "center",
+        "x": "10%",
     },
 
     tooltip: {
@@ -259,7 +262,8 @@ getechart("ecMeasure", "themeEightteen", {
             "fontFamily": "SimSun"
 
         },
-        "x": "left"
+        "textAlign": "center",
+        "x": "5%",
     },
 
     tooltip: {
