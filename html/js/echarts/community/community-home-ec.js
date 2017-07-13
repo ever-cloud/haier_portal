@@ -289,7 +289,7 @@ getechart("ecMendseverleft", "theme",{
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+                           
                         }
                     }
                 }
@@ -311,7 +311,7 @@ getechart("ecMendseverleft", "theme",{
                         "textStyle": {
                             "color": "#ffffff",
                             "fontSize":12,
-                            "fontWeight":'bold'
+                          
                         }
                     }
                 }

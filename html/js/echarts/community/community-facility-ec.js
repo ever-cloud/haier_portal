@@ -125,8 +125,8 @@ getechart("ecOpenspecial", "themeFourteen",{
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        //"textAlign":"center",
-        "x": "2%",
+        "textAlign":"center",
+        "x": "10%",
         "y":"5%",
     },
     tooltip: {

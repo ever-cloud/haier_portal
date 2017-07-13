@@ -15,7 +15,7 @@ getechart("ecDescribenew", "themeEightteen", {
 
         },
         textAlign:'center',
-        x: "10%",
+        x: "5%",
     },
     tooltip: {
         trigger: 'axis'

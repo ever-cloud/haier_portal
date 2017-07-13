@@ -14,7 +14,7 @@ getechart("ecDescribe", "themeEightteen", {
             "fontFamily": "SimSun"
         },
         textAlign:'center',
-        x: "10%"
+        x: "5%"
     },
     tooltip: {
         trigger: 'axis'
