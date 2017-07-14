@@ -722,7 +722,7 @@
 .com_special_bar_title{
     position: absolute;
     bottom: 4%;
-    left: 43%;
+    left: 40%;
     font-size: 18px;
     font-weight: bold;
 
@@ -926,7 +926,7 @@
 
 .door_system_new li span {
     font-size: 16px;
-    padding-top:30%;
+    padding-top:35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -967,7 +967,7 @@
 
 .info_system_new li span {
     font-size: 16px;
-    padding-top: 30%;
+    padding-top: 35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -1000,7 +1000,7 @@
 
 .invade_system_new li span {
     font-size: 16px;
-    padding-top: 22%;
+    padding-top: 35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -1031,7 +1031,7 @@
 
 .manage_system_new li span {
     font-size: 16px;
-    padding-top: 38%;
+    padding-top: 46%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -1061,7 +1061,7 @@
 
 .communicate_system_new li span {
     font-size: 16px;
-    padding-top: 40%;
+    padding-top: 50%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -1092,7 +1092,7 @@
 
 .electron_new li span {
     font-size: 16px;
-    padding-top: 50%;
+    padding-top: 61%;
     width: 100%;
     height: 28%;
     display: inline-block;

@@ -721,7 +721,7 @@
 
 .hr_total_commen .common_title_total {
     width: 3%;
-    padding: 12% 5%;
+    padding: 8% 5%;
     vertical-align: middle;
     font-size: 18px;
     font-weight: bold;
@@ -804,7 +804,7 @@
 
 .door_system li span {
     font-size: 16px;
-    padding-top:30%;
+    padding-top:35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -845,7 +845,7 @@
 
 .info_system li span {
     font-size: 16px;
-    padding-top: 30%;
+    padding-top: 35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -878,7 +878,7 @@
 
 .invade_system li span {
     font-size: 16px;
-    padding-top: 30%;
+    padding-top: 35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -909,7 +909,7 @@
 
 .manage_system li span {
     font-size: 16px;
-    padding-top: 38%;
+    padding-top: 45%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -939,7 +939,7 @@
 
 .communicate_system li span {
     font-size: 16px;
-    padding-top: 40%;
+    padding-top: 50%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -970,7 +970,7 @@
 
 .electron li span {
     font-size: 16px;
-    padding-top: 50%;
+    padding-top: 60%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -1806,7 +1806,7 @@
 
 .commen .common_title {
     width: 3%;
-    padding: 12% 5%;
+    padding: 8% 5%;
     vertical-align: middle;
     font-size: 18px;
     font-weight: bold;
@@ -1921,7 +1921,7 @@
 
 .door_system_r li span {
     font-size: 16px;
-    padding-top:30%;
+    padding-top:35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -1962,7 +1962,7 @@
 
 .info_system_r li span {
     font-size: 16px;
-    padding-top: 30%;
+    padding-top: 35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -1995,7 +1995,7 @@
 
 .invade_system_r li span {
     font-size: 16px;
-    padding-top: 30%;
+    padding-top: 35%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -2026,7 +2026,7 @@
 
 .manage_system_r li span {
     font-size: 16px;
-    padding-top: 38%;
+    padding-top: 46%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -2056,7 +2056,7 @@
 
 .communicate_system_r li span {
     font-size: 16px;
-    padding-top: 40%;
+    padding-top: 49%;
     width: 100%;
     height: 28%;
     display: inline-block;
@@ -2087,7 +2087,7 @@
 
 .electron_r li span {
     font-size: 16px;
-    padding-top: 50%;
+    padding-top: 60%;
     width: 100%;
     height: 28%;
     display: inline-block;
