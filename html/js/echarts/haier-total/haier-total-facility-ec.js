@@ -300,7 +300,7 @@ series: [
         },
 
         data: [
-            {value: 335, name: 'dvr', selected: true},
+            {value: 335, name: 'dvr'},
             {value: 679, name: '摄像机'},
         ]
     },
