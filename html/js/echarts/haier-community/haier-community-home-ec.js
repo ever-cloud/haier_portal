@@ -6,7 +6,7 @@ getechart("ecDetailsDown", "theme", {
             "color": "#000",
             "fontFamily": "SimSun"
         },
-        "itemGap":1,
+        "itemGap": 1,
         "subtext": "用户数",
         "subtextStyle": {
             "fontSize": "12",
@@ -61,7 +61,7 @@ getechart("ecDetailsDown", "theme", {
             name: '月用户数',
             min: 0,
             max: 5000,
-            interval: 1000  ,
+            interval: 1000,
             axisLabel: {
                 formatter: '{value}'
             }
@@ -90,22 +90,22 @@ getechart("ecConfine", "theme", {
         "textStyle": {
             "fontSize": "20",
             "color": "#000",
-            "fontFamily": "SimSun"
+            // "fontFamily": "SimSun"
         },
         "itemGap": 5,
         "x": "50%",
-        "textAlign":"center",
+        "textAlign": "center",
     },
         {
             "text": "9",
             "textStyle": {
                 "fontSize": "20",
                 "color": "#000",
-                "fontFamily": "SimSun"
+                // "fontFamily": "SimSun"
             },
             "itemGap": 5,
             "x": "80%",
-            "textAlign":"center",
+            "textAlign": "center",
         },
 //padding:100,//内边距，控制两个标题距离
         {
@@ -114,11 +114,11 @@ getechart("ecConfine", "theme", {
             "subtextStyle": {
                 "fontSize": "12",
                 "color": "#000",
-                "fontFamily": "SimSun"
+                // "fontFamily": "SimSun"
             },
             "itemGap": 5,
             "x": "50%",
-            "textAlign":"center",
+            "textAlign": "center",
         },
         {
 
@@ -126,15 +126,22 @@ getechart("ecConfine", "theme", {
             "subtextStyle": {
                 "fontSize": "12",
                 "color": "#000",
-                "fontFamily": "SimSun"
+                // "fontFamily": "SimSun"
             },
             "itemGap": 5,
             "x": "80%",
-            "textAlign":"center",
+            "textAlign": "center",
         }],
     tooltip: {
-        trigger: 'axis'
+        trigger: 'axis',
+        padding:15
     },
+    // axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+    //     label: {
+    //         show: true,
+    //         precision: 2
+    //     }
+    // },
     legend: {
         orient: 'vertical',
         //center:0,
@@ -143,7 +150,7 @@ getechart("ecConfine", "theme", {
         itemGap: 5,
         itemWidth: 15,
         itemHeight: 8,
-        data: ['月成交额','月订单量']
+        data: ['月成交额', '月订单量']
     },
     "grid": {
         "left": "10%",
@@ -185,10 +192,10 @@ getechart("ecConfine", "theme", {
     ],
     series: [
         {
-            name:'月成交额',
-            type:'line',
+            name: '月成交额',
+            type: 'line',
             //stack: '总量',
-            data:[345893, 459087,87890, 90900, 509870,  74993]
+            data: [3.01, 0.01, 0.0004, 909.99900, 509870, 74993]
         },
         {
             name: '月订单量',
@@ -201,13 +208,13 @@ getechart("ecConfine", "theme", {
     ]
 
 });
-getechart("ecMendsever", "theme",{
+getechart("ecMendsever", "theme", {
     "title": {
         "text": "147",
         "textStyle": {
             "fontSize": "20",
             "color": "#000",
-            "fontFamily": "SimSun"
+            // "fontFamily": "SimSun"
 
         },
         "itemGap": 3,
@@ -215,10 +222,10 @@ getechart("ecMendsever", "theme",{
         "subtextStyle": {
             "fontSize": "12",
             "color": "#000",
-            "fontFamily": "SimSun"
+            // "fontFamily": "SimSun"
         },
         "x": "center",
-        "y":'-5%'
+        "y": '-5%'
     },
     "tooltip": {
         "trigger": "axis",
@@ -226,16 +233,16 @@ getechart("ecMendsever", "theme",{
             "type": "shadow"
         }
     },
-    legend:{
-        show:true,
-        data:['已完成','已受理','未受理'],
-        orient:'vertical',
+    legend: {
+        show: true,
+        data: ['已完成', '已受理', '未受理'],
+        orient: 'vertical',
         //center:0,
-        left:65,
-        top:-5,
-        itemGap:5,
-        itemWidth:10,
-        itemHeight:8,
+        left: 65,
+        top: -5,
+        itemGap: 5,
+        itemWidth: 10,
+        itemHeight: 8,
         formatter: '{name}',
     },
     "grid": {
@@ -262,11 +269,11 @@ getechart("ecMendsever", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
 
                         }
                     }
@@ -284,11 +291,11 @@ getechart("ecMendsever", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
 
                         }
                     }
@@ -306,11 +313,11 @@ getechart("ecMendsever", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
 
                         }
                     }
@@ -322,7 +329,7 @@ getechart("ecMendsever", "theme",{
         }
     ]
 });
-getechart("ecProcess", "theme",{
+getechart("ecProcess", "theme", {
     "title": {
         "text": "120",
         "textStyle": {
@@ -341,7 +348,7 @@ getechart("ecProcess", "theme",{
 
         },
         "x": "center",
-        "y":"-5%"
+        "y": "-5%"
     },
     "tooltip": {
         "trigger": "axis",
@@ -349,16 +356,16 @@ getechart("ecProcess", "theme",{
             "type": "shadow"
         }
     },
-    legend:{
-        show:true,
-        data:['已完成','对话中','新投诉'],
-        orient:'vertical',
+    legend: {
+        show: true,
+        data: ['已完成', '对话中'],
+        orient: 'vertical',
         //center:0,
-        left:65,
-        top:-5,
-        itemGap:5,
-        itemWidth:10,
-        itemHeight:8,
+        left: 65,
+        top: -5,
+        itemGap: 5,
+        itemWidth: 10,
+        itemHeight: 8,
         formatter: '{name}'
     },
     "grid": {
@@ -385,11 +392,11 @@ getechart("ecProcess", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
                         }
                     }
                 }
@@ -406,11 +413,11 @@ getechart("ecProcess", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
                         }
                     }
                 }
@@ -418,31 +425,32 @@ getechart("ecProcess", "theme",{
             "data": [
                 12
             ]
-        },
-        {
-            "name": "新投诉",
-            "type": "bar",
-            "stack": "总量",
-            itemStyle: {
-                normal: {
-                    label: {
-                        show: true,
-                        position: ['1','5'],
-                        formatter: '{c}',
-                        "textStyle": {
-                            "color": "#ffffff",
-                            "fontSize":12,
-                        }
-                    }
-                }
-            },
-            "data": [
-                20
-            ]
         }
+        // ,
+        // {
+        //     "name": "新投诉",
+        //     "type": "bar",
+        //     "stack": "总量",
+        //     itemStyle: {
+        //         normal: {
+        //             label: {
+        //                 show: true,
+        //                 position: ['1', '5'],
+        //                 formatter: '{c}',
+        //                 "textStyle": {
+        //                     "color": "#ffffff",
+        //                     "fontSize": 12,
+        //                 }
+        //             }
+        //         }
+        //     },
+        //     "data": [
+        //         20
+        //     ]
+        // }
     ]
 });
-getechart("ecPush", "theme",{
+getechart("ecPush", "theme", {
     "title": {
         "text": "160",
         "textStyle": {
@@ -451,7 +459,7 @@ getechart("ecPush", "theme",{
             "fontFamily": "SimSun"
 
         },
-        "itemGap":3,
+        "itemGap": 3,
         "subtext": "设备在线数",
         "subtextStyle": {
             "fontSize": "12",
@@ -461,7 +469,7 @@ getechart("ecPush", "theme",{
         },
         "x": "center",
         //"itemGap": 3,
-        "y":'-5%'
+        "y": '-5%'
     },
     "tooltip": {
         "trigger": "axis",
@@ -469,16 +477,16 @@ getechart("ecPush", "theme",{
             "type": "shadow"
         }
     },
-    legend:{
-        show:true,
-        data:['在线','非在线'],
-        orient:'vertical',
+    legend: {
+        show: true,
+        data: ['在线', '非在线'],
+        orient: 'vertical',
         //center:0,
-        left:65,
-        top:10,
-        itemGap:5,
-        itemWidth:10,
-        itemHeight:8,
+        left: 65,
+        top: 10,
+        itemGap: 5,
+        itemWidth: 10,
+        itemHeight: 8,
         formatter: '{name}'
     },
     "grid": {
@@ -505,11 +513,11 @@ getechart("ecPush", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
                         }
                     }
                 }
@@ -526,11 +534,11 @@ getechart("ecPush", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
                         }
                     }
                 }
@@ -541,7 +549,7 @@ getechart("ecPush", "theme",{
         }
     ]
 });
-getechart("ecReference", "theme",{
+getechart("ecReference", "theme", {
     "title": {
         "text": "56",
         "textStyle": {
@@ -560,7 +568,7 @@ getechart("ecReference", "theme",{
 
         },
         "x": "center",
-        "y":"-5%"
+        "y": "-5%"
     },
     "tooltip": {
         "trigger": "axis",
@@ -568,16 +576,16 @@ getechart("ecReference", "theme",{
             "type": "shadow"
         }
     },
-    legend:{
-        show:true,
-        data:['故障','非故障'],
-        orient:'vertical',
+    legend: {
+        show: true,
+        data: ['故障', '非故障'],
+        orient: 'vertical',
         //center:0,
-        left:65,
-        top:3,
-        itemGap:5,
-        itemWidth:10,
-        itemHeight:8,
+        left: 65,
+        top: 3,
+        itemGap: 5,
+        itemWidth: 10,
+        itemHeight: 8,
         formatter: '{name}'
     },
     "grid": {
@@ -604,11 +612,11 @@ getechart("ecReference", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
                         }
                     }
                 }
@@ -625,11 +633,11 @@ getechart("ecReference", "theme",{
                 normal: {
                     label: {
                         show: true,
-                        position: ['1','5'],
+                        position: ['1', '5'],
                         formatter: '{c}',
                         "textStyle": {
                             "color": "#ffffff",
-                            "fontSize":12,
+                            "fontSize": 12,
                         }
                     }
                 }
@@ -640,7 +648,6 @@ getechart("ecReference", "theme",{
         }
     ]
 });
-
 
 
 function getechart(idName, themes, idOption) {

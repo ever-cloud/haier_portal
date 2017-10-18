@@ -297,7 +297,7 @@ getechart("ecHomenew", "themeFour", {
 getechart("eccomtopnew", "theme",{
 
     title: {
-        text: '用户构成情况',
+        text: '当月用户构成情况',
         x: "20%",
         "textStyle": {
             "fontSize": "16",
@@ -318,7 +318,7 @@ getechart("eccomtopnew", "theme",{
     },
     series: [
         {
-            name: '用户构成情况',
+            name: '当月用户构成情况',
             type: 'pie',
             radius: ['70%', '50%'],  //前面半径控制大小，后面半径控制粗细
             center: ["40%", "55%"],
@@ -350,7 +350,7 @@ getechart("eccomtopnew", "theme",{
 getechart("eccombottomnew", "theme",{
 
     title: {
-        text: '活跃用户构成情况',
+        text: '当月活跃用户构成情况',
         x: "20%",
         "textStyle": {
             "fontSize": "16",
@@ -371,7 +371,7 @@ getechart("eccombottomnew", "theme",{
     },
     series: [
         {
-            name: '活跃用户构成情况',
+            name: '当月活跃用户构成情况',
             type: 'pie',
             radius: ['70%', '50%'],  //前面半径控制大小，后面半径控制粗细
             center: ["40%", "55%"],
@@ -525,7 +525,7 @@ getechart("ecExcellentnew", "theme",{
 });
 getechart("ecEducationnew", "theme",{
     "title": {
-        "text": "90天商户类别分布",
+        "text": "商户类别分布",
         "top": "30",
         "x": "center"
     },
@@ -546,7 +546,7 @@ getechart("ecEducationnew", "theme",{
     },
     "series": [
         {
-            "name": "商品分布",
+            "name": "商户类别分布",
             "type": "pie",
             "radius": "55%",
             "center": [

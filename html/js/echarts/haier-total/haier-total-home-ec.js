@@ -135,7 +135,13 @@ getechart("ecReduce_total", "theme", {
 
     },
     tooltip: {
-        trigger: 'axis'
+        trigger: 'axis',
+    },
+    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+        label:{
+            show:true,
+            precision:2
+        }
     },
     legend: {
         orient: 'vertical',
@@ -191,7 +197,7 @@ getechart("ecReduce_total", "theme", {
             name: '用户活跃总数',
             type: 'line',
             //stack: '总量',
-            data: [1900, 2600, 1400, 2390, 2500, 3049]
+            data: [0.01, 2600.777, 1400.6, 2390.77777, 2500, 3049]
         },
         {
             name: '月用户数',
@@ -471,7 +477,7 @@ getechart("ecReceive_total", "theme", {
     },
     legend: {
         show: true,
-        data: ['已完成', '对话中', '新投诉'],
+        data: ['已完成', '对话中'],
         orient: 'vertical',
         //center:0,
         left: 50,
@@ -538,28 +544,29 @@ getechart("ecReceive_total", "theme", {
             "data": [
                 12
             ]
-        },
-        {
-            "name": "新投诉",
-            "type": "bar",
-            "stack": "总量",
-            itemStyle: {
-                normal: {
-                    label: {
-                        show: true,
-                        "position": ['1', '5'],
-                        formatter: '{c}',
-                        "textStyle": {
-                            "color": "#ffffff",
-                            "fontSize": 12,
-                        }
-                    }
-                }
-            },
-            "data": [
-                20
-            ]
         }
+        // ,
+        // {
+        //     "name": "新投诉",
+        //     "type": "bar",
+        //     "stack": "总量",
+        //     itemStyle: {
+        //         normal: {
+        //             label: {
+        //                 show: true,
+        //                 "position": ['1', '5'],
+        //                 formatter: '{c}',
+        //                 "textStyle": {
+        //                     "color": "#ffffff",
+        //                     "fontSize": 12,
+        //                 }
+        //             }
+        //         }
+        //     },
+        //     "data": [
+        //         20
+        //     ]
+        // }
     ]
 });
 getechart("ecStart_total", "theme", {

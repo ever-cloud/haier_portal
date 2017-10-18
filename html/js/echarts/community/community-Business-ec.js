@@ -170,7 +170,7 @@ getechart("ecMonthnew", "theme",{
 });
 getechart("ecDeucenew", "theme",{
     "title": {
-        "text": "商家类别分布",
+        "text": "商业服务类别分布",
         "top":"10",
         "x": "20%",
         'y':'bottom'
@@ -192,7 +192,7 @@ getechart("ecDeucenew", "theme",{
     },
     "series": [
         {
-            "name": "商家类别",
+            "name": "商业服务类别分布",
             "type": "pie",
             "radius": [
                 "40%",

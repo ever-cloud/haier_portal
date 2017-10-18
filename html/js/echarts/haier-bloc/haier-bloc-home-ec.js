@@ -467,7 +467,7 @@ getechart("ecReceive", "theme", {
     },
     legend:{
         show:true,
-        data:['已完成','对话中','新投诉'],
+        data:['已完成','对话中'],
         orient:'vertical',
         //center:0,
         left:50,
@@ -534,28 +534,29 @@ getechart("ecReceive", "theme", {
             "data": [
                 12
             ]
-        },
-        {
-            "name": "新投诉",
-            "type": "bar",
-            "stack": "总量",
-            itemStyle: {
-                normal: {
-                    label: {
-                        show: true,
-                        position: ['1','5'],
-                        formatter: '{c}',
-                        "textStyle": {
-                            "color": "#ffffff",
-                            "fontSize":12,
-                        }
-                    }
-                }
-            },
-            "data": [
-                20
-            ]
         }
+        // ,
+        // {
+        //     "name": "新投诉",
+        //     "type": "bar",
+        //     "stack": "总量",
+        //     itemStyle: {
+        //         normal: {
+        //             label: {
+        //                 show: true,
+        //                 position: ['1','5'],
+        //                 formatter: '{c}',
+        //                 "textStyle": {
+        //                     "color": "#ffffff",
+        //                     "fontSize":12,
+        //                 }
+        //             }
+        //         }
+        //     },
+        //     "data": [
+        //         20
+        //     ]
+        // }
     ]
 });
 getechart("ecStart", "theme", {
