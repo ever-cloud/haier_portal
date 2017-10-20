@@ -67,7 +67,7 @@ getechart("ecHouse_total", "themeFour", {
         },
         {
             x: '40%',
-            subtext: '注册用户数',
+            subtext: '当月新增用户数',
 
             "subtextStyle": {
                 "fontSize": "14",
@@ -79,7 +79,7 @@ getechart("ecHouse_total", "themeFour", {
         },
         {
             x: '55%',
-            subtext: '活跃用户数',
+            subtext: '当月活跃用户数',
             "subtextStyle": {
                 "fontSize": "14",
                 "color": "#000",
@@ -206,7 +206,7 @@ getechart("ecHome_total", "themeFour", {
         },
         {
             x: '40%',
-            subtext: '注册用户数',
+            subtext: '当月新增用户数',
 
             "subtextStyle": {
                 "fontSize": "14",
@@ -218,7 +218,7 @@ getechart("ecHome_total", "themeFour", {
         },
         {
             x: '55%',
-            subtext: '活跃用户数',
+            subtext: '当月活跃用户数',
             "subtextStyle": {
                 "fontSize": "14",
                 "color": "#000",
@@ -280,7 +280,7 @@ getechart("ecHome_total", "themeFour", {
 getechart("ecBloctop_total", "theme", {
 
     title: {
-        text: '当月用户构成情况',
+        text: '当月新增用户构成',
         x: "20%",
         "textStyle": {
             "fontSize": "16",
@@ -297,11 +297,11 @@ getechart("ecBloctop_total", "theme", {
         x: '70%',
         y: '60%',
         color: ['pink', 'blue'],
-        data: ["住户", "商家"]
+        data: ["住户", "商家","管理员"]
     },
     series: [
         {
-            name: '当月用户构成情况',
+            name: '当月新增用户构成',
             type: 'pie',
             radius: ['70%', '50%'],  //前面半径控制大小，后面半径控制粗细
             center: ["40%", "55%"],
@@ -325,7 +325,9 @@ getechart("ecBloctop_total", "theme", {
             },
             data: [
                 {value: 335, name: '住户'},
-                {value: 234, name: '商家'}
+                {value: 234, name: '商家'},
+                {value: 134, name: '管理员'}
+
             ]
         }
     ]
@@ -333,7 +335,7 @@ getechart("ecBloctop_total", "theme", {
 getechart("ecBlocbottom_total", "theme", {
 
     title: {
-        text: '当月活跃用户构成情况',
+        text: '当月活跃用户构成',
         x: "20%",
         "textStyle": {
             "fontSize": "16",
@@ -351,11 +353,11 @@ getechart("ecBlocbottom_total", "theme", {
         x: '70%',
         y: '60%',
         color: ['pink', 'blue'],
-        data: ["住户", "商家"]
+        data: ["住户", "商家","管理员"]
     },
     series: [
         {
-            name: '当月活跃用户构成情况',
+            name: '当月活跃用户构成',
             type: 'pie',
             radius: ['70%', '50%'],  //前面半径控制大小，后面半径控制粗细
             center: ["40%", "55%"],
@@ -379,7 +381,8 @@ getechart("ecBlocbottom_total", "theme", {
             },
             data: [
                 {value: 335, name: '住户'},
-                {value: 234, name: '商家'}
+                {value: 234, name: '商家'},
+                {value: 100, name: '管理员'}
 
             ]
         }

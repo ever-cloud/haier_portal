@@ -124,7 +124,7 @@ getechart("ecReduce_total", "theme", {
             "fontFamily": "SimSun"
         },
         "itemGap": 1,
-        "subtext": "用户数",
+        "subtext": "总用户数",
         "subtextStyle": {
             "fontSize": "12",
             "color": "#000",
@@ -151,7 +151,7 @@ getechart("ecReduce_total", "theme", {
         itemGap: 5,
         itemWidth: 15,
         itemHeight: 8,
-        data: ['用户活跃总数', '月用户数']
+        data:  ['月活跃用户数', '月新增用户数']
     },
     "grid": {
         "left": "10%",
@@ -168,7 +168,7 @@ getechart("ecReduce_total", "theme", {
     yAxis: [
         {
             type: 'value',
-            name: '用户活跃总数',
+            name: '月活跃用户数',
             min: 0,
             max: 5000,
             interval: 1000,
@@ -183,7 +183,7 @@ getechart("ecReduce_total", "theme", {
         },
         {
             type: 'value',
-            name: '月用户数',
+            name: '月新增用户数',
             min: 0,
             max: 5000,
             interval: 1000,
@@ -194,13 +194,13 @@ getechart("ecReduce_total", "theme", {
     ],
     series: [
         {
-            name: '用户活跃总数',
+            name: '月活跃用户数',
             type: 'line',
             //stack: '总量',
             data: [0.01, 2600.777, 1400.6, 2390.77777, 2500, 3049]
         },
         {
-            name: '月用户数',
+            name: '月新增用户数',
             type: 'line',
             yAxisIndex: 1,//有多个y轴时候使用
             data: [800, 900, 2900, 2090, 2000, 3069]
