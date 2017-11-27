@@ -147,6 +147,9 @@ getechart("ecOpenCount", "themeFourteen", {
             type: 'pie',
             radius: '55%',
             center: ['60%', '45%'],
+            startAngle:0,
+            clockwise:false,
+            avoidLabelOverlap:true,
             data: [
                 {value: 1480, name: 'dvr设备'},
                 {value: 310, name: '人员定位'},

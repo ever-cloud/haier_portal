@@ -333,7 +333,7 @@ getechart("ecProcessright", "theme",{
         },
         //padding:100,
         "itemGap": 3,
-        "subtext": "建议状态",
+        "subtext": "投诉状态",
         "subtextStyle": {
             "fontSize": "12",
             "color": "#000",
@@ -421,7 +421,7 @@ getechart("ecProcessright", "theme",{
         }
         // ,
         // {
-        //     "name": "新建议",
+        //     "name": "新投诉",
         //     "type": "bar",
         //     "stack": "总量",
         //     itemStyle: {

@@ -459,7 +459,7 @@ getechart("ecReceive_total", "theme", {
         },
         //padding:100,//内边距，控制两个标题距离
         "itemGap": 3,
-        "subtext": "建议状态",
+        "subtext": "投诉状态",
         "subtextStyle": {
             "fontSize": "12",
             "color": "#000",
@@ -547,7 +547,7 @@ getechart("ecReceive_total", "theme", {
         }
         // ,
         // {
-        //     "name": "新建议",
+        //     "name": "新投诉",
         //     "type": "bar",
         //     "stack": "总量",
         //     itemStyle: {

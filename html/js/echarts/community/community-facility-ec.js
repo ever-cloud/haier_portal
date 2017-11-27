@@ -144,15 +144,14 @@ getechart("ecOpenspecial", "themeFourteen",{
             type: 'pie',
             radius: '55%',
             center: ['60%', '45%'],
+            startAngle:0,
+            clockwise:false,
+            avoidLabelOverlap:true,
             data: [
                 {value: 1480, name: 'dvr设备'},
                 {value: 310, name: '人员定位'},
                 {value: 234, name: '摄像机'},
                 {value: 135, name: '电梯'},
-                {value: 335, name: '可视对讲'},
-                {value: 335, name: '可视对讲'},
-                {value: 335, name: '可视对讲'},
-                {value: 335, name: '可视对讲'},
                 {value: 335, name: '可视对讲'}
             ],
             label: {
