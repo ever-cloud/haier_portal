@@ -90,7 +90,7 @@ getechart("ecConfine", "theme", {
         "textStyle": {
             "fontSize": "20",
             "color": "#000",
-            // "fontFamily": "SimSun"
+            "fontFamily": "SimSun"
         },
         "itemGap": 5,
         "x": "50%",
@@ -101,7 +101,7 @@ getechart("ecConfine", "theme", {
             "textStyle": {
                 "fontSize": "20",
                 "color": "#000",
-                // "fontFamily": "SimSun"
+                 "fontFamily": "SimSun"
             },
             "itemGap": 5,
             "x": "80%",
@@ -114,7 +114,7 @@ getechart("ecConfine", "theme", {
             "subtextStyle": {
                 "fontSize": "12",
                 "color": "#000",
-                // "fontFamily": "SimSun"
+                 "fontFamily": "SimSun"
             },
             "itemGap": 5,
             "x": "50%",
@@ -126,7 +126,7 @@ getechart("ecConfine", "theme", {
             "subtextStyle": {
                 "fontSize": "12",
                 "color": "#000",
-                // "fontFamily": "SimSun"
+                 "fontFamily": "SimSun"
             },
             "itemGap": 5,
             "x": "80%",
@@ -214,7 +214,7 @@ getechart("ecMendsever", "theme", {
         "textStyle": {
             "fontSize": "20",
             "color": "#000",
-            // "fontFamily": "SimSun"
+             "fontFamily": "SimSun"
 
         },
         "itemGap": 3,
@@ -222,7 +222,7 @@ getechart("ecMendsever", "theme", {
         "subtextStyle": {
             "fontSize": "12",
             "color": "#000",
-            // "fontFamily": "SimSun"
+             "fontFamily": "SimSun"
         },
         "x": "center",
         "y": '-5%'
